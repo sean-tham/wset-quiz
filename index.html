@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSET Level 2 Wine Knowledge Quiz</title>
+    <style>
+        :root {
+            --primary: #722F37;
+            --secondary: #A4303F;
+            --accent: #C8A2C8;
+            --background: #FFF8F8;
+            --text: #2C1810;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-container {
+            display: none;
+        }
+
+        .quiz-container.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .question {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .options {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .option {
+            padding: 1rem;
+            background: white;
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: black;
+        }
+
+        .option:hover {
+            background: var(--accent);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .option.correct {
+            background: #4CAF50;
+            color: white;
+            border-color: #4CAF50;
+        }
+
+        .option.incorrect {
+            background: #f44336;
+            color: white;
+            border-color: #f44336;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: var(--secondary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: #ddd;
+            border-radius: 5px;
+            margin: 2rem 0;
+            overflow: hidden;
+        }
+
+        .progress {
+            width: 0%;
+            height: 100%;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .score-container {
+            text-align: center;
+            display: none;
+        }
+
+        .score-container.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .start-screen {
+            text-align: center;
+        }
+
+        .start-screen p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .wine-decoration {
+            font-size: 3rem;
+            margin: 1rem 0;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="start-screen" id="startScreen">
+            <h1>WSET Level 2 Wine Knowledge Quiz</h1>
+            <div class="wine-decoration">🍷</div>
+            <p>Test your knowledge about wine alcohol content, climate temperatures, fermentation requirements, and serving temperatures.</p>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <div class="quiz-container" id="quizContainer">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+            <div class="controls">
+                <button onclick="nextQuestion()" id="nextBtn">Next Question</button>
+            </div>
+        </div>
+
+        <div class="score-container" id="scoreContainer">
+            <h1>Quiz Complete!</h1>
+            <div class="wine-decoration">🏆</div>
+            <p>Your score: <span id="score">0</span>%</p>
+            <button onclick="restartQuiz()">Try Again</button>
+        </div>
+    </div>
+
+    <script>
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function generateQuestions() {
+            const questions = [
+                {
+                    question: "Wines with alcohol content below 11% are considered:",
+                    options: ["Low alcohol", "Medium alcohol", "High alcohol", "Very high alcohol"],
+                    correct: "Low alcohol"
+                },
+                {
+                    question: "Which category of wines typically has 16.5% - 18.4% alcohol content?",
+                    options: ["Table wines", "Medium fortified wines", "Light wines", "Sparkling wines"],
+                    correct: "Medium fortified wines"
+                },
+                {
+                    question: "A region with average growing season temperature of 16.5°C or below would be classified as:",
+                    options: ["Cool climate", "Moderate climate", "Warm climate", "Hot climate"],
+                    correct: "Cool climate"
+                },
+                {
+                    question: "Red wines are typically fermented at what temperature range?",
+                    options: ["12°C - 22°C", "20°C - 32°C", "6°C - 8°C", "10°C - 13°C"],
+                    correct: "20°C - 32°C"
+                },
+                {
+                    question: "Which wines are typically served at 7°C - 10°C?",
+                    options: ["Light-, medium-bodied white or rosé", "Full-bodied red", "Sweet wine", "Light-bodied red"],
+                    correct: "Light-, medium-bodied white or rosé"
+                },
+                {
+                    question: "A wine served at room temperature (15°C - 18°C) is most likely to be:",
+                    options: ["Sparkling wine", "Light white wine", "Sweet wine", "Medium-, full-bodied red"],
+                    correct: "Medium-, full-bodied red"
+                },
+                {
+                    question: "Light-, medium-bodied white or rosé wines are best served at what temperature?",
+                    options: ["13°C - 18°C", "7°C - 10°C", "15°C - 18°C", "6°C - 8°C"],
+                    correct: "7°C - 10°C"
+                },
+                {
+                    question: "A wine region with average temperatures of 18.5°C - 21°C during growing season is considered:",
+                    options: ["Cool", "Moderate", "Warm", "Very cool"],
+                    correct: "Warm"
+                },
+                {
+                    question: "Which wines are fermented at 12°C - 22°C?",
+                    options: ["White or rosé wines", "Only red wines", "Only sweet wines", "Only fortified wines"],
+                    correct: "White or rosé wines"
+                },
+                {
+                    question: "If you're serving a wine at 6°C - 8°C, it's most likely to be:",
+                    options: ["Full-bodied red", "Light-bodied red", "Sweet wine", "Medium-bodied red"],
+                    correct: "Sweet wine"
+                },
+                {
+                    question: "Which wines are typically served lightly chilled (10°C - 13°C)?",
+                    options: ["Full-bodied white", "Sweet wine", "Light-bodied red", "Sparkling wine"],
+                    correct: "Full-bodied white"
+                },
+                {
+                    question: "A fortified wine with alcohol content above 18.4% is considered:",
+                    options: ["Low strength", "Medium strength", "High strength", "Standard strength"],
+                    correct: "High strength"
+                },
+                {
+                    question: "What temperature range is considered a moderate climate for wine growing?",
+                    options: ["16.5°C - 18.5°C", "18.5°C - 21°C", "Below 16.5°C", "Above 21°C"],
+                    correct: "16.5°C - 18.5°C"
+                },
+                {
+                    question: "Which wine style is typically served at room temperature or lightly chilled (13°C - 18°C)?",
+                    options: ["Light-bodied red", "Sweet wine", "Sparkling wine", "Full-bodied white"],
+                    correct: "Light-bodied red"
+                },
+                {
+                    question: "Regular wines with alcohol content between 11% - 13.9% are classified as:",
+                    options: ["Medium alcohol", "Low alcohol", "High alcohol", "Very high alcohol"],
+                    correct: "Medium alcohol"
+                },
+                {
+                    question: "What is the typical alcohol range for low-strength fortified wines?",
+                    options: ["15% - 16.4%", "16.5% - 18.4%", ">18.4%", "11% - 13.9%"],
+                    correct: "15% - 16.4%"
+                },
+                {
+                    question: "In wine regions with temperatures between 18.5°C - 21°C, what climate classification would you expect?",
+                    options: ["Warm climate", "Cool climate", "Hot climate", "Moderate climate"],
+                    correct: "Warm climate"
+                },
+                {
+                    question: "Which type of wine requires the warmest fermentation temperature range?",
+                    options: ["Red wines", "White wines", "Rosé wines", "Sweet wines"],
+                    correct: "Red wines"
+                },
+                {
+                    question: "Regular wines with alcohol content above 14% are considered:",
+                    options: ["High alcohol", "Medium alcohol", "Low alcohol", "Standard alcohol"],
+                    correct: "High alcohol"
+                },
+                {
+                    question: "What is the ideal serving temperature range for well-chilled wines?",
+                    options: ["6°C - 8°C", "7°C - 10°C", "10°C - 13°C", "13°C - 18°C"],
+                    correct: "6°C - 8°C"
+                }
+            ];
+
+            // First shuffle the questions array itself
+            const shuffledQuestions = shuffleArray([...questions]);
+
+            // Then shuffle options for each question and track correct answer index
+            return shuffledQuestions.map(q => {
+                const shuffledOptions = shuffleArray([...q.options]);
+                const correctIndex = shuffledOptions.indexOf(q.correct);
+                return {
+                    question: q.question,
+                    options: shuffledOptions,
+                    correct: correctIndex
+                };
+            });
+        }
+
+        let currentQuestion = 0;
+        let score = 0;
+        let answered = false;
+        let questions = generateQuestions();
+
+        function startQuiz() {
+            questions = generateQuestions(); // This will now generate questions in random order
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('quizContainer').classList.add('active');
+            showQuestion();
+        }
+
+        function showQuestion() {
+            answered = false;
+            const question = questions[currentQuestion];
+            document.getElementById('question').textContent = question.question;
+            
+            const optionsContainer = document.getElementById('options');
+            optionsContainer.innerHTML = '';
+            
+            question.options.forEach((option, index) => {
+                const button = document.createElement('button');
+                button.className = 'option';
+                button.textContent = option;
+                button.onclick = () => selectOption(index);
+                optionsContainer.appendChild(button);
+            });
+
+            updateProgress();
+        }
+
+        function selectOption(index) {
+            if (answered) return;
+            answered = true;
+
+            const options = document.querySelectorAll('.option');
+            const correct = questions[currentQuestion].correct;
+
+            options[index].classList.add(index === correct ? 'correct' : 'incorrect');
+            options[correct].classList.add('correct');
+
+            if (index === correct) score++;
+        }
+
+        function nextQuestion() {
+            if (!answered) {
+                alert('Please select an answer first!');
+                return;
+            }
+
+            currentQuestion++;
+            if (currentQuestion < questions.length) {
+                showQuestion();
+            } else {
+                showScore();
+            }
+        }
+
+        function showScore() {
+            document.getElementById('quizContainer').classList.remove('active');
+            document.getElementById('scoreContainer').classList.add('active');
+            const percentage = Math.round((score / questions.length) * 100);
+            document.getElementById('score').textContent = percentage;
+        }
+
+        function restartQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('scoreContainer').classList.remove('active');
+            document.getElementById('quizContainer').classList.add('active');
+            showQuestion();
+        }
+
+        function updateProgress() {
+            const progress = ((currentQuestion + 1) / questions.length) * 100;
+            document.getElementById('progress').style.width = `${progress}%`;
+        }
+    </script>
+</body>
+</html> 
