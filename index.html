@@ -101,12 +101,13 @@
         }
 
         .controls {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 2rem;
+            text-align: center;
+            margin-top: 1rem;
         }
 
-        button {
+        #nextBtn {
+            display: none;
+            margin: 1rem auto;
             padding: 0.8rem 1.5rem;
             background: var(--primary);
             color: white;
@@ -117,9 +118,41 @@
             transition: all 0.3s ease;
         }
 
-        button:hover {
+        #nextBtn:hover {
             background: var(--secondary);
             transform: translateY(-2px);
+        }
+
+        .home-button {
+            display: inline-block;
+            margin: 1rem auto;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .home-button:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .quiz-container p {
+            text-align: center;
+            margin: 0.5rem 0;
+            color: var(--text);
+            font-size: 1.1rem;
         }
 
         .progress-bar {
@@ -301,7 +334,12 @@
     </div>
 
     <script>
-        let currentQuiz = 'temperature';
+        let currentQuiz = '';
+        let currentQuestion = 0;
+        let score = 0;
+        let answered = false;
+        let questions = [];
+
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -429,11 +467,6 @@
             });
         }
 
-        let currentQuestion = 0;
-        let score = 0;
-        let answered = false;
-        let questions = generateQuestions();
-
         function startQuiz() {
             questions = generateQuestions(); // This will now generate questions in random order
             currentQuestion = 0;
@@ -454,15 +487,26 @@
                 const optionsContainer = document.getElementById('options');
                 optionsContainer.innerHTML = '';
                 
+                // Create and append each option
                 questionData.options.forEach((option, index) => {
-                    const button = document.createElement('div');
-                    button.className = 'option';
-                    button.textContent = option;
-                    button.onclick = () => selectOption(index);
-                    optionsContainer.appendChild(button);
+                    const optionDiv = document.createElement('div');
+                    optionDiv.className = 'option';
+                    optionDiv.textContent = option;
+                    // Add data attribute for index
+                    optionDiv.dataset.index = index;
+                    optionsContainer.appendChild(optionDiv);
                 });
+
+                // Add single event listener to options container (event delegation)
+                optionsContainer.onclick = function(e) {
+                    const optionDiv = e.target.closest('.option');
+                    if (!optionDiv || answered) return;
+                    
+                    const index = parseInt(optionDiv.dataset.index);
+                    selectOption(index);
+                };
                 
-                // Update progress bar and percentage
+                // Update progress
                 const progressPercent = ((currentQuestion + 1) / questions.length) * 100;
                 document.getElementById('progressBar').style.width = `${progressPercent}%`;
                 document.querySelector('.progress-percentage').textContent = `${Math.round(progressPercent)}% Complete`;
@@ -490,10 +534,14 @@
             if (index === correct) score++;
 
             // Disable all options after selection
+            const optionsContainer = document.getElementById('options');
+            optionsContainer.onclick = null; // Remove event listener
             options.forEach(option => {
                 option.style.cursor = 'default';
-                option.onclick = null;
             });
+
+            // Show next button
+            document.getElementById('nextBtn').style.display = 'block';
         }
 
         function nextQuestion() {
@@ -503,14 +551,18 @@
             }
             
             currentQuestion++;
+            document.getElementById('nextBtn').style.display = 'none';
             showQuestion();
         }
 
         function showScore() {
-            document.getElementById('quizContainer').classList.remove('active');
-            document.getElementById('scoreContainer').classList.add('active');
-            const percentage = Math.round((score / questions.length) * 100);
-            document.getElementById('score').textContent = percentage;
+            const quizContainer = document.getElementById('quizContainer');
+            quizContainer.innerHTML = `
+                <h2>Quiz Complete!</h2>
+                <p>Your score: ${score} out of ${questions.length}</p>
+                <p>Percentage: ${Math.round((score / questions.length) * 100)}%</p>
+                <button onclick="returnToHome()" class="home-button">Return to Home</button>
+            `;
         }
 
         function restartQuiz() {
