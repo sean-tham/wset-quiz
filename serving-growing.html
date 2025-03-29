@@ -238,104 +238,129 @@
         // Question data from WSET Level 2 Cheat Sheet - Others
         const allQuestions = [
             {
-                question: "What is considered a cool climate temperature range?",
+                question: "What is the correct serving temperature for sweet wines?",
+                answer: "6°C - 8°C",
+                options: ["6°C - 8°C", "10°C - 13°C", "15°C - 18°C", "18°C - 20°C"]
+            },
+            {
+                question: "What is the ideal serving temperature for sparkling wines?",
+                answer: "6°C - 10°C",
+                options: ["6°C - 10°C", "10°C - 13°C", "13°C - 18°C", "15°C - 18°C"]
+            },
+            {
+                question: "What is the correct serving temperature for light and medium-bodied white wines?",
+                answer: "7°C - 10°C",
+                options: ["6°C - 8°C", "7°C - 10°C", "10°C - 13°C", "15°C - 18°C"]
+            },
+            {
+                question: "At what temperature should full-bodied white wines be served?",
+                answer: "10°C - 13°C",
+                options: ["6°C - 8°C", "7°C - 10°C", "10°C - 13°C", "15°C - 18°C"]
+            },
+            {
+                question: "What is the appropriate serving temperature for light-bodied red wines?",
+                answer: "13°C - 18°C",
+                options: ["7°C - 10°C", "10°C - 13°C", "13°C - 18°C", "18°C - 20°C"]
+            },
+            {
+                question: "What temperature range is considered 'room temperature' for medium and full-bodied red wines?",
+                answer: "15°C - 18°C",
+                options: ["10°C - 13°C", "13°C - 15°C", "15°C - 18°C", "18°C - 20°C"]
+            },
+            {
+                question: "What temperature range defines a cool climate for grape growing?",
+                answer: "16.5°C or below",
+                options: ["16.5°C or below", "16.5°C - 18.5°C", "18.5°C - 21°C", "Above 21°C"]
+            },
+            {
+                question: "What temperature range characterizes a moderate climate for viticulture?",
                 answer: "16.5°C - 18.5°C",
-                options: ["16.5°C - 18.5°C", "18.5°C - 21°C", "21°C - 24°C", "Above 24°C"]
+                options: ["Below 16.5°C", "16.5°C - 18.5°C", "18.5°C - 21°C", "Above 21°C"]
             },
             {
-                question: "What temperature range indicates a moderate climate?",
+                question: "What defines a warm climate in terms of temperature for grape growing?",
                 answer: "18.5°C - 21°C",
-                options: ["16.5°C - 18.5°C", "18.5°C - 21°C", "21°C - 24°C", "Above 24°C"]
+                options: ["Below 16.5°C", "16.5°C - 18.5°C", "18.5°C - 21°C", "Above 21°C"]
             },
             {
-                question: "What is considered a warm climate temperature range?",
-                answer: "21°C - 24°C",
-                options: ["16.5°C - 18.5°C", "18.5°C - 21°C", "21°C - 24°C", "Above 24°C"]
+                question: "What temperature range is used for white wine fermentation?",
+                answer: "12°C - 22°C",
+                options: ["8°C - 15°C", "12°C - 22°C", "20°C - 32°C", "25°C - 35°C"]
             },
             {
-                question: "What temperature range indicates a hot climate?",
-                answer: "Above 24°C",
-                options: ["16.5°C - 18.5°C", "18.5°C - 21°C", "21°C - 24°C", "Above 24°C"]
+                question: "What is the optimal fermentation temperature range for red wines?",
+                answer: "20°C - 32°C",
+                options: ["12°C - 22°C", "15°C - 25°C", "20°C - 32°C", "30°C - 40°C"]
             },
             {
-                question: "What is the ideal serving temperature for light white wines?",
-                answer: "7-10°C",
-                options: ["7-10°C", "10-13°C", "15-18°C", "18-20°C"]
+                question: "What alcohol level is considered 'low' for still wines?",
+                answer: "Below 11%",
+                options: ["Below 11%", "11% - 13.9%", "14% or above", "15% - 16.4%"]
             },
             {
-                question: "What is the ideal serving temperature for full-bodied white wines?",
-                answer: "10-13°C",
-                options: ["7-10°C", "10-13°C", "15-18°C", "18-20°C"]
+                question: "What range of alcohol is considered 'medium' for still wines?",
+                answer: "11% - 13.9%",
+                options: ["Below 11%", "11% - 13.9%", "14% or above", "16.5% - 18.4%"]
             },
             {
-                question: "What is the ideal serving temperature for light red wines?",
-                answer: "13-16°C",
-                options: ["7-10°C", "10-13°C", "13-16°C", "18-20°C"]
+                question: "What alcohol level is considered 'high' for still wines?",
+                answer: "14% or above",
+                options: ["Below 11%", "11% - 13.9%", "14% or above", "18.4% or above"]
             },
             {
-                question: "What is the ideal serving temperature for full-bodied red wines?",
-                answer: "15-18°C",
-                options: ["10-13°C", "13-16°C", "15-18°C", "18-20°C"]
+                question: "What alcohol level is typical for low-strength fortified wines?",
+                answer: "15% - 16.4%",
+                options: ["11% - 13.9%", "14% - 15%", "15% - 16.4%", "Above 18.4%"]
             },
             {
-                question: "Which factor is NOT a major influence on grape ripening?",
-                answer: "Soil pH",
-                options: ["Temperature", "Sunlight exposure", "Soil pH", "Water availability"]
+                question: "What alcohol level is typical for medium-strength fortified wines?",
+                answer: "16.5% - 18.4%",
+                options: ["14% - 15%", "15% - 16.4%", "16.5% - 18.4%", "Above 18.4%"]
             },
             {
-                question: "What is the minimum temperature needed for grape vine growth?",
-                answer: "10°C",
-                options: ["5°C", "10°C", "15°C", "20°C"]
+                question: "What alcohol level indicates a high-strength fortified wine?",
+                answer: "Above 18.4%",
+                options: ["15% - 16.4%", "16.5% - 18.4%", "18.4% - 20%", "Above 18.4%"]
             },
             {
-                question: "Which hazard can occur during the growing season and damage grape quality?",
-                answer: "Frost",
-                options: ["Frost", "High humidity", "Strong winds", "All of the above"]
+                question: "Why are white wines typically served at cooler temperatures than red wines?",
+                answer: "To preserve freshness and acidity",
+                options: ["To preserve freshness and acidity", "To increase tannin perception", "To enhance alcohol warmth", "To develop tertiary aromas"]
             },
             {
-                question: "What is the optimal rainfall range for grape growing?",
-                answer: "500-750mm annually",
-                options: ["200-400mm annually", "500-750mm annually", "800-1000mm annually", "Above 1000mm annually"]
+                question: "Why should full-bodied red wines be served at 'room temperature'?",
+                answer: "To soften tannins and release aromas",
+                options: ["To increase acidity", "To soften tannins and release aromas", "To preserve freshness", "To prevent oxidation"]
             },
             {
-                question: "Which soil type is generally considered best for grape growing?",
-                answer: "Well-draining soils",
-                options: ["Clay-rich soils", "Well-draining soils", "Waterlogged soils", "Acidic soils"]
+                question: "What happens if a wine is served too cold?",
+                answer: "Aromas and flavors become muted",
+                options: ["Aromas and flavors become muted", "Tannins become harsh", "Alcohol becomes more prominent", "Acidity increases significantly"]
             },
             {
-                question: "What is the purpose of canopy management?",
-                answer: "Control sunlight exposure and air circulation",
-                options: ["Increase yield only", "Control pests", "Control sunlight exposure and air circulation", "Reduce water usage"]
+                question: "What effect does a cool climate have on grape ripening?",
+                answer: "Slower ripening with higher acidity",
+                options: ["Slower ripening with higher acidity", "Faster ripening with lower acidity", "Higher sugar content", "Lower tannin levels"]
             },
             {
-                question: "Which practice helps prevent frost damage in vineyards?",
-                answer: "Using wind machines",
-                options: ["Using wind machines", "Increasing irrigation", "Reducing pruning", "Adding fertilizer"]
+                question: "What characterizes wines from warm climate regions?",
+                answer: "Higher alcohol and riper fruit flavors",
+                options: ["Higher acidity", "More herbaceous notes", "Higher alcohol and riper fruit flavors", "Lower sugar content"]
             },
             {
-                question: "What is the ideal aspect (slope direction) for vineyards in the Northern Hemisphere?",
-                answer: "South-facing",
-                options: ["North-facing", "East-facing", "South-facing", "West-facing"]
+                question: "Why is temperature control important during fermentation?",
+                answer: "To preserve aromatic compounds",
+                options: ["To increase alcohol content", "To preserve aromatic compounds", "To enhance tannin extraction", "To speed up fermentation"]
             },
             {
-                question: "Which climate type typically produces wines with higher acidity?",
-                answer: "Cool climate",
-                options: ["Cool climate", "Moderate climate", "Warm climate", "Hot climate"]
+                question: "What effect does moderate climate have on wine style?",
+                answer: "Balanced between fruit and acidity",
+                options: ["Very high acidity", "Extremely ripe fruit", "Balanced between fruit and acidity", "Low alcohol content"]
             },
             {
-                question: "What is the effect of altitude on grape growing?",
-                answer: "Cooler temperatures and higher diurnal range",
-                options: ["Warmer temperatures", "Lower diurnal range", "Cooler temperatures and higher diurnal range", "Higher humidity"]
-            },
-            {
-                question: "Which factor contributes to water stress in vines?",
-                answer: "All of the above",
-                options: ["Low rainfall", "High temperatures", "Strong winds", "All of the above"]
-            },
-            {
-                question: "What is the purpose of leaf removal in viticulture?",
-                answer: "Improve air circulation and sun exposure",
-                options: ["Reduce yield", "Improve air circulation and sun exposure", "Increase water retention", "Prevent frost damage"]
+                question: "How does serving temperature affect tannin perception in red wines?",
+                answer: "Warmer temperatures soften tannins",
+                options: ["Warmer temperatures soften tannins", "Colder temperatures soften tannins", "Temperature has no effect on tannins", "Tannins increase with temperature"]
             }
         ];
 

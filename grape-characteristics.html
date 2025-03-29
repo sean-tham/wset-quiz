@@ -237,129 +237,154 @@
         // Question data from WSET Level 2 Cheat Sheet - Characteristics
         const allQuestions = [
             {
-                question: "Which grape variety typically shows aromas of green apple, citrus, and mineral notes?",
-                answer: "Chardonnay (Cool Climate)",
-                options: ["Chardonnay (Cool Climate)", "Sauvignon Blanc", "Riesling", "Pinot Grigio"]
+                question: "What are the typical characteristics of Pinot Noir?",
+                answer: "High acidity, low to medium tannins, light to medium body",
+                options: ["High acidity, low to medium tannins, light to medium body", "Low acidity, high tannins, full body", "Medium acidity, high tannins, light body", "High acidity, high tannins, full body"]
             },
             {
-                question: "What are the typical characteristics of Sauvignon Blanc?",
-                answer: "Gooseberry, Cut Grass, Green Bell Pepper",
-                options: ["Gooseberry, Cut Grass, Green Bell Pepper", "Peach, Apricot, Honey", "Cherry, Strawberry, Earth", "Black Currant, Cedar, Tobacco"]
+                question: "What are the primary flavors of Zinfandel/Primitivo?",
+                answer: "Red fruits (strawberries, raspberries) and black fruits (plums, black cherries)",
+                options: ["Green fruits and citrus", "Stone fruits and tropical fruits", "Red fruits (strawberries, raspberries) and black fruits (plums, black cherries)", "Dried fruits and nuts"]
             },
             {
-                question: "Which grape variety is known for its 'petrol' notes when aged?",
-                answer: "Riesling",
-                options: ["Riesling", "Gewürztraminer", "Pinot Grigio", "Viognier"]
+                question: "What characterizes Riesling wines?",
+                answer: "High acidity, varying sweetness levels, light to full body",
+                options: ["Low acidity, always dry, light body", "High acidity, varying sweetness levels, light to full body", "Medium acidity, always sweet, full body", "High acidity, always dry, full body"]
             },
             {
-                question: "What are the key characteristics of Pinot Noir?",
-                answer: "Red Cherry, Strawberry, Earth",
-                options: ["Red Cherry, Strawberry, Earth", "Blackberry, Black Pepper, Leather", "Gooseberry, Asparagus, Grass", "Black Currant, Cedar, Tobacco"]
+                question: "What are the typical characteristics of Chenin Blanc?",
+                answer: "High acidity, versatile sweetness levels, susceptible to botrytis",
+                options: ["Low acidity, always dry, resistant to botrytis", "High acidity, versatile sweetness levels, susceptible to botrytis", "Medium acidity, always sweet, resistant to botrytis", "High acidity, always dry, susceptible to botrytis"]
             },
             {
-                question: "Which grape variety shows aromas of lychee and rose petals?",
-                answer: "Gewürztraminer",
-                options: ["Gewürztraminer", "Viognier", "Albariño", "Chenin Blanc"]
+                question: "What characterizes Sémillon wines?",
+                answer: "Medium to high acidity, varying sweetness levels, light to full body",
+                options: ["Low acidity, always dry, light body", "Medium to high acidity, varying sweetness levels, light to full body", "High acidity, always sweet, full body", "Low acidity, always sweet, light body"]
             },
             {
-                question: "What are the typical characteristics of Cabernet Sauvignon?",
-                answer: "Black Currant, Cedar, Tobacco",
-                options: ["Black Currant, Cedar, Tobacco", "Cherry, Raspberry, Violet", "Plum, Chocolate, Black Pepper", "Apple, Pear, Almond"]
+                question: "What are the typical characteristics of Chardonnay?",
+                answer: "High to medium acidity, varying body styles, range of climates",
+                options: ["Low acidity, always full body, warm climates only", "High to medium acidity, varying body styles, range of climates", "High acidity, always light body, cool climates only", "Low acidity, always medium body, moderate climates only"]
             },
             {
-                question: "Which grape variety is known for its spicy black pepper notes?",
-                answer: "Syrah/Shiraz",
-                options: ["Syrah/Shiraz", "Merlot", "Sangiovese", "Tempranillo"]
-            },
-            {
-                question: "What are the key characteristics of warm-climate Chardonnay?",
-                answer: "Tropical Fruit, Vanilla, Butter",
-                options: ["Tropical Fruit, Vanilla, Butter", "Green Apple, Mineral, Citrus", "Peach, Apricot, Honey", "Gooseberry, Cut Grass, Asparagus"]
-            },
-            {
-                question: "Which grape variety shows aromas of cherry, tar, and roses?",
-                answer: "Nebbiolo",
-                options: ["Nebbiolo", "Malbec", "Grenache", "Tempranillo"]
-            },
-            {
-                question: "What are the typical characteristics of Merlot?",
-                answer: "Plum, Chocolate, Soft Tannins",
-                options: ["Plum, Chocolate, Soft Tannins", "Black Currant, Cedar, Firm Tannins", "Cherry, Strawberry, Earth", "Blackberry, Black Pepper, Leather"]
-            },
-            {
-                question: "Which grape variety is known for its orange blossom and apricot notes?",
-                answer: "Viognier",
-                options: ["Viognier", "Riesling", "Pinot Grigio", "Sauvignon Blanc"]
-            },
-            {
-                question: "What are the key characteristics of Sangiovese?",
-                answer: "Cherry, Tea Leaf, Tomato Leaf",
-                options: ["Cherry, Tea Leaf, Tomato Leaf", "Blackberry, Chocolate, Pepper", "Plum, Tobacco, Vanilla", "Strawberry, Earth, Mushroom"]
-            },
-            {
-                question: "Which grape variety shows aromas of black fruit and eucalyptus?",
-                answer: "Australian Shiraz",
-                options: ["Australian Shiraz", "French Syrah", "Cabernet Sauvignon", "Malbec"]
+                question: "What characterizes Sauvignon Blanc?",
+                answer: "High acidity, typically unoaked, aromatic variety",
+                options: ["Low acidity, always oaked, neutral variety", "High acidity, typically unoaked, aromatic variety", "Medium acidity, always oaked, neutral variety", "High acidity, always oaked, aromatic variety"]
             },
             {
                 question: "What are the typical characteristics of Pinot Grigio?",
-                answer: "Lemon, Green Apple, Light Body",
-                options: ["Lemon, Green Apple, Light Body", "Peach, Honey, Full Body", "Tropical Fruit, Vanilla, Rich", "Gooseberry, Grass, Crisp"]
+                answer: "Medium to high acidity, typically unoaked, simple style",
+                options: ["Low acidity, always oaked, complex style", "Medium to high acidity, typically unoaked, simple style", "High acidity, always oaked, simple style", "Low acidity, always unoaked, complex style"]
             },
             {
-                question: "Which grape variety is known for its leather and dried fruit notes?",
-                answer: "Tempranillo",
-                options: ["Tempranillo", "Merlot", "Pinot Noir", "Grenache"]
+                question: "What characterizes Pinot Gris?",
+                answer: "Medium to high acidity, typically unoaked, complex style",
+                options: ["Low acidity, always oaked, simple style", "Medium to high acidity, typically unoaked, complex style", "High acidity, always oaked, complex style", "Low acidity, always unoaked, simple style"]
             },
             {
-                question: "What are the key characteristics of Malbec?",
-                answer: "Plum, Violet, Velvety Tannins",
-                options: ["Plum, Violet, Velvety Tannins", "Cherry, Earth, Light Body", "Black Currant, Cedar, Firm Tannins", "Blackberry, Pepper, Spice"]
+                question: "What are the typical characteristics of Gewurztraminer?",
+                answer: "Low to medium acidity, typically unoaked, aromatic variety",
+                options: ["High acidity, always oaked, neutral variety", "Low to medium acidity, typically unoaked, aromatic variety", "Medium acidity, always oaked, aromatic variety", "High acidity, always unoaked, neutral variety"]
             },
             {
-                question: "Which grape variety shows aromas of peach and honey when sweet?",
-                answer: "Chenin Blanc",
-                options: ["Chenin Blanc", "Sauvignon Blanc", "Chardonnay", "Pinot Grigio"]
+                question: "What characterizes Viognier?",
+                answer: "Low to medium acidity, oaked or unoaked, medium to full body",
+                options: ["High acidity, always oaked, light body", "Low to medium acidity, oaked or unoaked, medium to full body", "Medium acidity, always unoaked, full body", "High acidity, always oaked, medium body"]
             },
             {
-                question: "What are the typical characteristics of Grenache/Garnacha?",
-                answer: "Red Fruit, White Pepper, High Alcohol",
-                options: ["Red Fruit, White Pepper, High Alcohol", "Black Fruit, Black Pepper, Medium Alcohol", "Green Fruit, Mineral, Low Alcohol", "Tropical Fruit, Vanilla, Medium Alcohol"]
+                question: "What are the typical characteristics of Albariño?",
+                answer: "High acidity, oaked or unoaked, medium body",
+                options: ["Low acidity, always oaked, light body", "High acidity, oaked or unoaked, medium body", "Medium acidity, always unoaked, full body", "High acidity, always oaked, light body"]
             },
             {
-                question: "Which grape variety is known for its high tannins and acidity?",
-                answer: "Nebbiolo",
-                options: ["Nebbiolo", "Merlot", "Grenache", "Pinot Noir"]
+                question: "What characterizes Cabernet Sauvignon?",
+                answer: "High acidity, high tannins, medium to full body",
+                options: ["Low acidity, low tannins, light body", "High acidity, high tannins, medium to full body", "Medium acidity, medium tannins, light body", "High acidity, low tannins, full body"]
             },
             {
-                question: "What are the key characteristics of cool-climate Syrah?",
-                answer: "Black Pepper, Blackberry, Medium Body",
-                options: ["Black Pepper, Blackberry, Medium Body", "Jammy Fruit, Chocolate, Full Body", "Red Cherry, Earth, Light Body", "Plum, Vanilla, Medium Body"]
+                question: "What are the typical characteristics of Merlot?",
+                answer: "Medium acidity, medium tannins, light to full body",
+                options: ["High acidity, high tannins, light body", "Medium acidity, medium tannins, light to full body", "Low acidity, low tannins, full body", "High acidity, low tannins, medium body"]
             },
             {
-                question: "Which grape variety shows aromas of grapefruit and tropical fruit?",
-                answer: "New Zealand Sauvignon Blanc",
-                options: ["New Zealand Sauvignon Blanc", "French Sauvignon Blanc", "Chardonnay", "Riesling"]
+                question: "What characterizes Syrah/Shiraz?",
+                answer: "Medium to high acidity, medium to high tannins, medium to full body",
+                options: ["Low acidity, low tannins, light body", "Medium to high acidity, medium to high tannins, medium to full body", "High acidity, high tannins, light body", "Low acidity, high tannins, full body"]
             },
             {
-                question: "What are the typical characteristics of aged Riesling?",
-                answer: "Petrol, Honey, Toast",
-                options: ["Petrol, Honey, Toast", "Tropical Fruit, Vanilla, Butter", "Cherry, Earth, Leather", "Black Fruit, Spice, Oak"]
+                question: "What are the typical characteristics of Gamay?",
+                answer: "High acidity, low to medium tannins, light body",
+                options: ["Low acidity, high tannins, full body", "High acidity, low to medium tannins, light body", "Medium acidity, medium tannins, medium body", "High acidity, high tannins, light body"]
             },
             {
-                question: "Which grape variety is known for its firm tannins and cedar notes?",
-                answer: "Cabernet Sauvignon",
-                options: ["Cabernet Sauvignon", "Merlot", "Pinot Noir", "Sangiovese"]
+                question: "What characterizes Grenache/Garnacha?",
+                answer: "Low acidity, low to medium tannins, thin skin",
+                options: ["High acidity, high tannins, thick skin", "Low acidity, low to medium tannins, thin skin", "Medium acidity, medium tannins, medium skin", "High acidity, low tannins, thick skin"]
             },
             {
-                question: "What are the key characteristics of Albariño?",
-                answer: "Peach, Salinity, High Acidity",
-                options: ["Peach, Salinity, High Acidity", "Tropical Fruit, Butter, Low Acidity", "Gooseberry, Grass, Medium Acidity", "Apple, Honey, Medium Acidity"]
+                question: "What are the typical characteristics of Tempranillo?",
+                answer: "Medium acidity, medium tannins, medium to full body",
+                options: ["High acidity, high tannins, light body", "Medium acidity, medium tannins, medium to full body", "Low acidity, low tannins, full body", "High acidity, low tannins, medium body"]
             },
             {
-                question: "Which grape variety shows aromas of dried herbs and tobacco?",
-                answer: "Sangiovese",
-                options: ["Sangiovese", "Chardonnay", "Riesling", "Pinot Grigio"]
+                question: "What characterizes Carmenère?",
+                answer: "Medium to high acidity, high tannins, full body",
+                options: ["Low acidity, low tannins, light body", "Medium to high acidity, high tannins, full body", "High acidity, low tannins, medium body", "Low acidity, high tannins, light body"]
+            },
+            {
+                question: "What are the typical characteristics of Malbec?",
+                answer: "High tannins, full body, often oaked",
+                options: ["Low tannins, light body, typically unoaked", "High tannins, full body, often oaked", "Medium tannins, medium body, always oaked", "Low tannins, full body, always unoaked"]
+            },
+            {
+                question: "What characterizes Pinotage?",
+                answer: "High acidity, medium tannins, medium to full body",
+                options: ["Low acidity, high tannins, light body", "High acidity, medium tannins, medium to full body", "Medium acidity, low tannins, full body", "High acidity, high tannins, light body"]
+            },
+            {
+                question: "What are the typical characteristics of Cortese?",
+                answer: "High acidity, unoaked, light body",
+                options: ["Low acidity, always oaked, full body", "High acidity, unoaked, light body", "Medium acidity, sometimes oaked, medium body", "High acidity, always oaked, light body"]
+            },
+            {
+                question: "What characterizes Garganega?",
+                answer: "High acidity, unoaked, medium body",
+                options: ["Low acidity, always oaked, light body", "High acidity, unoaked, medium body", "Medium acidity, sometimes oaked, full body", "High acidity, always oaked, medium body"]
+            },
+            {
+                question: "What are the typical characteristics of Verdicchio?",
+                answer: "High acidity, unoaked, medium body",
+                options: ["Low acidity, always oaked, light body", "High acidity, unoaked, medium body", "Medium acidity, sometimes oaked, full body", "High acidity, always oaked, medium body"]
+            },
+            {
+                question: "What characterizes Fiano?",
+                answer: "Medium acidity, oaked or unoaked, medium to full body",
+                options: ["High acidity, always oaked, light body", "Medium acidity, oaked or unoaked, medium to full body", "Low acidity, always unoaked, full body", "High acidity, always oaked, medium body"]
+            },
+            {
+                question: "What are the typical characteristics of Nebbiolo?",
+                answer: "High acidity, high tannins, full body",
+                options: ["Low acidity, low tannins, light body", "High acidity, high tannins, full body", "Medium acidity, medium tannins, medium body", "High acidity, low tannins, full body"]
+            },
+            {
+                question: "What characterizes Barbera?",
+                answer: "High acidity, low to medium tannins, light to full body",
+                options: ["Low acidity, high tannins, light body", "High acidity, low to medium tannins, light to full body", "Medium acidity, medium tannins, medium body", "High acidity, high tannins, full body"]
+            },
+            {
+                question: "What are the typical characteristics of Corvina?",
+                answer: "High acidity, low to medium tannins, light to full body",
+                options: ["Low acidity, high tannins, light body", "High acidity, low to medium tannins, light to full body", "Medium acidity, medium tannins, medium body", "High acidity, high tannins, full body"]
+            },
+            {
+                question: "What characterizes Sangiovese?",
+                answer: "High acidity, high tannins, medium to full body",
+                options: ["Low acidity, low tannins, light body", "High acidity, high tannins, medium to full body", "Medium acidity, medium tannins, medium body", "High acidity, low tannins, full body"]
+            },
+            {
+                question: "What are the typical characteristics of Montepulciano?",
+                answer: "Medium acidity, high tannins",
+                options: ["High acidity, low tannins", "Medium acidity, high tannins", "Low acidity, medium tannins", "High acidity, high tannins"]
             }
         ];
 
