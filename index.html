@@ -174,13 +174,14 @@
         }
 
         .quiz-option {
-            padding: 1.5rem;
             background: white;
-            border: 2px solid var(--primary);
+            padding: 2rem;
             border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             transition: all 0.3s ease;
-            text-align: left;
+            border: 2px solid var(--primary);
+            margin-bottom: 1rem;
         }
 
         .quiz-option h3 {
@@ -208,10 +209,30 @@
         #grapeQuizContainer {
             display: none;
         }
+
+        .back-button {
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <button class="back-button" onclick="returnToHome()">Back to Home</button>
         <div class="start-screen" id="startScreen">
             <h1>WSET Level 2 Quiz</h1>
             <div class="wine-decoration">🍷</div>
@@ -229,6 +250,10 @@
                 <div class="quiz-option" onclick="startCharacteristicsQuiz()">
                     <h3>Grape Characteristics Quiz</h3>
                     <p>Test your knowledge about grape characteristics, aging potential, and flavor profiles.</p>
+                </div>
+                <div class="quiz-option" onclick="startMixedQuiz()">
+                    <h3>Mixed Quiz (50 Questions)</h3>
+                    <p>Test your knowledge across all categories with a comprehensive 50-question quiz.</p>
                 </div>
             </div>
         </div>
