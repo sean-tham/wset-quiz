@@ -1049,6 +1049,34 @@
             showQuestion();
         }
 
+        function startMixedQuiz() {
+            currentQuiz = 'mixed';
+            
+            // Combine questions from all three categories
+            const allQuestions = [
+                ...generateQuestions().slice(0, 17), // 17 temperature questions
+                ...grapeQuestions.slice(0, 17),      // 17 grape questions
+                ...characteristicsQuestions.slice(0, 16) // 16 characteristics questions
+            ];
+            
+            // Shuffle all questions
+            questions = shuffleArray(allQuestions).map(q => {
+                const shuffledOptions = shuffleArray([...q.options]);
+                const correctIndex = shuffledOptions.indexOf(q.correct);
+                return {
+                    question: q.question,
+                    options: shuffledOptions,
+                    correct: correctIndex
+                };
+            });
+            
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('quizContainer').classList.add('active');
+            showQuestion();
+        }
+
         function returnToHome() {
             document.getElementById('quizContainer').classList.remove('active');
             document.getElementById('scoreContainer').classList.remove('active');
