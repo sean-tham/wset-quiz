@@ -742,6 +742,269 @@
             showQuestion();
         }
 
+        const characteristicsQuestions = [
+            {
+                question: "Which grape variety typically shows 'forest floor' and 'mushroom' characteristics when aged?",
+                options: ["Pinot Noir", "Merlot", "Cabernet Sauvignon", "Syrah"],
+                correct: "Pinot Noir"
+            },
+            {
+                question: "What is a distinctive aged characteristic of Riesling?",
+                options: ["Petrol", "Forest floor", "Coffee", "Caramel"],
+                correct: "Petrol"
+            },
+            {
+                question: "Which grape variety is known for its 'rose' and 'lychee' aromatic characteristics?",
+                options: ["Gewurztraminer", "Viognier", "Albariño", "Pinot Gris"],
+                correct: "Gewurztraminer"
+            },
+            {
+                question: "Cabernet Sauvignon is known for which distinctive herbaceous note?",
+                options: ["Green bell pepper", "Fennel", "Eucalyptus", "Asparagus"],
+                correct: "Green bell pepper"
+            },
+            {
+                question: "Which grape variety typically shows coffee and chocolate characteristics from oak aging?",
+                options: ["Pinotage", "Merlot", "Tempranillo", "Grenache"],
+                correct: "Pinotage"
+            },
+            {
+                question: "What level of tannins is characteristic of Nebbiolo?",
+                options: ["High", "Medium", "Low", "Very low"],
+                correct: "High"
+            },
+            {
+                question: "Which grape variety is known for its distinctive black pepper characteristic?",
+                options: ["Syrah / Shiraz", "Merlot", "Cabernet Sauvignon", "Tempranillo"],
+                correct: "Syrah / Shiraz"
+            },
+            {
+                question: "What is a key aromatic characteristic of cool-climate Sauvignon Blanc?",
+                options: ["Grass", "Peach", "Banana", "Lychee"],
+                correct: "Grass"
+            },
+            {
+                question: "Which grape variety typically shows 'banana and candy' aromas from carbonic maceration?",
+                options: ["Gamay", "Grenache", "Tempranillo", "Barbera"],
+                correct: "Gamay"
+            },
+            {
+                question: "What body level is typical of Pinot Grigio?",
+                options: ["Light", "Full", "Medium to full", "Variable"],
+                correct: "Light"
+            },
+            {
+                question: "Which grape variety is known for developing 'honey' and 'nuts' characteristics when aged?",
+                options: ["Sémillon", "Albariño", "Cortese", "Montepulciano"],
+                correct: "Sémillon"
+            },
+            {
+                question: "What is the typical acidity level of Gewurztraminer?",
+                options: ["Low to medium", "High", "Very high", "Medium to high"],
+                correct: "Low to medium"
+            },
+            {
+                question: "Which grape variety shows 'dried herbs' characteristics in both Nebbiolo and Sangiovese?",
+                options: ["Both", "Neither", "Only Nebbiolo", "Only Sangiovese"],
+                correct: "Both"
+            },
+            {
+                question: "What is a distinctive characteristic of warm-climate Chardonnay?",
+                options: ["Tropical fruit (pineapple, banana)", "Green apple", "Wet stones", "Gooseberry"],
+                correct: "Tropical fruit (pineapple, banana)"
+            },
+            {
+                question: "Which grape variety is known for white pepper and liquorice spice notes?",
+                options: ["Grenache / Garnacha", "Tempranillo", "Merlot", "Barbera"],
+                correct: "Grenache / Garnacha"
+            },
+            {
+                question: "What is the typical body level of cool-climate Riesling?",
+                options: ["Light to medium", "Full", "Always medium", "Always full"],
+                correct: "Light to medium"
+            },
+            {
+                question: "Which grape variety shows eucalyptus as a herbal characteristic?",
+                options: ["Carmenère", "Cabernet Sauvignon", "Syrah", "Merlot"],
+                correct: "Carmenère"
+            },
+            {
+                question: "What are the typical fruit characteristics of young Sémillon?",
+                options: ["Apple, lemon, grass", "Peach, mango, pineapple", "Blackberry, plum", "Rose, lychee"],
+                correct: "Apple, lemon, grass"
+            },
+            {
+                question: "Which grape variety typically shows violet and rose floral notes?",
+                options: ["Nebbiolo", "Merlot", "Cabernet Sauvignon", "Pinotage"],
+                correct: "Nebbiolo"
+            },
+            {
+                question: "What is a key characteristic of Chenin Blanc in terms of climate adaptability?",
+                options: ["Versatile across climates", "Only cool climate", "Only warm climate", "Only moderate climate"],
+                correct: "Versatile across climates"
+            },
+            {
+                question: "Which grape variety is known for developing leather and meat characteristics with age?",
+                options: ["Syrah / Shiraz", "Pinot Grigio", "Cortese", "Verdicchio"],
+                correct: "Syrah / Shiraz"
+            },
+            {
+                question: "What is the typical oak treatment for Sauvignon Blanc?",
+                options: ["Typically unoaked", "Always oaked", "Oak maturation is common", "Variable oak treatment"],
+                correct: "Typically unoaked"
+            },
+            {
+                question: "Which grape variety shows fennel as a herbal characteristic?",
+                options: ["Verdicchio", "Viognier", "Albariño", "Fiano"],
+                correct: "Verdicchio"
+            },
+            {
+                question: "What is a distinctive characteristic of Viognier?",
+                options: ["Stone fruit and blossom", "Green bell pepper", "Petrol", "Black pepper"],
+                correct: "Stone fruit and blossom"
+            },
+            {
+                question: "Which grape variety typically has high sugar levels and thin skin?",
+                options: ["Grenache / Garnacha", "Nebbiolo", "Cabernet Sauvignon", "Malbec"],
+                correct: "Grenache / Garnacha"
+            },
+            {
+                question: "What is the typical tannin level of Gamay?",
+                options: ["Low to medium", "High", "Very high", "Always high"],
+                correct: "Low to medium"
+            },
+            {
+                question: "Which grape variety is susceptible to botrytis/noble rot?",
+                options: ["Riesling, Chenin Blanc, and Sémillon", "Only Riesling", "Only Chenin Blanc", "Only Sémillon"],
+                correct: "Riesling, Chenin Blanc, and Sémillon"
+            },
+            {
+                question: "What is a key characteristic of cool-climate Chardonnay?",
+                options: ["Green fruit and wet stones", "Tropical fruit", "Dried fruit", "Black fruit"],
+                correct: "Green fruit and wet stones"
+            },
+            {
+                question: "Which grape variety typically shows caramel notes when aged?",
+                options: ["Furmint", "Cortese", "Albariño", "Verdicchio"],
+                correct: "Furmint"
+            },
+            {
+                question: "What is the typical body level of Tempranillo?",
+                options: ["Medium to full", "Always light", "Light to medium", "Variable"],
+                correct: "Medium to full"
+            },
+            {
+                question: "Which grape variety is known for its thick skin and high tannins?",
+                options: ["Cabernet Sauvignon", "Pinot Noir", "Gamay", "Grenache"],
+                correct: "Cabernet Sauvignon"
+            },
+            {
+                question: "What are the typical fruit characteristics of Barbera?",
+                options: ["Red cherry and red plum", "Black cherry and blackberry", "Green apple and pear", "Peach and apricot"],
+                correct: "Red cherry and red plum"
+            },
+            {
+                question: "Which grape variety typically shows ginger notes when aged?",
+                options: ["Pinot Gris", "Pinot Grigio", "Cortese", "Garganega"],
+                correct: "Pinot Gris"
+            },
+            {
+                question: "What is the typical acidity level of Albariño?",
+                options: ["High", "Low", "Medium", "Variable"],
+                correct: "High"
+            },
+            {
+                question: "Which grape variety is known for developing tobacco characteristics with age?",
+                options: ["Merlot", "Cortese", "Garganega", "Verdicchio"],
+                correct: "Merlot"
+            },
+            {
+                question: "What is a distinctive characteristic of Carmenère?",
+                options: ["Green bell pepper", "Petrol", "Rose", "Banana"],
+                correct: "Green bell pepper"
+            },
+            {
+                question: "Which grape variety typically shows almond notes when aged?",
+                options: ["Garganega", "Cortese", "Albariño", "Viognier"],
+                correct: "Garganega"
+            },
+            {
+                question: "What is the typical sweetness range of Gewurztraminer?",
+                options: ["Dry to medium sweet", "Always dry", "Always sweet", "Only off-dry"],
+                correct: "Dry to medium sweet"
+            },
+            {
+                question: "Which grape variety is known for its versatility in winemaking techniques?",
+                options: ["Chardonnay", "Cortese", "Montepulciano", "Barbera"],
+                correct: "Chardonnay"
+            },
+            {
+                question: "What are the typical fruit characteristics of Corvina?",
+                options: ["Red cherry and red plum", "Black cherry and blackberry", "Apple and pear", "Peach and apricot"],
+                correct: "Red cherry and red plum"
+            },
+            {
+                question: "Which grape variety typically shows mushroom characteristics when aged?",
+                options: ["Both Pinot Noir and Chardonnay", "Only Pinot Noir", "Only Chardonnay", "Neither"],
+                correct: "Both Pinot Noir and Chardonnay"
+            },
+            {
+                question: "What is the typical tannin level of Merlot?",
+                options: ["Medium", "High", "Low", "Variable"],
+                correct: "Medium"
+            },
+            {
+                question: "Which grape variety shows passion fruit characteristics when ripe?",
+                options: ["Sauvignon Blanc", "Chardonnay", "Pinot Grigio", "Garganega"],
+                correct: "Sauvignon Blanc"
+            },
+            {
+                question: "What is a distinctive characteristic of Fiano?",
+                options: ["Can be aged on lees", "Always unoaked", "Only for early drinking", "Never aged"],
+                correct: "Can be aged on lees"
+            },
+            {
+                question: "Which grape variety typically shows hazelnut characteristics when aged?",
+                options: ["Chardonnay", "Cortese", "Garganega", "Montepulciano"],
+                correct: "Chardonnay"
+            },
+            {
+                question: "What is the typical body level of Malbec?",
+                options: ["Full", "Light", "Medium", "Variable"],
+                correct: "Full"
+            },
+            {
+                question: "Which grape variety is known for developing earth and meat characteristics with age?",
+                options: ["Grenache / Garnacha", "Cortese", "Garganega", "Verdicchio"],
+                correct: "Grenache / Garnacha"
+            },
+            {
+                question: "What is the typical acidity level of Tempranillo?",
+                options: ["Medium", "High", "Low", "Variable"],
+                correct: "Medium"
+            },
+            {
+                question: "Which grape variety shows asparagus as a herbaceous characteristic?",
+                options: ["Sauvignon Blanc", "Chardonnay", "Riesling", "Viognier"],
+                correct: "Sauvignon Blanc"
+            },
+            {
+                question: "What is a distinctive characteristic of Pinot Noir's skin?",
+                options: ["Thin skin", "Thick skin", "Variable thickness", "Very thick skin"],
+                correct: "Thin skin"
+            },
+            {
+                question: "Which grape variety typically shows leather characteristics when aged?",
+                options: ["Both Nebbiolo and Tempranillo", "Only Nebbiolo", "Only Tempranillo", "Neither"],
+                correct: "Both Nebbiolo and Tempranillo"
+            },
+            {
+                question: "What is the typical oak treatment for Riesling?",
+                options: ["Unoaked", "Always oaked", "Sometimes oaked", "Heavily oaked"],
+                correct: "Unoaked"
+            }
+        ];
+
         function startCharacteristicsQuiz() {
             currentQuiz = 'characteristics';
             questions = shuffleArray([...characteristicsQuestions]).map(q => {
