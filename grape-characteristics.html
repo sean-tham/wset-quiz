@@ -235,132 +235,262 @@
         let selectedQuestions = [];
 
         // Question data from WSET Level 2 Cheat Sheet - Characteristics
-        const allQuestions = [
+        const questions = [
             {
                 question: "Which grape variety has high acidity, low to medium tannins, and exhibits red fruit flavors (strawberry, raspberry, red cherry) with careful use of oak?",
                 answer: "Pinot Noir",
-                options: ["Pinot Noir", "Merlot", "Syrah", "Cabernet Sauvignon"]
+                options: [
+                    "Pinot Noir",
+                    "Merlot",
+                    "Sangiovese",
+                    "Gamay"
+                ]
             },
             {
                 question: "What are the typical characteristics of Zinfandel/Primitivo, including climate, acidity, tannins, and flavor profile?",
-                answer: "Warm climate, medium to high acidity, medium to high tannins, red fruits (strawberries, raspberries) and black fruits (plums, black cherries), often oaked",
-                options: ["Warm climate, medium to high acidity, medium to high tannins, red fruits (strawberries, raspberries) and black fruits (plums, black cherries), often oaked", "Cool climate, high acidity, low tannins, green fruit and citrus", "Moderate climate, medium acidity, high tannins, black fruit and herbs", "Warm climate, low acidity, medium tannins, red fruit and spice"]
+                answer: "Medium to high acidity, medium to high tannins, pronounced black fruit, dried fruit, and oak flavors",
+                options: [
+                    "Medium to high acidity, medium to high tannins, pronounced black fruit, dried fruit, and oak flavors",
+                    "Low acidity, low tannins, light red fruit flavors",
+                    "High acidity, low tannins, green fruit flavors",
+                    "Medium acidity, high tannins, herbal flavors"
+                ]
             },
             {
                 question: "Which grape variety is susceptible to botrytis/noble rot, has high acidity, and can exhibit flavors from green fruit to tropical fruit depending on ripeness?",
-                answer: "Riesling",
-                options: ["Riesling", "Chardonnay", "Sauvignon Blanc", "Chenin Blanc"]
-            },
-            {
-                question: "What are the typical characteristics of Chenin Blanc, including climate adaptability, acidity, and flavor development?",
-                answer: "Versatile climates (cool to warm), high acidity, flavors from green fruit to tropical fruit, can be oaked or unoaked, susceptible to botrytis",
-                options: ["Versatile climates (cool to warm), high acidity, flavors from green fruit to tropical fruit, can be oaked or unoaked, susceptible to botrytis", "Cool climate only, high acidity, green fruit only, unoaked", "Warm climate only, low acidity, tropical fruit only, oaked", "Moderate climate only, medium acidity, stone fruit only, unoaked"]
-            },
-            {
-                question: "Which grape variety has medium to high acidity, develops from apple and lemon to honey and nuts, and can be oaked or unoaked?",
-                answer: "Sémillon",
-                options: ["Sémillon", "Chardonnay", "Sauvignon Blanc", "Riesling"]
-            },
-            {
-                question: "What are the typical characteristics of Furmint, including acidity, sweetness levels, and aging characteristics?",
-                answer: "Moderate climate, high acidity, dry to sweet styles, oaked or unoaked, susceptible to botrytis, develops dried fruit, caramel, and nuts with age",
-                options: ["Moderate climate, high acidity, dry to sweet styles, oaked or unoaked, susceptible to botrytis, develops dried fruit, caramel, and nuts with age", "Warm climate, low acidity, dry only, oaked, no botrytis", "Cool climate, high acidity, sweet only, unoaked, no botrytis", "Moderate climate, medium acidity, dry only, oaked, no botrytis"]
-            },
-            {
-                question: "Which grape variety exhibits different flavor profiles based on climate: green fruit in cool climates, stone fruit in moderate climates, and tropical fruit in warm climates?",
-                answer: "Chardonnay",
-                options: ["Chardonnay", "Sauvignon Blanc", "Riesling", "Chenin Blanc"]
-            },
-            {
-                question: "What are the typical characteristics of Sauvignon Blanc, including acidity, body, and flavor profile?",
-                answer: "Cool to moderate climate, high acidity, light to medium body, herbaceous and floral notes, green to tropical fruit, typically unoaked",
-                options: ["Cool to moderate climate, high acidity, light to medium body, herbaceous and floral notes, green to tropical fruit, typically unoaked", "Warm climate, low acidity, full body, tropical fruit only, oaked", "Cool climate only, high acidity, light body, green fruit only, unoaked", "Moderate climate only, medium acidity, medium body, stone fruit only, oaked"]
-            },
-            {
-                question: "Which grape variety has medium to high acidity, light body, and simple green apple and lemon flavors?",
-                answer: "Pinot Grigio",
-                options: ["Pinot Grigio", "Pinot Gris", "Albariño", "Verdicchio"]
-            },
-            {
-                question: "What are the typical characteristics of Pinot Gris, including acidity, body, and flavor development?",
-                answer: "Cool to moderate climate, medium to high acidity, full body, lemon and stone fruit flavors, typically unoaked, develops honey and ginger with age",
-                options: ["Cool to moderate climate, medium to high acidity, full body, lemon and stone fruit flavors, typically unoaked, develops honey and ginger with age", "Warm climate, low acidity, light body, green fruit only, oaked", "Cool climate only, high acidity, medium body, citrus only, unoaked", "Moderate climate only, medium acidity, full body, tropical fruit only, oaked"]
-            },
-            {
-                question: "Which grape variety has low to medium acidity, full body, and pronounced floral and stone fruit flavors?",
-                answer: "Gewurztraminer",
-                options: ["Gewurztraminer", "Viognier", "Riesling", "Chenin Blanc"]
-            },
-            {
-                question: "What are the typical characteristics of Viognier, including acidity, body, and flavor profile?",
-                answer: "Moderate climate, low to medium acidity, medium to full body, floral and stone fruit flavors, can be oaked or unoaked",
-                options: ["Moderate climate, low to medium acidity, medium to full body, floral and stone fruit flavors, can be oaked or unoaked", "Cool climate, high acidity, light body, green fruit only, unoaked", "Warm climate, low acidity, full body, tropical fruit only, oaked", "Moderate climate, high acidity, medium body, citrus only, unoaked"]
-            },
-            {
-                question: "Which grape variety has high acidity, medium body, and citrus and stone fruit flavors?",
-                answer: "Albariño",
-                options: ["Albariño", "Verdicchio", "Fiano", "Garganega"]
+                answer: "Chenin Blanc",
+                options: [
+                    "Chenin Blanc",
+                    "Riesling",
+                    "Sémillon",
+                    "Furmint"
+                ]
             },
             {
                 question: "What are the typical characteristics of Cabernet Sauvignon, including climate, acidity, tannins, and flavor profile?",
-                answer: "Moderate to warm climate, high acidity, high tannins, medium to full body, herbaceous and black fruit flavors, oak maturation common",
-                options: ["Moderate to warm climate, high acidity, high tannins, medium to full body, herbaceous and black fruit flavors, oak maturation common", "Cool climate, low acidity, low tannins, light body, red fruit only, unoaked", "Warm climate, medium acidity, medium tannins, full body, tropical fruit only, oaked", "Moderate climate, high acidity, low tannins, medium body, citrus only, unoaked"]
+                answer: "High acidity, high tannins, black fruit, herbaceous notes, and oak flavors",
+                options: [
+                    "High acidity, high tannins, black fruit, herbaceous notes, and oak flavors",
+                    "Medium acidity, medium tannins, red fruit flavors",
+                    "Low acidity, low tannins, tropical fruit flavors",
+                    "High acidity, low tannins, floral flavors"
+                ]
             },
             {
-                question: "Which grape variety has medium acidity, medium tannins, and develops from herbaceous and red fruit to black fruit flavors?",
-                answer: "Merlot",
-                options: ["Merlot", "Cabernet Sauvignon", "Syrah", "Grenache"]
+                question: "Which grape variety has medium to high acidity, medium to high tannins, and exhibits black fruit, black pepper, and oak flavors?",
+                answer: "Syrah/Shiraz",
+                options: [
+                    "Syrah/Shiraz",
+                    "Grenache",
+                    "Mourvèdre",
+                    "Carignan"
+                ]
             },
             {
-                question: "What are the typical characteristics of Syrah/Shiraz, including acidity, tannins, and flavor development?",
-                answer: "Moderate to warm climate, medium to high acidity, medium to high tannins, medium to full body, black fruit and herbal notes, oak maturation common, develops dried fruit, leather, meat, and earth with age",
-                options: ["Moderate to warm climate, medium to high acidity, medium to high tannins, medium to full body, black fruit and herbal notes, oak maturation common, develops dried fruit, leather, meat, and earth with age", "Cool climate, low acidity, low tannins, light body, red fruit only, unoaked", "Warm climate, high acidity, high tannins, full body, tropical fruit only, oaked", "Moderate climate, medium acidity, medium tannins, medium body, citrus only, unoaked"]
+                question: "What are the typical characteristics of Chardonnay, including climate, acidity, and flavor profile?",
+                answer: "Medium to high acidity, apple and lemon flavors, can be oaked or unoaked",
+                options: [
+                    "Medium to high acidity, apple and lemon flavors, can be oaked or unoaked",
+                    "Low acidity, tropical fruit flavors",
+                    "High acidity, green fruit flavors",
+                    "Medium acidity, floral flavors"
+                ]
             },
             {
-                question: "Which grape variety has high acidity, low to medium tannins, light body, and red fruit flavors with carbonic maceration?",
+                question: "Which grape variety has high acidity, low to medium tannins, and exhibits pronounced lime, peach, blossom, and petrol aromas?",
+                answer: "Riesling",
+                options: [
+                    "Riesling",
+                    "Sauvignon Blanc",
+                    "Pinot Grigio",
+                    "Albariño"
+                ]
+            },
+            {
+                question: "What are the typical characteristics of Merlot, including climate, acidity, tannins, and flavor profile?",
+                answer: "Medium acidity, medium to high tannins, red and black fruit flavors, oak influence",
+                options: [
+                    "Medium acidity, medium to high tannins, red and black fruit flavors, oak influence",
+                    "High acidity, low tannins, green fruit flavors",
+                    "Low acidity, high tannins, dried fruit flavors",
+                    "Medium acidity, low tannins, floral flavors"
+                ]
+            },
+            {
+                question: "Which grape variety has medium to high acidity, medium to high tannins, and exhibits black fruit, mint, and oak flavors?",
+                answer: "Cabernet Sauvignon",
+                options: [
+                    "Cabernet Sauvignon",
+                    "Merlot",
+                    "Malbec",
+                    "Carmenère"
+                ]
+            },
+            {
+                question: "What are the typical characteristics of Sauvignon Blanc, including climate, acidity, and flavor profile?",
+                answer: "High acidity, green fruit, herbaceous notes, and tropical fruit flavors",
+                options: [
+                    "High acidity, green fruit, herbaceous notes, and tropical fruit flavors",
+                    "Medium acidity, stone fruit flavors",
+                    "Low acidity, floral flavors",
+                    "High acidity, dried fruit flavors"
+                ]
+            },
+            {
+                question: "Which grape variety has medium to high acidity, medium to high tannins, and exhibits red fruit, dried fruit, and oak flavors?",
+                answer: "Sangiovese",
+                options: [
+                    "Sangiovese",
+                    "Nebbiolo",
+                    "Barbera",
+                    "Montepulciano"
+                ]
+            },
+            {
+                question: "What are the typical characteristics of Gewurztraminer, including climate, acidity, and flavor profile?",
+                answer: "Low to medium acidity, pronounced floral aromas, stone fruit, and tropical fruit flavors",
+                options: [
+                    "Low to medium acidity, pronounced floral aromas, stone fruit, and tropical fruit flavors",
+                    "High acidity, green fruit flavors",
+                    "Medium acidity, red fruit flavors",
+                    "Low acidity, dried fruit flavors"
+                ]
+            },
+            {
+                question: "Which grape variety has high acidity, low to medium tannins, and exhibits red fruit, floral, and herbal flavors?",
                 answer: "Gamay",
-                options: ["Gamay", "Pinot Noir", "Grenache", "Tempranillo"]
+                options: [
+                    "Gamay",
+                    "Pinot Noir",
+                    "Grenache",
+                    "Cinsault"
+                ]
+            },
+            {
+                question: "What are the typical characteristics of Tempranillo, including climate, acidity, tannins, and flavor profile?",
+                answer: "Medium acidity, medium to high tannins, red and black fruit flavors, oak influence",
+                options: [
+                    "Medium acidity, medium to high tannins, red and black fruit flavors, oak influence",
+                    "High acidity, low tannins, green fruit flavors",
+                    "Low acidity, high tannins, dried fruit flavors",
+                    "Medium acidity, low tannins, floral flavors"
+                ]
+            },
+            {
+                question: "Which grape variety has medium to high acidity, medium to high tannins, and exhibits black fruit, herbal notes, and oak flavors?",
+                answer: "Carmenère",
+                options: [
+                    "Carmenère",
+                    "Malbec",
+                    "Merlot",
+                    "Cabernet Franc"
+                ]
+            },
+            {
+                question: "What are the typical characteristics of Albariño, including climate, acidity, and flavor profile?",
+                answer: "High acidity, citrus and stone fruit flavors, sometimes with saline notes",
+                options: [
+                    "High acidity, citrus and stone fruit flavors, sometimes with saline notes",
+                    "Medium acidity, tropical fruit flavors",
+                    "Low acidity, floral flavors",
+                    "High acidity, dried fruit flavors"
+                ]
+            },
+            {
+                question: "Which grape variety has high acidity, low to medium tannins, and exhibits red fruit, floral, and herbal flavors?",
+                answer: "Pinot Noir",
+                options: [
+                    "Pinot Noir",
+                    "Gamay",
+                    "Grenache",
+                    "Cinsault"
+                ]
+            },
+            {
+                question: "What are the typical characteristics of Nebbiolo, including climate, acidity, tannins, and flavor profile?",
+                answer: "High acidity, high tannins, red fruit, tar, and rose aromas",
+                options: [
+                    "High acidity, high tannins, red fruit, tar, and rose aromas",
+                    "Medium acidity, low tannins, black fruit flavors",
+                    "Low acidity, high tannins, dried fruit flavors",
+                    "Medium acidity, medium tannins, floral flavors"
+                ]
+            },
+            {
+                question: "Which grape variety has medium to high acidity, medium to high tannins, and exhibits black fruit, mint, and oak flavors?",
+                answer: "Cabernet Sauvignon",
+                options: [
+                    "Cabernet Sauvignon",
+                    "Merlot",
+                    "Malbec",
+                    "Carmenère"
+                ]
+            },
+            {
+                question: "What are the typical characteristics of Sémillon, including climate, acidity, and flavor profile?",
+                answer: "Medium to high acidity, citrus and stone fruit flavors, can be affected by botrytis",
+                options: [
+                    "Medium to high acidity, citrus and stone fruit flavors, can be affected by botrytis",
+                    "Low acidity, tropical fruit flavors",
+                    "High acidity, green fruit flavors",
+                    "Medium acidity, floral flavors"
+                ]
+            },
+            {
+                question: "Which grape variety has high acidity, low to medium tannins, and exhibits pronounced lime, peach, blossom, and petrol aromas?",
+                answer: "Riesling",
+                options: [
+                    "Riesling",
+                    "Sauvignon Blanc",
+                    "Pinot Grigio",
+                    "Albariño"
+                ]
             },
             {
                 question: "What are the typical characteristics of Grenache/Garnacha, including climate, acidity, tannins, and flavor profile?",
-                answer: "Warm climate, low acidity, low to medium tannins, red fruit and spice flavors, can be oaked or unoaked, develops earth, meat, dried fruit, and caramel with age",
-                options: ["Warm climate, low acidity, low to medium tannins, red fruit and spice flavors, can be oaked or unoaked, develops earth, meat, dried fruit, and caramel with age", "Cool climate, high acidity, high tannins, light body, green fruit only, unoaked", "Moderate climate, medium acidity, medium tannins, full body, tropical fruit only, oaked", "Warm climate, high acidity, low tannins, medium body, citrus only, unoaked"]
+                answer: "Medium acidity, medium to high tannins, red fruit and spice flavors",
+                options: [
+                    "Medium acidity, medium to high tannins, red fruit and spice flavors",
+                    "High acidity, low tannins, green fruit flavors",
+                    "Low acidity, high tannins, dried fruit flavors",
+                    "Medium acidity, low tannins, floral flavors"
+                ]
             },
             {
-                question: "Which grape variety has medium acidity, medium tannins, and develops from red and black fruit to dried fruit, leather, and mushroom?",
-                answer: "Tempranillo",
-                options: ["Tempranillo", "Grenache", "Sangiovese", "Nebbiolo"]
+                question: "Which grape variety has medium to high acidity, medium to high tannins, and exhibits black fruit, black pepper, and oak flavors?",
+                answer: "Syrah/Shiraz",
+                options: [
+                    "Syrah/Shiraz",
+                    "Grenache",
+                    "Mourvèdre",
+                    "Carignan"
+                ]
             },
             {
-                question: "What are the typical characteristics of Carmenère, including climate, acidity, tannins, and flavor profile?",
-                answer: "Warm climate, medium to high acidity, high tannins, full body, herbaceous and black fruit flavors, often oaked, develops leather and earth with age",
-                options: ["Warm climate, medium to high acidity, high tannins, full body, herbaceous and black fruit flavors, often oaked, develops leather and earth with age", "Cool climate, low acidity, low tannins, light body, red fruit only, unoaked", "Moderate climate, high acidity, high tannins, medium body, tropical fruit only, oaked", "Warm climate, medium acidity, low tannins, full body, citrus only, unoaked"]
+                question: "What are the typical characteristics of Furmint, including climate, acidity, and flavor profile?",
+                answer: "High acidity, citrus and stone fruit flavors, can be affected by botrytis",
+                options: [
+                    "High acidity, citrus and stone fruit flavors, can be affected by botrytis",
+                    "Medium acidity, tropical fruit flavors",
+                    "Low acidity, floral flavors",
+                    "High acidity, dried fruit flavors"
+                ]
             },
             {
-                question: "Which grape variety has high acidity, medium tannins, and develops coffee and chocolate flavors from oak?",
-                answer: "Pinotage",
-                options: ["Pinotage", "Malbec", "Carmenère", "Montepulciano"]
-            },
-            {
-                question: "What are the typical characteristics of Nebbiolo, including acidity, tannins, and flavor development?",
-                answer: "High acidity, high tannins, full body, red fruit, floral, and herbal flavors, oak maturation common, develops mushroom, tobacco, and leather with age",
-                options: ["High acidity, high tannins, full body, red fruit, floral, and herbal flavors, oak maturation common, develops mushroom, tobacco, and leather with age", "Low acidity, low tannins, light body, green fruit only, unoaked", "Medium acidity, medium tannins, medium body, tropical fruit only, oaked", "High acidity, low tannins, full body, citrus only, unoaked"]
-            },
-            {
-                question: "Which grape variety has high acidity, low to medium tannins, and develops from red fruit and spice to dried fruit with age?",
-                answer: "Barbera",
-                options: ["Barbera", "Sangiovese", "Corvina", "Montepulciano"]
-            },
-            {
-                question: "What are the typical characteristics of Sangiovese, including acidity, tannins, and flavor profile?",
-                answer: "High acidity, high tannins, medium to full body, red fruit and dried herbs, often oaked, develops dried fruit, leather, and mushroom with age",
-                options: ["High acidity, high tannins, medium to full body, red fruit and dried herbs, often oaked, develops dried fruit, leather, and mushroom with age", "Low acidity, low tannins, light body, green fruit only, unoaked", "Medium acidity, medium tannins, medium body, tropical fruit only, oaked", "High acidity, low tannins, full body, citrus only, unoaked"]
+                question: "Which grape variety has high acidity, low to medium tannins, and exhibits red fruit, floral, and herbal flavors?",
+                answer: "Gamay",
+                options: [
+                    "Gamay",
+                    "Pinot Noir",
+                    "Grenache",
+                    "Cinsault"
+                ]
             }
         ];
 
         function selectRandomQuestions() {
             // Shuffle all questions
-            const shuffled = [...allQuestions];
+            const shuffled = [...questions];
             shuffleArray(shuffled);
             // Take only 25 questions
             selectedQuestions = shuffled.slice(0, 25);
