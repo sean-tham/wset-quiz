@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSET Level 2 Quiz</title>
+    <style>
+        :root {
+            --primary: #435E58;
+            --secondary: #B5838D;
+            --background: #FFB4A2;
+            --text: #435E58;
+            --accent: #6B9B8A;
+            --hover: #E5989B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0;
+            background: white;
+            box-shadow: 0 2px 4px rgba(74, 29, 36, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .quiz-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .quiz-option {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(74, 29, 36, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .quiz-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(67, 94, 88, 0.15);
+            background: var(--accent);
+            color: white;
+        }
+
+        .quiz-option h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .wine-decoration {
+            font-size: 4rem;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            header {
+                padding: 1rem 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .quiz-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WSET Level 2 Quiz</h1>
+        <div class="wine-decoration">🍷</div>
+    </header>
+
+    <div class="container">
+        <div class="quiz-options">
+            <a href="serving-growing.html" class="quiz-option">
+                <h3>Wine Serving & Growing</h3>
+                <p>Test your knowledge about wine serving temperatures, growing conditions, and related topics.</p>
+            </a>
+            <!-- Additional quiz options will be added here -->
+        </div>
+    </div>
+</body>
+</html> 
