@@ -166,15 +166,67 @@
             margin: 1rem 0;
             color: var(--primary);
         }
+
+        .quiz-options {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .quiz-option {
+            padding: 1.5rem;
+            background: white;
+            border: 2px solid var(--primary);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .quiz-option h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .quiz-option p {
+            color: var(--text);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .quiz-option:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background: var(--primary);
+        }
+
+        .quiz-option:hover h3,
+        .quiz-option:hover p {
+            color: white;
+        }
+
+        #grapeQuizContainer {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="start-screen" id="startScreen">
-            <h1>WSET Level 2 Wine Knowledge Quiz</h1>
+            <h1>WSET Level 2 Quiz</h1>
             <div class="wine-decoration">🍷</div>
-            <p>Test your knowledge about wine alcohol content, climate temperatures, fermentation requirements, and serving temperatures.</p>
-            <button onclick="startQuiz()">Start Quiz</button>
+            <p>Test your knowledge about wines with our interactive quizzes</p>
+            
+            <div class="quiz-options">
+                <div class="quiz-option" onclick="startTemperatureQuiz()">
+                    <h3>Temperature & Service Quiz</h3>
+                    <p>Test your knowledge about wine temperatures, alcohol content, and serving requirements.</p>
+                </div>
+                <div class="quiz-option" onclick="startGrapeQuiz()">
+                    <h3>Grapes & Regions Quiz</h3>
+                    <p>Test your knowledge about grape varieties, regions, and appellations.</p>
+                </div>
+            </div>
         </div>
 
         <div class="quiz-container" id="quizContainer">
@@ -193,6 +245,7 @@
             <div class="wine-decoration">🏆</div>
             <p>Your score: <span id="score">0</span>%</p>
             <button onclick="restartQuiz()">Try Again</button>
+            <button onclick="returnToHome()">Return to Home</button>
         </div>
     </div>
 
@@ -402,6 +455,293 @@
         function updateProgress() {
             const progress = ((currentQuestion + 1) / questions.length) * 100;
             document.getElementById('progress').style.width = `${progress}%`;
+        }
+
+        const grapeQuestions = [
+            {
+                question: "Which grape variety is the main grape in Barbaresco, Italy?",
+                options: ["Nebbiolo", "Barbera", "Sangiovese", "Montepulciano"],
+                correct: "Nebbiolo"
+            },
+            {
+                question: "In which region would you find the Pauillac appellation?",
+                options: ["Bordeaux Left Bank", "Bordeaux Right Bank", "Loire Valley", "Burgundy"],
+                correct: "Bordeaux Left Bank"
+            },
+            {
+                question: "Which appellation in Burgundy is known for producing dry wines with 'wet stones' character from Chardonnay?",
+                options: ["Chablis", "Meursault", "Pouilly-Fuissé", "Mâcon"],
+                correct: "Chablis"
+            },
+            {
+                question: "The Priorat region in Spain is known for which grape variety?",
+                options: ["Grenache / Garnacha", "Tempranillo", "Albariño", "Verdejo"],
+                correct: "Grenache / Garnacha"
+            },
+            {
+                question: "Which grape variety is associated with the Marlborough region of New Zealand?",
+                options: ["Sauvignon blanc", "Chardonnay", "Riesling", "Pinot gris"],
+                correct: "Sauvignon blanc"
+            },
+            {
+                question: "In which country's region would you find the Barossa Valley GI producing concentrated Shiraz?",
+                options: ["Australia", "South Africa", "New Zealand", "Chile"],
+                correct: "Australia"
+            },
+            {
+                question: "Which appellation in the Northern Rhône is known for Syrah with small amounts of Viognier?",
+                options: ["Côte-Rotie", "Hermitage", "Crozes-Hermitage", "Châteauneuf-du-Pape"],
+                correct: "Côte-Rotie"
+            },
+            {
+                question: "The Brunello di Montalcino DOCG is known for which grape variety?",
+                options: ["Sangiovese", "Nebbiolo", "Barbera", "Montepulciano"],
+                correct: "Sangiovese"
+            },
+            {
+                question: "Which grape variety is the main grape in Pouilly-Fumé in the Loire Valley?",
+                options: ["Sauvignon blanc", "Chenin blanc", "Chardonnay", "Riesling"],
+                correct: "Sauvignon blanc"
+            },
+            {
+                question: "In which region would you find the Margaret River GI?",
+                options: ["Western Australia", "South Australia", "Victoria", "New South Wales"],
+                correct: "Western Australia"
+            },
+            {
+                question: "Which appellation in Bordeaux's Right Bank is known for Merlot-dominated wines?",
+                options: ["Pomerol", "Margaux", "Pauillac", "Graves"],
+                correct: "Pomerol"
+            },
+            {
+                question: "The Walker Bay region in South Africa is known for which grape variety?",
+                options: ["Chardonnay", "Pinotage", "Cabernet Sauvignon", "Merlot"],
+                correct: "Chardonnay"
+            },
+            {
+                question: "Which Italian region is home to the Barolo DOCG?",
+                options: ["Piemonte", "Tuscany", "Veneto", "Puglia"],
+                correct: "Piemonte"
+            },
+            {
+                question: "In which country's region would you find the Colchagua Valley producing Cabernet Sauvignon?",
+                options: ["Chile", "Argentina", "South Africa", "Australia"],
+                correct: "Chile"
+            },
+            {
+                question: "Which grape variety is associated with the Mosel region of Germany?",
+                options: ["Riesling", "Gewurztraminer", "Pinot gris", "Chardonnay"],
+                correct: "Riesling"
+            },
+            {
+                question: "The Napa Valley AVA is particularly known for which grape variety?",
+                options: ["Cabernet Sauvignon", "Pinot Noir", "Zinfandel", "Merlot"],
+                correct: "Cabernet Sauvignon"
+            },
+            {
+                question: "Which region in France produces Condrieu from Viognier?",
+                options: ["Northern Rhône", "Southern Rhône", "Loire Valley", "Alsace"],
+                correct: "Northern Rhône"
+            },
+            {
+                question: "The Clare Valley in South Australia is known for which grape variety?",
+                options: ["Riesling", "Chardonnay", "Sauvignon blanc", "Semillon"],
+                correct: "Riesling"
+            },
+            {
+                question: "Which Spanish wine region is known for its Tempranillo-based wines with 'Crianza' and 'Reserva' classifications?",
+                options: ["Rioja", "Priorat", "Rías Baixas", "Rueda"],
+                correct: "Rioja"
+            },
+            {
+                question: "In which Italian region would you find Soave DOC made from Garganega?",
+                options: ["Veneto", "Tuscany", "Piemonte", "Puglia"],
+                correct: "Veneto"
+            },
+            {
+                question: "The Central Otago region is known for which grape variety?",
+                options: ["Pinot Noir", "Sauvignon blanc", "Chardonnay", "Riesling"],
+                correct: "Pinot Noir"
+            },
+            {
+                question: "Which grape variety is traditional in Tokaj, Hungary?",
+                options: ["Furmint", "Riesling", "Gewurztraminer", "Pinot gris"],
+                correct: "Furmint"
+            },
+            {
+                question: "The Hawke's Bay region in New Zealand is known for which red grape variety?",
+                options: ["Merlot", "Pinot Noir", "Syrah", "Cabernet Franc"],
+                correct: "Merlot"
+            },
+            {
+                question: "Which appellation in Alsace is known for aromatic Gewurztraminer?",
+                options: ["Alsace Grand Cru", "Chablis", "Pouilly-Fuissé", "Vouvray"],
+                correct: "Alsace Grand Cru"
+            },
+            {
+                question: "The Hunter Valley in Australia is known for which white grape variety?",
+                options: ["Semillon", "Chardonnay", "Riesling", "Sauvignon blanc"],
+                correct: "Semillon"
+            },
+            {
+                question: "Which region in France is known for producing Sauternes from botrytis-affected Sémillon?",
+                options: ["Bordeaux Left Bank", "Loire Valley", "Burgundy", "Alsace"],
+                correct: "Bordeaux Left Bank"
+            },
+            {
+                question: "The Casablanca Valley in Chile is known for which white grape variety?",
+                options: ["Chardonnay", "Riesling", "Viognier", "Gewurztraminer"],
+                correct: "Chardonnay"
+            },
+            {
+                question: "Which Italian region produces Amarone della Valpolicella from Corvina?",
+                options: ["Veneto", "Tuscany", "Piedmont", "Puglia"],
+                correct: "Veneto"
+            },
+            {
+                question: "The Rheingau region in Germany is known for which grape variety?",
+                options: ["Riesling", "Pinot Noir", "Gewurztraminer", "Sylvaner"],
+                correct: "Riesling"
+            },
+            {
+                question: "Which grape variety is traditional in Vouvray from the Loire Valley?",
+                options: ["Chenin blanc", "Sauvignon blanc", "Chardonnay", "Riesling"],
+                correct: "Chenin blanc"
+            },
+            {
+                question: "The Ribera del Duero region in Spain is known for which grape variety?",
+                options: ["Tempranillo", "Garnacha", "Monastrell", "Mencía"],
+                correct: "Tempranillo"
+            },
+            {
+                question: "Which Italian region produces Gavi from the Cortese grape?",
+                options: ["Piemonte", "Veneto", "Tuscany", "Marche"],
+                correct: "Piemonte"
+            },
+            {
+                question: "The Eden Valley in South Australia is known for which aromatic white grape?",
+                options: ["Riesling", "Chardonnay", "Viognier", "Semillon"],
+                correct: "Riesling"
+            },
+            {
+                question: "Which appellation in the Northern Rhône produces full-bodied Syrah?",
+                options: ["Hermitage", "Châteauneuf-du-Pape", "Gigondas", "Vacqueyras"],
+                correct: "Hermitage"
+            },
+            {
+                question: "The Mâconnais region of Burgundy is known for which white grape variety?",
+                options: ["Chardonnay", "Aligoté", "Sauvignon blanc", "Pinot blanc"],
+                correct: "Chardonnay"
+            },
+            {
+                question: "Which grape variety is traditional in Chianti DOCG?",
+                options: ["Sangiovese", "Nebbiolo", "Barbera", "Primitivo"],
+                correct: "Sangiovese"
+            },
+            {
+                question: "The Constantia region in South Africa is known for which white grape?",
+                options: ["Sauvignon blanc", "Chenin blanc", "Chardonnay", "Viognier"],
+                correct: "Sauvignon blanc"
+            },
+            {
+                question: "Which region produces Crozes-Hermitage from Syrah?",
+                options: ["Northern Rhône", "Southern Rhône", "Bordeaux", "Loire Valley"],
+                correct: "Northern Rhône"
+            },
+            {
+                question: "The Coonawarra region in Australia is known for which red grape?",
+                options: ["Cabernet Sauvignon", "Shiraz", "Merlot", "Pinot Noir"],
+                correct: "Cabernet Sauvignon"
+            },
+            {
+                question: "Which Italian region produces Fiano di Avellino?",
+                options: ["Campania", "Tuscany", "Piedmont", "Veneto"],
+                correct: "Campania"
+            },
+            {
+                question: "The Maipo Valley in Chile is known for which red grape variety?",
+                options: ["Cabernet Sauvignon", "Merlot", "Carmenère", "Syrah"],
+                correct: "Cabernet Sauvignon"
+            },
+            {
+                question: "Which grape variety is traditional in Sancerre?",
+                options: ["Sauvignon blanc", "Chenin blanc", "Chardonnay", "Melon de Bourgogne"],
+                correct: "Sauvignon blanc"
+            },
+            {
+                question: "The Pfalz region in Germany is known for which grape variety?",
+                options: ["Riesling", "Gewurztraminer", "Silvaner", "Müller-Thurgau"],
+                correct: "Riesling"
+            },
+            {
+                question: "Which region produces Verdicchio dei Castelli di Jesi?",
+                options: ["Marche", "Tuscany", "Veneto", "Puglia"],
+                correct: "Marche"
+            },
+            {
+                question: "The McLaren Vale region in Australia is known for which red grape?",
+                options: ["Grenache", "Cabernet Sauvignon", "Merlot", "Pinot Noir"],
+                correct: "Grenache"
+            },
+            {
+                question: "Which grape variety is traditional in Beaujolais Villages?",
+                options: ["Gamay", "Pinot Noir", "Syrah", "Grenache"],
+                correct: "Gamay"
+            },
+            {
+                question: "The Mendoza region in Argentina is known for which red grape?",
+                options: ["Malbec", "Cabernet Sauvignon", "Merlot", "Syrah"],
+                correct: "Malbec"
+            },
+            {
+                question: "Which Italian region produces Barbera d'Asti?",
+                options: ["Piemonte", "Tuscany", "Veneto", "Puglia"],
+                correct: "Piemonte"
+            },
+            {
+                question: "The Elgin region in South Africa is known for which white grape?",
+                options: ["Sauvignon blanc", "Chenin blanc", "Chardonnay", "Viognier"],
+                correct: "Sauvignon blanc"
+            },
+            {
+                question: "Which grape variety is traditional in Fleurie?",
+                options: ["Gamay", "Pinot Noir", "Syrah", "Grenache"],
+                correct: "Gamay"
+            }
+        ];
+
+        function startTemperatureQuiz() {
+            currentQuiz = 'temperature';
+            questions = generateQuestions();
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('quizContainer').classList.add('active');
+            showQuestion();
+        }
+
+        function startGrapeQuiz() {
+            currentQuiz = 'grape';
+            questions = shuffleArray([...grapeQuestions]).map(q => {
+                const shuffledOptions = shuffleArray([...q.options]);
+                const correctIndex = shuffledOptions.indexOf(q.correct);
+                return {
+                    question: q.question,
+                    options: shuffledOptions,
+                    correct: correctIndex
+                };
+            });
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('quizContainer').classList.add('active');
+            showQuestion();
+        }
+
+        function returnToHome() {
+            document.getElementById('quizContainer').classList.remove('active');
+            document.getElementById('scoreContainer').classList.remove('active');
+            document.getElementById('startScreen').style.display = 'block';
         }
     </script>
 </body>
