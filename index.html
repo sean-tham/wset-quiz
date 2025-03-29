@@ -467,15 +467,6 @@
             });
         }
 
-        function startQuiz() {
-            questions = generateQuestions(); // This will now generate questions in random order
-            currentQuestion = 0;
-            score = 0;
-            document.getElementById('startScreen').style.display = 'none';
-            document.getElementById('quizContainer').classList.add('active');
-            showQuestion();
-        }
-
         function showQuestion() {
             if (currentQuestion < questions.length) {
                 // Reset the answered flag for the new question
@@ -492,8 +483,7 @@
                     const optionDiv = document.createElement('div');
                     optionDiv.className = 'option';
                     optionDiv.textContent = option;
-                    // Add data attribute for index
-                    optionDiv.dataset.index = index;
+                    optionDiv.setAttribute('data-index', index);
                     optionsContainer.appendChild(optionDiv);
                 });
 
@@ -502,7 +492,7 @@
                     const optionDiv = e.target.closest('.option');
                     if (!optionDiv || answered) return;
                     
-                    const index = parseInt(optionDiv.dataset.index);
+                    const index = parseInt(optionDiv.getAttribute('data-index'));
                     selectOption(index);
                 };
                 
@@ -511,6 +501,9 @@
                 document.getElementById('progressBar').style.width = `${progressPercent}%`;
                 document.querySelector('.progress-percentage').textContent = `${Math.round(progressPercent)}% Complete`;
                 document.getElementById('progressText').textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
+                
+                // Hide next button until answer is selected
+                document.getElementById('nextBtn').style.display = 'none';
             } else {
                 showScore();
             }
@@ -533,14 +526,12 @@
 
             if (index === correct) score++;
 
-            // Disable all options after selection
+            // Remove click handler and show next button
             const optionsContainer = document.getElementById('options');
-            optionsContainer.onclick = null; // Remove event listener
+            optionsContainer.onclick = null;
             options.forEach(option => {
                 option.style.cursor = 'default';
             });
-
-            // Show next button
             document.getElementById('nextBtn').style.display = 'block';
         }
 
@@ -551,7 +542,6 @@
             }
             
             currentQuestion++;
-            document.getElementById('nextBtn').style.display = 'none';
             showQuestion();
         }
 
@@ -563,6 +553,42 @@
                 <p>Percentage: ${Math.round((score / questions.length) * 100)}%</p>
                 <button onclick="returnToHome()" class="home-button">Return to Home</button>
             `;
+        }
+
+        function startQuiz(type) {
+            currentQuiz = type;
+            currentQuestion = 0;
+            score = 0;
+            answered = false;
+            
+            switch(type) {
+                case 'temperature':
+                    questions = generateQuestions();
+                    break;
+                case 'grapes':
+                    questions = shuffleArray([...grapeQuestions]);
+                    break;
+                case 'characteristics':
+                    questions = shuffleArray([...characteristicsQuestions]);
+                    break;
+                case 'mixed':
+                    const tempQuestions = generateQuestions().slice(0, 17);
+                    const grapeQs = grapeQuestions.slice(0, 17);
+                    const charQs = characteristicsQuestions.slice(0, 16);
+                    questions = shuffleArray([...tempQuestions, ...grapeQs, ...charQs]);
+                    break;
+            }
+            
+            // Map questions to ensure correct format
+            questions = questions.map(q => ({
+                question: q.question,
+                options: shuffleArray([...q.options]),
+                correct: q.correct
+            }));
+
+            document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('quizContainer').classList.add('active');
+            showQuestion();
         }
 
         function restartQuiz() {
@@ -832,31 +858,11 @@
         ];
 
         function startTemperatureQuiz() {
-            currentQuiz = 'temperature';
-            questions = generateQuestions();
-            currentQuestion = 0;
-            score = 0;
-            document.getElementById('startScreen').style.display = 'none';
-            document.getElementById('quizContainer').classList.add('active');
-            showQuestion();
+            startQuiz('temperature');
         }
 
         function startGrapeQuiz() {
-            currentQuiz = 'grape';
-            questions = shuffleArray([...grapeQuestions]).map(q => {
-                const shuffledOptions = shuffleArray([...q.options]);
-                const correctIndex = shuffledOptions.indexOf(q.correct);
-                return {
-                    question: q.question,
-                    options: shuffledOptions,
-                    correct: correctIndex
-                };
-            });
-            currentQuestion = 0;
-            score = 0;
-            document.getElementById('startScreen').style.display = 'none';
-            document.getElementById('quizContainer').classList.add('active');
-            showQuestion();
+            startQuiz('grapes');
         }
 
         const characteristicsQuestions = [
@@ -1123,49 +1129,11 @@
         ];
 
         function startCharacteristicsQuiz() {
-            currentQuiz = 'characteristics';
-            questions = shuffleArray([...characteristicsQuestions]).map(q => {
-                const shuffledOptions = shuffleArray([...q.options]);
-                const correctIndex = shuffledOptions.indexOf(q.correct);
-                return {
-                    question: q.question,
-                    options: shuffledOptions,
-                    correct: correctIndex
-                };
-            });
-            currentQuestion = 0;
-            score = 0;
-            document.getElementById('startScreen').style.display = 'none';
-            document.getElementById('quizContainer').classList.add('active');
-            showQuestion();
+            startQuiz('characteristics');
         }
 
         function startMixedQuiz() {
-            currentQuiz = 'mixed';
-            
-            // Combine questions from all three categories
-            const allQuestions = [
-                ...generateQuestions().slice(0, 17), // 17 temperature questions
-                ...grapeQuestions.slice(0, 17),      // 17 grape questions
-                ...characteristicsQuestions.slice(0, 16) // 16 characteristics questions
-            ];
-            
-            // Shuffle all questions
-            questions = shuffleArray(allQuestions).map(q => {
-                const shuffledOptions = shuffleArray([...q.options]);
-                const correctIndex = shuffledOptions.indexOf(q.correct);
-                return {
-                    question: q.question,
-                    options: shuffledOptions,
-                    correct: correctIndex
-                };
-            });
-            
-            currentQuestion = 0;
-            score = 0;
-            document.getElementById('startScreen').style.display = 'none';
-            document.getElementById('quizContainer').classList.add('active');
-            showQuestion();
+            startQuiz('mixed');
         }
 
         function returnToHome() {

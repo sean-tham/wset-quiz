@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSET Quiz Test Suite</title>
+    <style>
+        .test-log {
+            font-family: monospace;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .pass { color: green; }
+        .fail { color: red; }
+    </style>
+</head>
+<body>
+    <div id="testLog" class="test-log"></div>
+
+    <script>
+        // Test logging function
+        function log(message, type = 'info') {
+            const div = document.createElement('div');
+            div.textContent = message;
+            div.className = type;
+            document.getElementById('testLog').appendChild(div);
+        }
+
+        // Test suite
+        async function runTests() {
+            let allPassed = true;
+            let totalTests = 0;
+            let passedTests = 0;
+
+            // Helper function to simulate click
+            function simulateClick(element) {
+                element.click();
+            }
+
+            // Test 1: Quiz Initialization
+            try {
+                totalTests++;
+                // Start each quiz type and verify initialization
+                ['temperature', 'grapes', 'characteristics', 'mixed'].forEach(quizType => {
+                    window.parent.startQuiz(quizType);
+                    const container = window.parent.document.getElementById('quizContainer');
+                    if (!container || !container.classList.contains('active')) {
+                        throw new Error(`${quizType} quiz initialization failed`);
+                    }
+                });
+                log('✓ Quiz initialization test passed', 'pass');
+                passedTests++;
+            } catch (e) {
+                log(`✗ Quiz initialization test failed: ${e.message}`, 'fail');
+                allPassed = false;
+            }
+
+            // Test 2: Question Display
+            try {
+                totalTests++;
+                window.parent.startQuiz('temperature');
+                const question = window.parent.document.getElementById('question');
+                const options = window.parent.document.getElementById('options');
+                if (!question.textContent || !options.children.length) {
+                    throw new Error('Question or options not displayed properly');
+                }
+                log('✓ Question display test passed', 'pass');
+                passedTests++;
+            } catch (e) {
+                log(`✗ Question display test failed: ${e.message}`, 'fail');
+                allPassed = false;
+            }
+
+            // Test 3: Answer Selection
+            try {
+                totalTests++;
+                const options = window.parent.document.querySelectorAll('.option');
+                simulateClick(options[0]);
+                const hasResult = options[0].classList.contains('correct') || options[0].classList.contains('incorrect');
+                if (!hasResult) {
+                    throw new Error('Answer selection not working');
+                }
+                log('✓ Answer selection test passed', 'pass');
+                passedTests++;
+            } catch (e) {
+                log(`✗ Answer selection test failed: ${e.message}`, 'fail');
+                allPassed = false;
+            }
+
+            // Test 4: Progress Tracking
+            try {
+                totalTests++;
+                const progressBar = window.parent.document.querySelector('.progress');
+                const progressText = window.parent.document.querySelector('.progress-percentage');
+                if (!progressBar || !progressText) {
+                    throw new Error('Progress tracking elements not found');
+                }
+                log('✓ Progress tracking test passed', 'pass');
+                passedTests++;
+            } catch (e) {
+                log(`✗ Progress tracking test failed: ${e.message}`, 'fail');
+                allPassed = false;
+            }
+
+            // Test 5: Next Question
+            try {
+                totalTests++;
+                const nextBtn = window.parent.document.getElementById('nextBtn');
+                simulateClick(nextBtn);
+                const newQuestion = window.parent.document.getElementById('question').textContent;
+                if (!newQuestion) {
+                    throw new Error('Next question not loaded');
+                }
+                log('✓ Next question test passed', 'pass');
+                passedTests++;
+            } catch (e) {
+                log(`✗ Next question test failed: ${e.message}`, 'fail');
+                allPassed = false;
+            }
+
+            // Test 6: Score Display
+            try {
+                totalTests++;
+                window.parent.showScore();
+                const scoreContainer = window.parent.document.querySelector('.quiz-container');
+                if (!scoreContainer.innerHTML.includes('Quiz Complete')) {
+                    throw new Error('Score not displayed properly');
+                }
+                log('✓ Score display test passed', 'pass');
+                passedTests++;
+            } catch (e) {
+                log(`✗ Score display test failed: ${e.message}`, 'fail');
+                allPassed = false;
+            }
+
+            // Final results
+            log(`\nTest Summary: ${passedTests}/${totalTests} tests passed`, allPassed ? 'pass' : 'fail');
+            return allPassed;
+        }
+
+        // Run tests
+        runTests().then(passed => {
+            if (passed) {
+                log('\nAll tests passed! ✓', 'pass');
+            } else {
+                log('\nSome tests failed! ✗', 'fail');
+            }
+        });
+    </script>
+</body>
+</html> 
