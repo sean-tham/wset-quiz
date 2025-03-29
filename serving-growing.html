@@ -349,10 +349,8 @@
 
         // Function to select random questions
         function selectRandomQuestions() {
-            const shuffled = [...allQuestions];
-            shuffleArray(shuffled);
-            selectedQuestions = shuffled.slice(0, 20);
-            shuffleArray(selectedQuestions);
+            selectedQuestions = [...allQuestions];  // Use all questions
+            shuffleArray(selectedQuestions);        // Just shuffle them
         }
 
         // Function to start quiz
