@@ -1,15 +1,15 @@
-name: Production Deployment
+name: Development Deployment
 
 on:
   push:
     branches:
-      - main
+      - development
   pull_request:
     branches:
-      - main
+      - development
 
 jobs:
-  deploy-production:
+  deploy-development:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -31,9 +31,10 @@ jobs:
             npm test
           fi
 
-      - name: Deploy to GitHub Pages (Production)
+      - name: Deploy to GitHub Pages (Development)
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
+          destination_dir: development
           publish_branch: gh-pages 
