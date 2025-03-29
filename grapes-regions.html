@@ -237,210 +237,128 @@
         // Question data from WSET Level 2 Cheat Sheet - By Grape
         const allQuestions = [
             {
-                question: "Which region is Albariño primarily grown in?",
-                answer: "Rías Baixas, Spain",
-                options: ["Rías Baixas, Spain", "Rioja, Spain", "Priorat, Spain", "Ribera del Duero, Spain"]
+                question: "Which classification system and labelling terms are used for Barbera d'Asti in Piemonte, Italy?",
+                answer: "DOCG (Denominazione di Origine Controllata e Garantita) with Superiore",
+                options: ["DOCG (Denominazione di Origine Controllata e Garantita) with Superiore", "DOC (Denominazione di Origine Controllata) with Classico", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva"]
             },
             {
-                question: "What is the main appellation for Barbera in Italy?",
-                answer: "Barbera d'Asti",
-                options: ["Barbera d'Asti", "Barolo", "Barbaresco", "Chianti"]
+                question: "What is the classification system and labelling for Cabernet Sauvignon in Coonawarra, South Australia?",
+                answer: "GI (Geographical Indication)",
+                options: ["GI (Geographical Indication)", "DO (Denominación de Origen) with Reserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DOC (Denominazione di Origine Controllata) with Superiore"]
             },
             {
-                question: "Which region in Australia is known for Cabernet Sauvignon with distinctive herbal notes?",
-                answer: "Coonawarra, South Australia",
-                options: ["Coonawarra, South Australia", "Margaret River, Western Australia", "Barossa Valley, South Australia", "Hunter Valley, New South Wales"]
+                question: "Which classification system and labelling terms are used for Cabernet Sauvignon in Chile's Central Valley?",
+                answer: "DO (Denominación de Origen) with Reserva, Gran Reserva",
+                options: ["DO (Denominación de Origen) with Reserva, Gran Reserva", "DOC (Denominazione di Origine Controllata) with Superiore", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "GI (Geographical Indication)"]
             },
             {
-                question: "What is the main classification system for Chilean wines?",
-                answer: "DO (Denominación de Origen)",
-                options: ["DO (Denominación de Origen)", "DOC (Denominazione di Origine Controllata)", "AOC (Appellation d'Origine Contrôlée)", "AVA (American Viticultural Area)"]
+                question: "What is the classification system and labelling for Chardonnay in Chablis, Burgundy?",
+                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Grand Cru, Premier Cru, Village, Petit Chablis",
+                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Grand Cru, Premier Cru, Village, Petit Chablis", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
             },
             {
-                question: "Which classification system is used in Bordeaux?",
+                question: "Which classification system and labelling terms are used for Chenin Blanc in Vouvray, Loire Valley?",
+                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Sec, Demi-sec, Moelleux, Doux",
+                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Sec, Demi-sec, Moelleux, Doux", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
+            },
+            {
+                question: "What is the classification system and labelling for Corvina in Amarone della Valpolicella, Veneto?",
+                answer: "DOCG (Denominazione di Origine Controllata e Garantita) with Classico, Riserva",
+                options: ["DOCG (Denominazione di Origine Controllata e Garantita) with Classico, Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
+            },
+            {
+                question: "Which classification system and labelling terms are used for Furmint in Tokaj, Hungary?",
+                answer: "Tokaji with Aszú (3-6 Puttonyos), Eszencia",
+                options: ["Tokaji with Aszú (3-6 Puttonyos), Eszencia", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva"]
+            },
+            {
+                question: "What is the classification system and labelling for Gewurztraminer in Alsace?",
+                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Grand Cru",
+                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Grand Cru", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
+            },
+            {
+                question: "Which classification system and labelling terms are used for Grenache/Garnacha in Priorat, Catalunya?",
+                answer: "DOCa/DOQ (Denominación de Origen Calificada/Denominació d'Origen Qualificada) with Crianza, Reserva, Gran Reserva",
+                options: ["DOCa/DOQ (Denominación de Origen Calificada/Denominació d'Origen Qualificada) with Crianza, Reserva, Gran Reserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DOC (Denominazione di Origine Controllata) with Superiore", "GI (Geographical Indication)"]
+            },
+            {
+                question: "What is the classification system and labelling for Pinot Noir in Central Otago, New Zealand?",
+                answer: "GI (Geographical Indication)",
+                options: ["GI (Geographical Indication)", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva"]
+            },
+            {
+                question: "Which classification system and labelling terms are used for Riesling in Mosel, Germany?",
+                answer: "Qualitätswein with Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein",
+                options: ["Qualitätswein with Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva"]
+            },
+            {
+                question: "What is the classification system and labelling for Sangiovese in Brunello di Montalcino, Tuscany?",
+                answer: "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva",
+                options: ["DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
+            },
+            {
+                question: "Which classification system and labelling terms are used for Sauvignon Blanc in Pouilly–Fumé, Loire Valley?",
                 answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée)",
-                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée)", "DOC (Denominazione di Origine Controllata)", "DO (Denominación de Origen)", "AVA (American Viticultural Area)"]
+                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée)", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
             },
             {
-                question: "What is the main classification for wines in South Africa?",
-                answer: "Wine of Origin (WO)",
-                options: ["Wine of Origin (WO)", "DO (Denominación de Origen)", "DOC (Denominazione di Origine Controllata)", "AOC (Appellation d'Origine Contrôlée)"]
+                question: "What is the classification system and labelling for Sémillon in Sauternes, Bordeaux?",
+                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Premier Cru Supérieur, Premier Cru Classé",
+                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Premier Cru Supérieur, Premier Cru Classé", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
             },
             {
-                question: "Which classification system is used in California?",
-                answer: "AVA (American Viticultural Area)",
-                options: ["AVA (American Viticultural Area)", "AOC (Appellation d'Origine Contrôlée)", "DO (Denominación de Origen)", "DOC (Denominazione di Origine Controllata)"]
+                question: "Which classification system and labelling terms are used for Syrah in Côte-Rotie, Northern Rhône?",
+                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée)",
+                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée)", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
             },
             {
-                question: "What is the main classification for wines in Germany?",
-                answer: "Qualitätswein",
-                options: ["Qualitätswein", "AOC (Appellation d'Origine Contrôlée)", "DO (Denominación de Origen)", "DOC (Denominazione di Origine Controllata)"]
+                question: "What is the classification system and labelling for Tempranillo in Rioja?",
+                answer: "DOCa (Denominación de Origen Calificada) with Joven, Crianza, Reserva, Gran Reserva",
+                options: ["DOCa (Denominación de Origen Calificada) with Joven, Crianza, Reserva, Gran Reserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DOC (Denominazione di Origine Controllata) with Superiore", "GI (Geographical Indication)"]
             },
             {
-                question: "Which classification system is used in Italy?",
-                answer: "DOCG (Denominazione di Origine Controllata e Garantita)",
-                options: ["DOCG (Denominazione di Origine Controllata e Garantita)", "AOC (Appellation d'Origine Contrôlée)", "DO (Denominación de Origen)", "AVA (American Viticultural Area)"]
+                question: "Which classification system and labelling terms are used for Verdicchio in Verdicchio dei Castelli di Jesi, Marche?",
+                answer: "DOC (Denominazione di Origine Controllata) with Classico, Riserva, Superiore",
+                options: ["DOC (Denominazione di Origine Controllata) with Classico, Riserva, Superiore", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
             },
             {
-                question: "What is the main classification for wines in Spain?",
-                answer: "DO (Denominación de Origen)",
-                options: ["DO (Denominación de Origen)", "AOC (Appellation d'Origine Contrôlée)", "DOC (Denominazione di Origine Controllata)", "AVA (American Viticultural Area)"]
+                question: "What is the classification system and labelling for Viognier in Condrieu, Northern Rhône?",
+                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée)",
+                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée)", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
             },
             {
-                question: "Which region in Chile is known for Carmenère?",
-                answer: "Central Valley",
-                options: ["Central Valley", "Casablanca Valley", "Maipo Valley", "Colchagua Valley"]
+                question: "Which classification system and labelling terms are used for Zinfandel in California?",
+                answer: "AVA (American Viticultural Area) with Reserve",
+                options: ["AVA (American Viticultural Area) with Reserve", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva"]
             },
             {
-                question: "What is the main region for Chardonnay in Australia?",
-                answer: "Margaret River, Western Australia",
-                options: ["Margaret River, Western Australia", "Barossa Valley, South Australia", "Hunter Valley, New South Wales", "Yarra Valley, Victoria"]
+                question: "What is the classification system and labelling for Chardonnay in Meursault, Côte de Beaune?",
+                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Premier Cru",
+                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Premier Cru", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
             },
             {
-                question: "Which region in France is known for Chablis?",
-                answer: "Burgundy",
-                options: ["Burgundy", "Bordeaux", "Loire Valley", "Alsace"]
+                question: "Which classification system and labelling terms are used for Pinot Noir in Gevrey-Chambertin, Côte de Nuits?",
+                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Grand Cru, Premier Cru",
+                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Grand Cru, Premier Cru", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
             },
             {
-                question: "What is the main region for Chenin Blanc in France?",
-                answer: "Loire Valley",
-                options: ["Loire Valley", "Bordeaux", "Burgundy", "Alsace"]
+                question: "What is the classification system and labelling for Cabernet Sauvignon in Napa Valley, California?",
+                answer: "AVA (American Viticultural Area) with Reserve, Estate Bottled",
+                options: ["AVA (American Viticultural Area) with Reserve, Estate Bottled", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva"]
             },
             {
-                question: "Which region in Italy is known for Cortese?",
-                answer: "Piemonte",
-                options: ["Piemonte", "Tuscany", "Veneto", "Campania"]
-            },
-            {
-                question: "What is the main region for Corvina in Italy?",
-                answer: "Veneto",
-                options: ["Veneto", "Piemonte", "Tuscany", "Campania"]
-            },
-            {
-                question: "Which region in Italy is known for Fiano?",
-                answer: "Campania",
-                options: ["Campania", "Piemonte", "Tuscany", "Veneto"]
-            },
-            {
-                question: "What is the main region for Furmint in Hungary?",
-                answer: "Tokaj",
-                options: ["Tokaj", "Eger", "Villány", "Sopron"]
-            },
-            {
-                question: "Which region in France is known for Gamay?",
-                answer: "Beaujolais",
-                options: ["Beaujolais", "Bordeaux", "Burgundy", "Loire Valley"]
-            },
-            {
-                question: "What is the main region for Garganega in Italy?",
-                answer: "Veneto",
-                options: ["Veneto", "Piemonte", "Tuscany", "Campania"]
-            },
-            {
-                question: "Which region in France is known for Gewurztraminer?",
-                answer: "Alsace",
-                options: ["Alsace", "Bordeaux", "Burgundy", "Loire Valley"]
-            },
-            {
-                question: "What is the main region for Grenache/Garnacha in Spain?",
-                answer: "Priorat",
-                options: ["Priorat", "Rioja", "Ribera del Duero", "Navarra"]
-            },
-            {
-                question: "Which region in Argentina is known for Malbec?",
-                answer: "Mendoza",
-                options: ["Mendoza", "Salta", "Patagonia", "San Juan"]
-            },
-            {
-                question: "What is the main region for Merlot in Chile?",
-                answer: "Central Valley",
-                options: ["Central Valley", "Casablanca Valley", "Maipo Valley", "Colchagua Valley"]
-            },
-            {
-                question: "Which region in Italy is known for Montepulciano?",
-                answer: "Tuscany",
-                options: ["Tuscany", "Piemonte", "Veneto", "Campania"]
-            },
-            {
-                question: "What is the main region for Nebbiolo in Italy?",
-                answer: "Piemonte",
-                options: ["Piemonte", "Tuscany", "Veneto", "Campania"]
-            },
-            {
-                question: "Which region in Italy is known for Pinot Grigio?",
-                answer: "Friuli-Venezia Giulia",
-                options: ["Friuli-Venezia Giulia", "Veneto", "Piemonte", "Tuscany"]
-            },
-            {
-                question: "What is the main region for Pinot Noir in New Zealand?",
-                answer: "Central Otago",
-                options: ["Central Otago", "Marlborough", "Hawke's Bay", "Martinborough"]
-            },
-            {
-                question: "Which region in South Africa is known for Pinotage?",
-                answer: "Western Cape",
-                options: ["Western Cape", "Stellenbosch", "Walker Bay", "Constantia"]
-            },
-            {
-                question: "What is the main region for Riesling in Australia?",
-                answer: "Clare Valley",
-                options: ["Clare Valley", "Barossa Valley", "Eden Valley", "Hunter Valley"]
-            },
-            {
-                question: "Which region in Germany is known for Riesling?",
-                answer: "Mosel",
-                options: ["Mosel", "Pfalz", "Rheingau", "Nahe"]
-            },
-            {
-                question: "What is the main region for Sangiovese in Italy?",
-                answer: "Tuscany",
-                options: ["Tuscany", "Piemonte", "Veneto", "Campania"]
-            },
-            {
-                question: "Which region in France is known for Sauvignon Blanc?",
-                answer: "Loire Valley",
-                options: ["Loire Valley", "Bordeaux", "Burgundy", "Alsace"]
-            },
-            {
-                question: "What is the main region for Sémillon in Australia?",
-                answer: "Hunter Valley",
-                options: ["Hunter Valley", "Barossa Valley", "Margaret River", "Yarra Valley"]
-            },
-            {
-                question: "Which region in Australia is known for Shiraz?",
-                answer: "Barossa Valley",
-                options: ["Barossa Valley", "Margaret River", "Hunter Valley", "Yarra Valley"]
-            },
-            {
-                question: "What is the main region for Syrah in France?",
-                answer: "Northern Rhône",
-                options: ["Northern Rhône", "Southern Rhône", "Bordeaux", "Burgundy"]
-            },
-            {
-                question: "Which region in Spain is known for Tempranillo?",
-                answer: "Rioja",
-                options: ["Rioja", "Priorat", "Ribera del Duero", "Navarra"]
-            },
-            {
-                question: "What is the main region for Verdicchio in Italy?",
-                answer: "Marche",
-                options: ["Marche", "Piemonte", "Tuscany", "Veneto"]
-            },
-            {
-                question: "Which region in France is known for Viognier?",
-                answer: "Northern Rhône",
-                options: ["Northern Rhône", "Southern Rhône", "Bordeaux", "Burgundy"]
-            },
-            {
-                question: "What is the main region for Zinfandel in California?",
-                answer: "California",
-                options: ["California", "Napa Valley", "Sonoma", "Central Coast"]
+                question: "Which classification system and labelling terms are used for Merlot in Saint-Émilion, Right Bank Bordeaux?",
+                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Saint-Emilion AOC, Grand Cru, Grand Cru Classé, Premier Grand Cru Classé",
+                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Saint-Emilion AOC, Grand Cru, Grand Cru Classé, Premier Grand Cru Classé", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
             }
         ];
 
         function selectRandomQuestions() {
-            selectedQuestions = [...allQuestions];
-            shuffleArray(selectedQuestions);
+            // Shuffle all questions
+            const shuffled = [...allQuestions];
+            shuffleArray(shuffled);
+            // Take only 25 questions
+            selectedQuestions = shuffled.slice(0, 25);
         }
 
         function shuffleArray(array) {

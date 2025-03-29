@@ -1,153 +1,153 @@
-Grape,Country,Region,Location,Appellations,Main Grape,Characteristics,Classifications,Labelling
-Albariño,Spain,Rías Baixas,,,Yes,,DO (Denominación de Origen),
-Barbera,Italy,Piemonte,,Barbera d'Asti,Yes,,DOCG (Denominazione di Origine Controllata e Garantita),Superiore
-Cabernet sauvignon,Australia,South Australia,,Coonawarra,Yes,"distinctive herbal (mint), black fruit and oak (smoke and cedar)",GI (Geographical Indication),
-Cabernet sauvignon,Australia,Western Australia,,Margaret River,Yes,"ripe black-fruit aromas, subtle oak",GI (Geographical Indication),
-Cabernet sauvignon,Chile,Central Valley,,Colchagua Valley,Yes,"distinctive herbal (mint) and herbaceous (green ball pepper), black fruit, oak",DO (Denominación de Origen),"Reserva, Gran Reserva"
-Cabernet sauvignon,Chile,Central Valley,,Maipo Valley,Yes,"distinctive herbal (mint) and herbaceous (green ball pepper), black fruit, oak",DO (Denominación de Origen),"Reserva, Gran Reserva"
-Cabernet sauvignon,France,Bordeaux,,,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Château, Bordeaux Superieur"
-Cabernet sauvignon,France,Bordeaux,Left Bank,Graves,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
-Cabernet sauvignon,France,Bordeaux,Left Bank,"Graves, Pessac-Léognan",Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
-Cabernet sauvignon,France,Bordeaux,Left Bank,Médoc,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Cru Bourgeois, Cru Classé"
-Cabernet sauvignon,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, ",Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Cru Bourgeois, Cru Classé"
-Cabernet sauvignon,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, Margaux",Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
-Cabernet sauvignon,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, Pauillac",Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
-Cabernet sauvignon,France,South of France,Languedoc-Roussillon,Pays d'Oc,Yes,,IGP (Indication Géographique Protégée),Pays d'Oc IGP
-Cabernet sauvignon,New Zealand,New Zealand,North Island,Hawke's Bay,Yes,,GI (Geographical Indication),
-Cabernet sauvignon,South Africa,Western Cape,Stellenbosch,,Yes,used in Cape Blend,Wine of Origin (WO),Estate Wine
-Cabernet sauvignon,USA,California,Northern California,Napa Valley,Yes,ripest and full-bodied,AVA (American Viticultural Area),"Reserve, Estate Bottled"
-Cabernet sauvignon,USA,California,Northern California,"Napa Valley, Calistoga",Yes,ripest and full-bodied,AVA (American Viticultural Area),"Reserve, Estate Bottled"
-Cabernet sauvignon,USA,California,Northern California,"Napa Valley, Oakville",Yes,ripest and full-bodied,AVA (American Viticultural Area),"Reserve, Estate Bottled"
-Cabernet sauvignon,USA,California,Northern California,"Napa Valley, Rutherford",Yes,ripest and full-bodied,AVA (American Viticultural Area),"Reserve, Estate Bottled"
-Cabernet sauvignon,USA,California,Northern California,Sonoma,Yes,ripest and full-bodied,AVA (American Viticultural Area),"Reserve, Estate Bottled"
-Carmenère,Chile,Central Valley,,,Yes,pungent herbaceous notes,DO (Denominación de Origen),"Reserva, Gran Reserva"
-Chardonnay,Australia,South Australia,Adelaide Hills,,Yes,"medium, high acidity; carefully balanced with oak",GI (Geographical Indication),
-Chardonnay,Australia,Southeastern Australia,,,Yes,,GI (Geographical Indication),
-Chardonnay,Australia,Southeastern Australia,Yarra Valley,,Yes,"medium, high acidity; carefully balanced with oak",GI (Geographical Indication),
-Chardonnay,Australia,Western Australia,Margaret River,,Yes,"medium to full body, ripe stone fruit (peach) and tropical fruit flavours (pineapple)",GI (Geographical Indication),
-Chardonnay,Chile,Casablanca Valley,,,Yes,,DO (Denominación de Origen),"Reserva, Gran Reserva"
-Chardonnay,Chile,Central Valley,,,Yes,,DO (Denominación de Origen),"Reserva, Gran Reserva"
-Chardonnay,France,Burgundy,,,Yes,"simple, apple and lemon, high acidity",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Grand Cru, Premier Cru, Village, Regional"
-Chardonnay,France,Burgundy,Chablis,,Yes,"dry, high acidity, flavours: apple, lemon, wet stones; unoaked",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Grand Cru, Premier Cru, Village, Petit Chablis"
-Chardonnay,France,Burgundy,Côte d'Or,"Côte de Beaune, Meursault",Yes,oak or aging on lees is common,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Premier Cru
-Chardonnay,France,Burgundy,Côte d'Or,"Côte de Beaune, Puligny-Montrachet",Yes,oak or aging on lees is common,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Grand Cru, Premier Cru"
-Chardonnay,France,Burgundy,Mâconnais,Mâcon,Yes,"fruity, unoaked",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Chardonnay,France,Burgundy,Mâconnais,Pouilly-Fuissé,Yes,"concentrated, often oaked",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Premier Cru
-Chardonnay,France,South of France,,,,,IGP (Indication Géographique Protégée),
-Chardonnay,France,South of France,Languedoc-Roussillon,Pays d'Oc,Yes,"peach, pineapple and banana ",IGP (Indication Géographique Protégée),Pays d'Oc IGP
-Chardonnay,New Zealand,New Zealand,North Island,Hawke's Bay,Yes,full body; pronounced stone fruit flavours,GI (Geographical Indication),
-Chardonnay,New Zealand,South Island,Marlborough,,Yes,"ripe lemon, peach, melon; high acidity, subtle oak",GI (Geographical Indication),
-Chardonnay,South Africa,Western Cape,,,Yes,,Wine of Origin (WO),Estate Wine
-Chardonnay,South Africa,Western Cape,Walker Bay,,Yes,"high acidity, ripe stone fruit, tropical fruit and oak",Wine of Origin (WO),Estate Wine
-Chardonnay,USA,California,Central Coast,Santa Barbara County,Yes,"tropical fruit flavours, high alcohol, flavours from new oak",AVA (American Viticultural Area),Reserve
-Chardonnay,USA,California,Northern California,Carneros,Yes,,AVA (American Viticultural Area),Reserve
-Chardonnay,USA,California,Northern California,Napa Valley,Yes,"full-bodied, pronounced tropical-fruit flavours; vanilla from new oak",AVA (American Viticultural Area),"Reserve, Estate Bottled"
-Chardonnay,USA,California,Northern California,Sonoma,Yes,,AVA (American Viticultural Area),"Reserve, Estate Bottled"
-Chardonnay,USA,Oregon,,,Yes,high acidity,AVA (American Viticultural Area),Reserve
-Chenin blanc,France,Loire Valley,Vouvray,,Yes,"dry: fresh apple flavours, off-dry, medium labelled Demi-Sec; sweeter made from extra-ripe or botrytis-affected grapes with stone fruit or tropical fruit aromas; unoaked",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Sec, Demi-sec, Moelleux, Doux"
-Chenin blanc,South Africa,Western Cape,Walker Bay,,Yes,,Wine of Origin (WO),Estate Wine
-Cortese,Italy,Piemonte,Gavi,,Yes,,DOCG (Denominazione di Origine Controllata e Garantita),Riserva
-Corvina,Italy,Veneto,Amarone della Valpolicella,,Yes,"partially dried fruits; dry to off-dry, high alcohol, high tannins, pronounced flavours and dried fruit (prunes, raisins, figs)",DOCG (Denominazione di Origine Controllata e Garantita),"Classico, Riserva"
-Corvina,Italy,Veneto,Recioto della Valpolicella,,Yes,sweet from partially dried grapes,DOCG (Denominazione di Origine Controllata e Garantita),Classico
-Corvina,Italy,Veneto,Valpolicella,,Yes,,DOC (Denominazione di Origine Controllata),"Classico, Superiore, Ripasso"
-Fiano,Italy,Campania,Fiano di Avellino,,Yes,,DOCG (Denominazione di Origine Controllata e Garantita),Riserva
-Furmint,Hungary,Tokaj,,,Yes,Tokaji Aszú: sweet from grapes affected by botrytis,Tokaji,"Aszú (3-6 Puttonyos), Eszencia"
-Gamay,France,Beaujolais,,,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Beaujolais, Beaujolais Villages"
-Gamay,France,Beaujolais,Fleurie,,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Cru Beaujolais, Fleurie"
-Garganega,Italy,Veneto,Recioto di Soave,,Yes,"sweet, appassimento",DOCG (Denominazione di Origine Controllata e Garantita),Classico
-Garganega,Italy,Veneto,Soave,,Yes,,DOC (Denominazione di Origine Controllata),"Classico, Superiore"
-Gewurztraminer,France,Alsace,Alsace,,Yes,pronounced floral aromas (rose) and stone fruit and tropical fruit flavours,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru
-Grenache / Garnacha,Australia,South Australia,Barossa Valley,,Yes,old vines: concentrated red-fruit and spice flavours,GI (Geographical Indication),
-Grenache / Garnacha,Australia,South Australia,McLaren Vale,,Yes,old vines: concentrated red-fruit and spice flavours,GI (Geographical Indication),
-Grenache / Garnacha,France,Côtes du Rhône,,,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Côtes du Rhône AOC. Côtes du Rhône Villages AOC
-Grenache / Garnacha,France,Côtes du Rhône,Southern Rhône,Châteauneuf-du-Pape,Yes,"full-bodied, high alcohol levels",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Côtes du Rhône AOC. Côtes du Rhône Villages AOC, Rhone crus"
-Grenache / Garnacha,France,South of France,Minervois AOC,,Yes,blended,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Grenache / Garnacha,France,South of France,Languedoc-Roussillon and Provence,,Yes,blended,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Grenache / Garnacha,Spain,Catalunya,Priorat,,Yes,old vines: the most powerful full-bodied,DOCa/DOQ (Denominación de Origen Calificada/Denominació d'Origen Qualificada),"Crianza, Reserva, Gran Reserva"
-Grenache / Garnacha,Spain,Navarra,,,Yes,dry rosé wines,DO (Denominación de Origen),"Crianza, Reserva, Gran Reserva"
-Grenache / Garnacha,Spain,Rioja,,,Yes,,DOCa (Denominación de Origen Calificada),"Crianza, Reserva, Gran Reserva"
-Malbec,Argentina,Mendoza,,,Yes,,Mendoza DOC,
-Merlot,Australia,Western Australia,Margaret River,,Yes,,GI (Geographical Indication),
-Merlot,Chile,Central Valley,,,Yes,"soft, medium-bodied",DO (Denominación de Origen),"Reserva, Gran Reserva"
-Merlot,France,Bordeaux,Left Bank,Graves,,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
-Merlot,France,Bordeaux,Left Bank,"Graves, Pessac-Léognan",,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
-Merlot,France,Bordeaux,Left Bank,Médoc,,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Cru Bourgeois, Cru Classé"
-Merlot,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc",,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Cru Bourgeois, Cru Classé"
-Merlot,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, Margaux",,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
-Merlot,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, Pauillac",,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
-Merlot,France,Bordeaux,Right Bank,Pomerol,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Pomerol AOC
-Merlot,France,Bordeaux,Right Bank,Saint-Émilion,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Saint-Emilion AOC, Grand Cru, Grand Cru Classé, Premier Grand Cru Classé"
-Merlot,France,South of France,Bordeaux,,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Bordeaux AOC, Bordeaux Superieur AOC"
-Merlot,France,Languedoc-Roussillon,,,Yes,,IGP (Indication Géographique Protégée),Pays d'Oc IGP
-Merlot,New Zealand,New Zealand,North Island,Hawke's Bay,Yes,from light and fruity to full-bodied,GI (Geographical Indication),
-Merlot,South Africa,Western Cape,Stellenbosch,,Yes,"complext, age-worthy",Wine of Origin (WO),Estate Wine
-Merlot,USA,California,,,Yes,"oak (vanilla, coconut, smoke)",AVA (American Viticultural Area),Reserve
-Merlot,USA,California,Northern California,Napa Valley,Yes,"oak (vanilla, coconut, smoke)",AVA (American Viticultural Area),"Reserve, Estate Bottled"
-Merlot,USA,California,Northern California,Sonoma,Yes,"oak (vanilla, coconut, smoke)",AVA (American Viticultural Area),"Reserve, Estate Bottled"
-Montepulciano,Italy,Tuscany,Montepulciano d'Abruzzo,,Yes,,DOC (Denominazione di Origine Controllata),Riserva
-Nebbiolo,Italy,Piemonte,Barbaresco,,Yes,,DOCG (Denominazione di Origine Controllata e Garantita),Riserva
-Nebbiolo,Italy,Piemonte,Barolo,,Yes,,DOCG (Denominazione di Origine Controllata e Garantita),Riserva
-Pinot grigio,Italy,Friuli-Venezia Giulia,,,Yes,"more complext, fuller-body",DOC (Denominazione di Origine Controllata),"Superiore, Riserva"
-Pinot grigio,Italy,Veneto,Veneto,,Yes,"short finish, acceptable to good quality",IGT (Indicazione Geografica Tipica),
-Pinot grigio,Italy,Veneto,delle Venezie,,Yes,"short finish, acceptable to good quality",IGT (Indicazione Geografica Tipica),
-Pinot gris,France,Alsace,Alsace,,Yes,"extra-ripe, medium acidity, medium to full body, pronounced flavour",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Alsace AOC, Grand Cru, Vendanges tardives (VT)"
-Pinot Noir,Australia,Southeastern Australia,Mornington Peninsula,,Yes,"light and fragrant to riper with cooked-red-fruit flavours (red plum, strawberry) and medium tannins",GI (Geographical Indication),
-Pinot Noir,Australia,Southeastern Australia,Yarra Valley,,Yes,"light and fragrant to riper with cooked-red-fruit flavours (red plum, strawberry) and medium tannins",GI (Geographical Indication),
-Pinot Noir,Chile,Casablanca Valley,,,,flavours of cooked strawberries,DO (Denominación de Origen),"Reserva, Gran Reserva"
-Pinot Noir,France,Burgundy,,,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Grand Cru, Premier Cru, Village, Regional"
-Pinot Noir,France,Burgundy,Côte d'Or,"Côte de Beaune, Beaune",Yes,"more flavour intensity, complexity and length",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Premier Cru
-Pinot Noir,France,Burgundy,Côte d'Or,"Côte de Beaune, Pommard",Yes,"more flavour intensity, complexity and length",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Premier Cru
-Pinot Noir,France,Burgundy,Côte d'Or,"Côte de Nuits, Gevrey-Chambertin",Yes,"more flavour intensity, complexity and length",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Grand Cru, Premier Cru"
-Pinot Noir,France,Burgundy,Côte d'Or,"Côte de Nuits, Nuits-Saint-Georges",Yes,"more flavour intensity, complexity and length",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Premier Cru
-Pinot Noir,New Zealand,North Island,Martinborough,,Yes,,GI (Geographical Indication),
-Pinot Noir,New Zealand,South Island,Central Otago,,Yes,"ripest and most powerfully flavoured Pinot Noir in NZ; pronounced fruit flavours (strawberry, red cherry), medium to full body and medium tannins; often oaked and needs aging",GI (Geographical Indication),
-Pinot Noir,New Zealand,South Island,Marlborough,,Yes,,GI (Geographical Indication),
-Pinot Noir,South Africa,Western Cape,Walker Bay,,Yes,vibrant red fruit,Wine of Origin (WO),Estate Wine
-Pinot Noir,USA,California,Central Coast,Santa Barbara County,,"ripe red-fruit flavours (strawberry, red cherry), notable flavours from oak (vanilla)",AVA (American Viticultural Area),Reserve
-Pinot Noir,USA,California,Northern California,Carneros,,"ripe red-fruit flavours (strawberry, red cherry), notable flavours from oak (vanilla)",AVA (American Viticultural Area),Reserve
-Pinot Noir,USA,California,Northern California,Sonoma,Yes,"ripe red-fruit flavours (strawberry, red cherry), notable flavours from oak (vanilla)",AVA (American Viticultural Area),"Reserve, Estate Bottled"
-Pinot Noir,USA,Oregon,,,Yes,"complex, fresh, red fruit flavours, subtle oak flavours (smoke, cloves)",AVA (American Viticultural Area),Reserve
-Pinotage,South Africa,Western Cape,,,Yes,,Wine of Origin (WO),"Estate Wine, Cape Blends"
-Riesling,Australia,South Australia,Clare Valley,,Yes,"dry, pronounced aromas of lime, peach, blossom and petrol",GI (Geographical Indication),
-Riesling,Australia,South Australia,Eden Valley,,Yes,"dry, pronounced aromas of lime, peach, blossom and petrol",GI (Geographical Indication),
-Riesling,France,Alsace,Alsace,,Yes,"dry, pronounced aromas and flavours (ripe citrus and stone fruit); medium body, high acidity",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru
-Riesling,Germany,Mosel,,,Yes,lighter in body; medium sweetness to balance very high acidity,Qualitätswein,"Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein"
-Riesling,Germany,Pfalz,,,Yes,"dry, medium-bodied",Qualitätswein,"Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein"
-Riesling,Germany,Rheingau,,,Yes,drier and more body than Mosel,Qualitätswein,"Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein"
-Sangiovese,Italy,Tuscany,Brunello di Montalcino,,Yes,"powerful, full-bodied, very high tannins - must mature in oak",DOCG (Denominazione di Origine Controllata e Garantita),Riserva
-Sangiovese,Italy,Tuscany,Chianti,,Yes,,DOCG (Denominazione di Origine Controllata e Garantita),"Classico, Riserva"
-Sauvignon blanc,Australia,South Australia,Adelaide Hills,,Yes,"fresh and fruity, sometimes blended with Semillon",GI (Geographical Indication),
-Sauvignon blanc,Australia,Western Australia,Margaret River,,Yes,"concentrated herbaceous aromas (grass); , sometimes blended with Semillon; some matured in oak",GI (Geographical Indication),
-Sauvignon blanc,Chile,Casablanca Valley,,,Yes,,DO (Denominación de Origen),"Reserva, Gran Reserva"
-Sauvignon blanc,Chile,Central Valley,,,Yes,,DO (Denominación de Origen),"Reserva, Gran Reserva"
-Sauvignon blanc,France,Bordeaux,Left Bank,Graves,Yes,more concentrated and complex; blends with Sémillon; often matured in oak,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
-Sauvignon blanc,France,Bordeaux,Left Bank,"Graves, Pessac-Léognan",Yes,more concentrated and complex; blends with Sémillon; often matured in oak,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
-Sauvignon blanc,France,Loire Valley,Pouilly–Fumé,,Yes,"dry, high acidity, green fruit (apple), herbaceous notes (asparagus, grass), sometimes wet stones",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Sauvignon blanc,France,Loire Valley,Sancerre,,Yes,"dry, high acidity, green fruit (apple), herbaceous notes (asparagus, grass), sometimes wet stones",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Sauvignon blanc,France,Loire Valley,Touraine,,Yes,"fruity, inexpensive",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Sauvignon blanc,France,South of France,,,,"dry, high acidity, tropical fruit flavours (passion fruit) and herbaceous notes (grass)",IGP (Indication Géographique Protégée),
-Sauvignon blanc,France,South of France,Languedoc-Roussillon,Pays d'Oc,Yes,"dry, high in acid with tropical fruit flavours and herbaceous",IGP (Indication Géographique Protégée),Pays d'Oc IGP
-Sauvignon blanc,New Zealand,South Island,Marlborough,,Yes,"all styles, experimental approach",GI (Geographical Indication),
-Sauvignon blanc,South Africa,Western Cape,Constantia,,Yes,refreshing with ripe-tropical-fruit and herbaceous aromas,Wine of Origin (WO),Estate Wine
-Sauvignon blanc,South Africa,Western Cape,Elgin,,Yes,green fruit flavours (apple) and sometimes wet stones,Wine of Origin (WO),Estate Wine
-Sauvignon blanc,USA,California,Northern California,Napa Valley,Yes,oak to add body and flavour (smoke),AVA (American Viticultural Area),"Reserve, Estate Bottled"
-Sémillon / semillon,Australia,South Australia,Barossa Valley,,Yes,,GI (Geographical Indication),
-Sémillon / semillon,Australia,Southeastern Australia,Hunter Valley,,Yes,"dry, single-varietal, light body, light alcohol",GI (Geographical Indication),
-Sémillon / semillon,France,Bordeaux,,,Yes,commonly blended with Sauvingon Blanc,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Grand Cru, Premier Cru"
-Sémillon / semillon,France,Bordeaux,Left Bank,"Graves, Sauternes",Yes,sweet wines made from grapes affected by botrytis,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Premier Cru Supérieur, Premier Cru Classé"
-Syrah / Shiraz,Australia,South Australia,Barossa Valley,,Yes,"old vines, concentrated fruits, full-bodied, high, ripe tannins, cooked-black-fruit flavours (blackberry, black cherry), black peppery, oak (vanilla, coffee)",GI (Geographical Indication),
-Syrah / Shiraz,Australia,Southeastern Australia,,,Yes,,GI (Geographical Indication),
-Syrah / Shiraz,Australia,Southeastern Australia,Hunter Valley,,Yes,"medium-bodied, medium to high tannins, fresh-black-fruit flavours",GI (Geographical Indication),
-Syrah / Shiraz,France,Côtes du Rhône,Northern Rhône,,,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Syrah / Shiraz,France,Côtes du Rhône,Northern Rhône,Crozes-Hermitage,Yes,"less intense, cheaper",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Syrah / Shiraz,France,Côtes du Rhône,Northern Rhône,Côte-Rotie,Yes,"complex and peppery, sometimes small amounts of Viognier",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Syrah / Shiraz,France,Côtes du Rhône,Northern Rhône,Hermitage,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Syrah / Shiraz,France,South of France,Minervois AOC,,Yes,blended,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Syrah / Shiraz,France,South of France,Languedoc-Roussillon,Pays d'Oc,Yes,single-varietal,IGP (Indication Géographique Protégée),
-Tempranillo,Spain,Catalunya,,,Yes,from simple fruity and light to powerful oak-aged,DO (Denominación de Origen),"Joven, Crianza, Reserva, Gran Reserva"
-Tempranillo,Spain,Ribera del Duero,,,Yes,"full-bodied, fresh black-fruit flavours",DO (Denominación de Origen),"Joven, Crianza, Reserva, Gran Reserva"
-Tempranillo,Spain,Rioja,,,Yes,sometimes blended with Garnacha,DOCa (Denominación de Origen Calificada),"Joven, Crianza, Reserva, Gran Reserva"
-Verdicchio,Italy,Marche,Verdicchio dei Castelli di Jesi,,Yes,Fennel,DOC (Denominazione di Origine Controllata),"Classico, Riserva, Superiore"
-Viognier,France,Côtes du Rhône,Northern Rhône,Condrieu,Yes,"single-varietal, ligh flavours of oak (vanilla)",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Zinfandel / Primitivo,Italy,Puglia,,,Yes,"soft, fruity, dry",IGT (Indicazione Geografica Tipica),
-Zinfandel / Primitivo,USA,California,,,Yes,"medium-sweet rosé (White Zinfandel); red: pronounced aromas of black fruit (blackberry, black plum), dried fruit (raisin, prune) and oak (vanilla, coffee)",AVA (American Viticultural Area),Reserve
+Grape,Country,Region,Location,Appellations,Characteristics,Classifications,Labelling
+Albariño,Spain,Rías Baixas,,,,DO (Denominación de Origen),
+Barbera,Italy,Piemonte,,Barbera d'Asti,,DOCG (Denominazione di Origine Controllata e Garantita),Superiore
+Cabernet sauvignon,Australia,South Australia,,Coonawarra,"distinctive herbal (mint), black fruit and oak (smoke and cedar)",GI (Geographical Indication),
+Cabernet sauvignon,Australia,Western Australia,,Margaret River,"ripe black-fruit aromas, subtle oak",GI (Geographical Indication),
+Cabernet sauvignon,Chile,Central Valley,,Colchagua Valley,"distinctive herbal (mint) and herbaceous (green ball pepper), black fruit, oak",DO (Denominación de Origen),"Reserva, Gran Reserva"
+Cabernet sauvignon,Chile,Central Valley,,Maipo Valley,"distinctive herbal (mint) and herbaceous (green ball pepper), black fruit, oak",DO (Denominación de Origen),"Reserva, Gran Reserva"
+Cabernet sauvignon,France,Bordeaux,,,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Château, Bordeaux Superieur"
+Cabernet sauvignon,France,Bordeaux,Left Bank,Graves,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
+Cabernet sauvignon,France,Bordeaux,Left Bank,"Graves, Pessac-Léognan",,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
+Cabernet sauvignon,France,Bordeaux,Left Bank,Médoc,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Cru Bourgeois, Cru Classé"
+Cabernet sauvignon,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, ",,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Cru Bourgeois, Cru Classé"
+Cabernet sauvignon,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, Margaux",,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
+Cabernet sauvignon,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, Pauillac",,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
+Cabernet sauvignon,France,South of France,Languedoc-Roussillon,Pays d'Oc,,IGP (Indication Géographique Protégée),Pays d'Oc IGP
+Cabernet sauvignon,New Zealand,New Zealand,North Island,Hawke's Bay,,GI (Geographical Indication),
+Cabernet sauvignon,South Africa,Western Cape,Stellenbosch,,used in Cape Blend,Wine of Origin (WO),Estate Wine
+Cabernet sauvignon,USA,California,Northern California,Napa Valley,ripest and full-bodied,AVA (American Viticultural Area),"Reserve, Estate Bottled"
+Cabernet sauvignon,USA,California,Northern California,"Napa Valley, Calistoga",ripest and full-bodied,AVA (American Viticultural Area),"Reserve, Estate Bottled"
+Cabernet sauvignon,USA,California,Northern California,"Napa Valley, Oakville",ripest and full-bodied,AVA (American Viticultural Area),"Reserve, Estate Bottled"
+Cabernet sauvignon,USA,California,Northern California,"Napa Valley, Rutherford",ripest and full-bodied,AVA (American Viticultural Area),"Reserve, Estate Bottled"
+Cabernet sauvignon,USA,California,Northern California,Sonoma,ripest and full-bodied,AVA (American Viticultural Area),"Reserve, Estate Bottled"
+Carmenère,Chile,Central Valley,,,pungent herbaceous notes,DO (Denominación de Origen),"Reserva, Gran Reserva"
+Chardonnay,Australia,South Australia,Adelaide Hills,,"medium, high acidity; carefully balanced with oak",GI (Geographical Indication),
+Chardonnay,Australia,Southeastern Australia,,,,GI (Geographical Indication),
+Chardonnay,Australia,Southeastern Australia,Yarra Valley,,"medium, high acidity; carefully balanced with oak",GI (Geographical Indication),
+Chardonnay,Australia,Western Australia,Margaret River,,"medium to full body, ripe stone fruit (peach) and tropical fruit flavours (pineapple)",GI (Geographical Indication),
+Chardonnay,Chile,Casablanca Valley,,,,DO (Denominación de Origen),"Reserva, Gran Reserva"
+Chardonnay,Chile,Central Valley,,,,DO (Denominación de Origen),"Reserva, Gran Reserva"
+Chardonnay,France,Burgundy,,,"simple, apple and lemon, high acidity",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Grand Cru, Premier Cru, Village, Regional"
+Chardonnay,France,Burgundy,Chablis,,"dry, high acidity, flavours: apple, lemon, wet stones; unoaked",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Grand Cru, Premier Cru, Village, Petit Chablis"
+Chardonnay,France,Burgundy,Côte d'Or,"Côte de Beaune, Meursault",oak or aging on lees is common,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Premier Cru
+Chardonnay,France,Burgundy,Côte d'Or,"Côte de Beaune, Puligny-Montrachet",oak or aging on lees is common,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Grand Cru, Premier Cru"
+Chardonnay,France,Burgundy,Mâconnais,Mâcon,"fruity, unoaked",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
+Chardonnay,France,Burgundy,Mâconnais,Pouilly-Fuissé,"concentrated, often oaked",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Premier Cru
+Chardonnay,France,South of France,,,,IGP (Indication Géographique Protégée),
+Chardonnay,France,South of France,Languedoc-Roussillon,Pays d'Oc,"peach, pineapple and banana ",IGP (Indication Géographique Protégée),Pays d'Oc IGP
+Chardonnay,New Zealand,New Zealand,North Island,Hawke's Bay,full body; pronounced stone fruit flavours,GI (Geographical Indication),
+Chardonnay,New Zealand,South Island,Marlborough,,"ripe lemon, peach, melon; high acidity, subtle oak",GI (Geographical Indication),
+Chardonnay,South Africa,Western Cape,,,,Wine of Origin (WO),Estate Wine
+Chardonnay,South Africa,Western Cape,Walker Bay,,"high acidity, ripe stone fruit, tropical fruit and oak",Wine of Origin (WO),Estate Wine
+Chardonnay,USA,California,Central Coast,Santa Barbara County,"tropical fruit flavours, high alcohol, flavours from new oak",AVA (American Viticultural Area),Reserve
+Chardonnay,USA,California,Northern California,Carneros,,AVA (American Viticultural Area),Reserve
+Chardonnay,USA,California,Northern California,Napa Valley,"full-bodied, pronounced tropical-fruit flavours; vanilla from new oak",AVA (American Viticultural Area),"Reserve, Estate Bottled"
+Chardonnay,USA,California,Northern California,Sonoma,,AVA (American Viticultural Area),"Reserve, Estate Bottled"
+Chardonnay,USA,Oregon,,,high acidity,AVA (American Viticultural Area),Reserve
+Chenin blanc,France,Loire Valley,Vouvray,,"dry: fresh apple flavours, off-dry, medium labelled Demi-Sec; sweeter made from extra-ripe or botrytis-affected grapes with stone fruit or tropical fruit aromas; unoaked",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Sec, Demi-sec, Moelleux, Doux"
+Chenin blanc,South Africa,Western Cape,Walker Bay,,,Wine of Origin (WO),Estate Wine
+Cortese,Italy,Piemonte,Gavi,,,DOCG (Denominazione di Origine Controllata e Garantita),Riserva
+Corvina,Italy,Veneto,Amarone della Valpolicella,,"partially dried fruits; dry to off-dry, high alcohol, high tannins, pronounced flavours and dried fruit (prunes, raisins, figs)",DOCG (Denominazione di Origine Controllata e Garantita),"Classico, Riserva"
+Corvina,Italy,Veneto,Recioto della Valpolicella,,sweet from partially dried grapes,DOCG (Denominazione di Origine Controllata e Garantita),Classico
+Corvina,Italy,Veneto,Valpolicella,,,DOC (Denominazione di Origine Controllata),"Classico, Superiore, Ripasso"
+Fiano,Italy,Campania,Fiano di Avellino,,,DOCG (Denominazione di Origine Controllata e Garantita),Riserva
+Furmint,Hungary,Tokaj,,,Tokaji Aszú: sweet from grapes affected by botrytis,Tokaji,"Aszú (3-6 Puttonyos), Eszencia"
+Gamay,France,Beaujolais,,,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Beaujolais, Beaujolais Villages"
+Gamay,France,Beaujolais,Fleurie,,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Cru Beaujolais, Fleurie"
+Garganega,Italy,Veneto,Recioto di Soave,,"sweet, appassimento",DOCG (Denominazione di Origine Controllata e Garantita),Classico
+Garganega,Italy,Veneto,Soave,,,DOC (Denominazione di Origine Controllata),"Classico, Superiore"
+Gewurztraminer,France,Alsace,Alsace,,pronounced floral aromas (rose) and stone fruit and tropical fruit flavours,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru
+Grenache / Garnacha,Australia,South Australia,Barossa Valley,,old vines: concentrated red-fruit and spice flavours,GI (Geographical Indication),
+Grenache / Garnacha,Australia,South Australia,McLaren Vale,,old vines: concentrated red-fruit and spice flavours,GI (Geographical Indication),
+Grenache / Garnacha,France,Côtes du Rhône,,,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Côtes du Rhône AOC. Côtes du Rhône Villages AOC
+Grenache / Garnacha,France,Côtes du Rhône,Southern Rhône,Châteauneuf-du-Pape,"full-bodied, high alcohol levels",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Côtes du Rhône AOC. Côtes du Rhône Villages AOC, Rhone crus"
+Grenache / Garnacha,France,South of France,Minervois AOC,,blended,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
+Grenache / Garnacha,France,South of France,Languedoc-Roussillon and Provence,,blended,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
+Grenache / Garnacha,Spain,Catalunya,Priorat,,old vines: the most powerful full-bodied,DOCa/DOQ (Denominación de Origen Calificada/Denominació d'Origen Qualificada),"Crianza, Reserva, Gran Reserva"
+Grenache / Garnacha,Spain,Navarra,,,dry rosé wines,DO (Denominación de Origen),"Crianza, Reserva, Gran Reserva"
+Grenache / Garnacha,Spain,Rioja,,,,DOCa (Denominación de Origen Calificada),"Crianza, Reserva, Gran Reserva"
+Malbec,Argentina,Mendoza,,,,Mendoza DOC,
+Merlot,Australia,Western Australia,Margaret River,,,GI (Geographical Indication),
+Merlot,Chile,Central Valley,,,"soft, medium-bodied",DO (Denominación de Origen),"Reserva, Gran Reserva"
+Merlot,France,Bordeaux,Left Bank,Graves,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
+Merlot,France,Bordeaux,Left Bank,"Graves, Pessac-Léognan",,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
+Merlot,France,Bordeaux,Left Bank,Médoc,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Cru Bourgeois, Cru Classé"
+Merlot,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc",,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Cru Bourgeois, Cru Classé"
+Merlot,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, Margaux",,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
+Merlot,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, Pauillac",,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
+Merlot,France,Bordeaux,Right Bank,Pomerol,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Pomerol AOC
+Merlot,France,Bordeaux,Right Bank,Saint-Émilion,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Saint-Emilion AOC, Grand Cru, Grand Cru Classé, Premier Grand Cru Classé"
+Merlot,France,South of France,Bordeaux,,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Bordeaux AOC, Bordeaux Superieur AOC"
+Merlot,France,Languedoc-Roussillon,,,,IGP (Indication Géographique Protégée),Pays d'Oc IGP
+Merlot,New Zealand,New Zealand,North Island,Hawke's Bay,from light and fruity to full-bodied,GI (Geographical Indication),
+Merlot,South Africa,Western Cape,Stellenbosch,,"complext, age-worthy",Wine of Origin (WO),Estate Wine
+Merlot,USA,California,,,"oak (vanilla, coconut, smoke)",AVA (American Viticultural Area),Reserve
+Merlot,USA,California,Northern California,Napa Valley,"oak (vanilla, coconut, smoke)",AVA (American Viticultural Area),"Reserve, Estate Bottled"
+Merlot,USA,California,Northern California,Sonoma,"oak (vanilla, coconut, smoke)",AVA (American Viticultural Area),"Reserve, Estate Bottled"
+Montepulciano,Italy,Tuscany,Montepulciano d'Abruzzo,,,DOC (Denominazione di Origine Controllata),Riserva
+Nebbiolo,Italy,Piemonte,Barbaresco,,,DOCG (Denominazione di Origine Controllata e Garantita),Riserva
+Nebbiolo,Italy,Piemonte,Barolo,,,DOCG (Denominazione di Origine Controllata e Garantita),Riserva
+Pinot grigio,Italy,Friuli-Venezia Giulia,,,"more complext, fuller-body",DOC (Denominazione di Origine Controllata),"Superiore, Riserva"
+Pinot grigio,Italy,Veneto,Veneto,,"short finish, acceptable to good quality",IGT (Indicazione Geografica Tipica),
+Pinot grigio,Italy,Veneto,delle Venezie,,"short finish, acceptable to good quality",IGT (Indicazione Geografica Tipica),
+Pinot gris,France,Alsace,Alsace,,"extra-ripe, medium acidity, medium to full body, pronounced flavour",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Alsace AOC, Grand Cru, Vendanges tardives (VT)"
+Pinot Noir,Australia,Southeastern Australia,Mornington Peninsula,,"light and fragrant to riper with cooked-red-fruit flavours (red plum, strawberry) and medium tannins",GI (Geographical Indication),
+Pinot Noir,Australia,Southeastern Australia,Yarra Valley,,"light and fragrant to riper with cooked-red-fruit flavours (red plum, strawberry) and medium tannins",GI (Geographical Indication),
+Pinot Noir,Chile,Casablanca Valley,,,flavours of cooked strawberries,DO (Denominación de Origen),"Reserva, Gran Reserva"
+Pinot Noir,France,Burgundy,,,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Grand Cru, Premier Cru, Village, Regional"
+Pinot Noir,France,Burgundy,Côte d'Or,"Côte de Beaune, Beaune","more flavour intensity, complexity and length",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Premier Cru
+Pinot Noir,France,Burgundy,Côte d'Or,"Côte de Beaune, Pommard","more flavour intensity, complexity and length",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Premier Cru
+Pinot Noir,France,Burgundy,Côte d'Or,"Côte de Nuits, Gevrey-Chambertin","more flavour intensity, complexity and length",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Grand Cru, Premier Cru"
+Pinot Noir,France,Burgundy,Côte d'Or,"Côte de Nuits, Nuits-Saint-Georges","more flavour intensity, complexity and length",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Premier Cru
+Pinot Noir,New Zealand,North Island,Martinborough,,,GI (Geographical Indication),
+Pinot Noir,New Zealand,South Island,Central Otago,,"ripest and most powerfully flavoured Pinot Noir in NZ; pronounced fruit flavours (strawberry, red cherry), medium to full body and medium tannins; often oaked and needs aging",GI (Geographical Indication),
+Pinot Noir,New Zealand,South Island,Marlborough,,,GI (Geographical Indication),
+Pinot Noir,South Africa,Western Cape,Walker Bay,,vibrant red fruit,Wine of Origin (WO),Estate Wine
+Pinot Noir,USA,California,Central Coast,Santa Barbara County,"ripe red-fruit flavours (strawberry, red cherry), notable flavours from oak (vanilla)",AVA (American Viticultural Area),Reserve
+Pinot Noir,USA,California,Northern California,Carneros,"ripe red-fruit flavours (strawberry, red cherry), notable flavours from oak (vanilla)",AVA (American Viticultural Area),Reserve
+Pinot Noir,USA,California,Northern California,Sonoma,"ripe red-fruit flavours (strawberry, red cherry), notable flavours from oak (vanilla)",AVA (American Viticultural Area),"Reserve, Estate Bottled"
+Pinot Noir,USA,Oregon,,,"complex, fresh, red fruit flavours, subtle oak flavours (smoke, cloves)",AVA (American Viticultural Area),Reserve
+Pinotage,South Africa,Western Cape,,,,Wine of Origin (WO),"Estate Wine, Cape Blends"
+Riesling,Australia,South Australia,Clare Valley,,"dry, pronounced aromas of lime, peach, blossom and petrol",GI (Geographical Indication),
+Riesling,Australia,South Australia,Eden Valley,,"dry, pronounced aromas of lime, peach, blossom and petrol",GI (Geographical Indication),
+Riesling,France,Alsace,Alsace,,"dry, pronounced aromas and flavours (ripe citrus and stone fruit); medium body, high acidity",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru
+Riesling,Germany,Mosel,,,lighter in body; medium sweetness to balance very high acidity,Qualitätswein,"Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein"
+Riesling,Germany,Pfalz,,,"dry, medium-bodied",Qualitätswein,"Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein"
+Riesling,Germany,Rheingau,,,drier and more body than Mosel,Qualitätswein,"Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein"
+Sangiovese,Italy,Tuscany,Brunello di Montalcino,,"powerful, full-bodied, very high tannins - must mature in oak",DOCG (Denominazione di Origine Controllata e Garantita),Riserva
+Sangiovese,Italy,Tuscany,Chianti,,,DOCG (Denominazione di Origine Controllata e Garantita),"Classico, Riserva"
+Sauvignon blanc,Australia,South Australia,Adelaide Hills,,"fresh and fruity, sometimes blended with Semillon",GI (Geographical Indication),
+Sauvignon blanc,Australia,Western Australia,Margaret River,,"concentrated herbaceous aromas (grass); , sometimes blended with Semillon; some matured in oak",GI (Geographical Indication),
+Sauvignon blanc,Chile,Casablanca Valley,,,,DO (Denominación de Origen),"Reserva, Gran Reserva"
+Sauvignon blanc,Chile,Central Valley,,,,DO (Denominación de Origen),"Reserva, Gran Reserva"
+Sauvignon blanc,France,Bordeaux,Left Bank,Graves,more concentrated and complex; blends with Sémillon; often matured in oak,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
+Sauvignon blanc,France,Bordeaux,Left Bank,"Graves, Pessac-Léognan",more concentrated and complex; blends with Sémillon; often matured in oak,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
+Sauvignon blanc,France,Loire Valley,Pouilly–Fumé,,"dry, high acidity, green fruit (apple), herbaceous notes (asparagus, grass), sometimes wet stones",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
+Sauvignon blanc,France,Loire Valley,Sancerre,,"dry, high acidity, green fruit (apple), herbaceous notes (asparagus, grass), sometimes wet stones",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
+Sauvignon blanc,France,Loire Valley,Touraine,,"fruity, inexpensive",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
+Sauvignon blanc,France,South of France,,,"dry, high acidity, tropical fruit flavours (passion fruit) and herbaceous notes (grass)",IGP (Indication Géographique Protégée),
+Sauvignon blanc,France,South of France,Languedoc-Roussillon,Pays d'Oc,"dry, high in acid with tropical fruit flavours and herbaceous",IGP (Indication Géographique Protégée),Pays d'Oc IGP
+Sauvignon blanc,New Zealand,South Island,Marlborough,,"all styles, experimental approach",GI (Geographical Indication),
+Sauvignon blanc,South Africa,Western Cape,Constantia,,refreshing with ripe-tropical-fruit and herbaceous aromas,Wine of Origin (WO),Estate Wine
+Sauvignon blanc,South Africa,Western Cape,Elgin,,green fruit flavours (apple) and sometimes wet stones,Wine of Origin (WO),Estate Wine
+Sauvignon blanc,USA,California,Northern California,Napa Valley,oak to add body and flavour (smoke),AVA (American Viticultural Area),"Reserve, Estate Bottled"
+Sémillon / semillon,Australia,South Australia,Barossa Valley,,,GI (Geographical Indication),
+Sémillon / semillon,Australia,Southeastern Australia,Hunter Valley,,"dry, single-varietal, light body, light alcohol",GI (Geographical Indication),
+Sémillon / semillon,France,Bordeaux,,,commonly blended with Sauvingon Blanc,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Grand Cru, Premier Cru"
+Sémillon / semillon,France,Bordeaux,Left Bank,"Graves, Sauternes",sweet wines made from grapes affected by botrytis,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Premier Cru Supérieur, Premier Cru Classé"
+Syrah / Shiraz,Australia,South Australia,Barossa Valley,,"old vines, concentrated fruits, full-bodied, high, ripe tannins, cooked-black-fruit flavours (blackberry, black cherry), black peppery, oak (vanilla, coffee)",GI (Geographical Indication),
+Syrah / Shiraz,Australia,Southeastern Australia,,,,GI (Geographical Indication),
+Syrah / Shiraz,Australia,Southeastern Australia,Hunter Valley,,"medium-bodied, medium to high tannins, fresh-black-fruit flavours",GI (Geographical Indication),
+Syrah / Shiraz,France,Côtes du Rhône,Northern Rhône,,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
+Syrah / Shiraz,France,Côtes du Rhône,Northern Rhône,Crozes-Hermitage,"less intense, cheaper",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
+Syrah / Shiraz,France,Côtes du Rhône,Northern Rhône,Côte-Rotie,"complex and peppery, sometimes small amounts of Viognier",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
+Syrah / Shiraz,France,Côtes du Rhône,Northern Rhône,Hermitage,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
+Syrah / Shiraz,France,South of France,Minervois AOC,,blended,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
+Syrah / Shiraz,France,South of France,Languedoc-Roussillon,Pays d'Oc,single-varietal,IGP (Indication Géographique Protégée),
+Tempranillo,Spain,Catalunya,,,from simple fruity and light to powerful oak-aged,DO (Denominación de Origen),"Joven, Crianza, Reserva, Gran Reserva"
+Tempranillo,Spain,Ribera del Duero,,,"full-bodied, fresh black-fruit flavours",DO (Denominación de Origen),"Joven, Crianza, Reserva, Gran Reserva"
+Tempranillo,Spain,Rioja,,,sometimes blended with Garnacha,DOCa (Denominación de Origen Calificada),"Joven, Crianza, Reserva, Gran Reserva"
+Verdicchio,Italy,Marche,Verdicchio dei Castelli di Jesi,,Fennel,DOC (Denominazione di Origine Controllata),"Classico, Riserva, Superiore"
+Viognier,France,Côtes du Rhône,Northern Rhône,Condrieu,"single-varietal, ligh flavours of oak (vanilla)",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
+Zinfandel / Primitivo,Italy,Puglia,,,"soft, fruity, dry",IGT (Indicazione Geografica Tipica),
+Zinfandel / Primitivo,USA,California,,,"medium-sweet rosé (White Zinfandel); red: pronounced aromas of black fruit (blackberry, black plum), dried fruit (raisin, prune) and oak (vanilla, coffee)",AVA (American Viticultural Area),Reserve
