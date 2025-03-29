@@ -127,6 +127,7 @@
             border-radius: 5px;
             margin: 2rem 0;
             overflow: hidden;
+            position: relative;
         }
 
         .progress {
@@ -134,6 +135,15 @@
             height: 100%;
             background: var(--primary);
             transition: width 0.3s ease;
+        }
+
+        .progress-percentage {
+            position: absolute;
+            top: -25px;
+            right: 0;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 0.9rem;
         }
 
         .score-container {
@@ -422,22 +432,38 @@
         }
 
         function showQuestion() {
-            answered = false;
-            const question = questions[currentQuestion];
-            document.getElementById('question').textContent = question.question;
-            
-            const optionsContainer = document.getElementById('options');
-            optionsContainer.innerHTML = '';
-            
-            question.options.forEach((option, index) => {
-                const button = document.createElement('button');
-                button.className = 'option';
-                button.textContent = option;
-                button.onclick = () => selectOption(index);
-                optionsContainer.appendChild(button);
-            });
-
-            updateProgress();
+            if (currentQuestion < questions.length) {
+                const questionData = questions[currentQuestion];
+                document.getElementById('question').textContent = questionData.question;
+                
+                const optionsContainer = document.getElementById('options');
+                optionsContainer.innerHTML = '';
+                
+                questionData.options.forEach((option, index) => {
+                    const button = document.createElement('button');
+                    button.className = 'option';
+                    button.textContent = option;
+                    button.onclick = () => selectOption(index);
+                    optionsContainer.appendChild(button);
+                });
+                
+                // Update progress bar and percentage
+                const progressPercent = ((currentQuestion + 1) / questions.length) * 100;
+                document.querySelector('.progress').style.width = `${progressPercent}%`;
+                
+                // Update progress percentage text
+                const progressText = document.querySelector('.progress-percentage');
+                if (!progressText) {
+                    const percentageDiv = document.createElement('div');
+                    percentageDiv.className = 'progress-percentage';
+                    document.querySelector('.progress-bar').appendChild(percentageDiv);
+                }
+                document.querySelector('.progress-percentage').textContent = `${Math.round(progressPercent)}% Complete`;
+                
+                document.getElementById('progress').textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
+            } else {
+                showScore();
+            }
         }
 
         function selectOption(index) {
