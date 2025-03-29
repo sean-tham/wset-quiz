@@ -6,11 +6,11 @@
     <title>WSET Level 2 Wine Knowledge Quiz</title>
     <style>
         :root {
-            --primary: #722F37;
-            --secondary: #A4303F;
-            --accent: #C8A2C8;
-            --background: #FFF8F8;
-            --text: #2C1810;
+            --primary: #4A1D24;      /* Deep burgundy/wine red */
+            --secondary: #FF5C7A;    /* Bright coral pink */
+            --accent: #FFB5B5;       /* Light coral pink */
+            --background: #FFE8E0;   /* Very light peach/pink */
+            --text: #4A1D24;         /* Using the deep burgundy for text */
         }
 
         * {
@@ -37,7 +37,7 @@
             padding: 2rem;
             background: white;
             border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(74, 29, 36, 0.1);
         }
 
         h1 {
@@ -45,7 +45,7 @@
             text-align: center;
             margin-bottom: 2rem;
             font-size: 2.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            text-shadow: 2px 2px 4px rgba(74, 29, 36, 0.1);
         }
 
         .quiz-container {
@@ -77,12 +77,12 @@
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
-            color: black;
+            color: var(--text);
         }
 
         .option:hover {
             background: var(--accent);
-            color: white;
+            color: var(--primary);
             transform: translateY(-2px);
         }
 
@@ -93,9 +93,9 @@
         }
 
         .option.incorrect {
-            background: #f44336;
+            background: var(--secondary);
             color: white;
-            border-color: #f44336;
+            border-color: var(--secondary);
         }
 
         .controls {
@@ -117,14 +117,13 @@
 
         button:hover {
             background: var(--secondary);
-            color: white;
             transform: translateY(-2px);
         }
 
         .progress-bar {
             width: 100%;
             height: 10px;
-            background: #ddd;
+            background: var(--accent);
             border-radius: 5px;
             margin: 2rem 0;
             overflow: hidden;
@@ -164,7 +163,8 @@
         .wine-decoration {
             font-size: 3rem;
             margin: 1rem 0;
-            color: var(--primary);
+            color: var(--secondary);
+            text-shadow: 2px 2px 4px rgba(74, 29, 36, 0.1);
         }
 
         .quiz-options {
@@ -177,7 +177,7 @@
             background: white;
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(74, 29, 36, 0.1);
             cursor: pointer;
             transition: all 0.3s ease;
             border: 2px solid var(--primary);
@@ -197,7 +197,7 @@
 
         .quiz-option:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(74, 29, 36, 0.2);
             background: var(--primary);
         }
 
