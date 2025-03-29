@@ -78,6 +78,8 @@
             cursor: pointer;
             transition: all 0.3s ease;
             color: var(--text);
+            user-select: none;
+            text-align: center;
         }
 
         .option:hover {
@@ -453,7 +455,7 @@
                 optionsContainer.innerHTML = '';
                 
                 questionData.options.forEach((option, index) => {
-                    const button = document.createElement('button');
+                    const button = document.createElement('div');
                     button.className = 'option';
                     button.textContent = option;
                     button.onclick = () => selectOption(index);
@@ -489,7 +491,8 @@
 
             // Disable all options after selection
             options.forEach(option => {
-                option.style.pointerEvents = 'none';
+                option.style.cursor = 'default';
+                option.onclick = null;
             });
         }
 
