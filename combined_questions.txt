@@ -1,0 +1,91 @@
+Complex Combined Questions for WSET Level 2 Quiz
+
+1. Question: "Which grape variety, known for its high acidity and susceptibility to botrytis, should be served at 6°C - 8°C when made into a sweet wine?"
+   Answer: "Riesling"
+   Options: [
+     "Riesling",
+     "Chardonnay",
+     "Chenin Blanc",
+     "Sémillon"
+   ]
+
+2. Question: "What is the recommended serving temperature for a full-bodied Chardonnay from a warm climate region (18.5°C - 21°C) that exhibits stone fruit and tropical fruit flavors?"
+   Answer: "10°C - 13°C"
+   Options: [
+     "10°C - 13°C",
+     "6°C - 8°C",
+     "7°C - 10°C",
+     "13°C - 18°C"
+   ]
+
+3. Question: "Which grape variety, grown in cool climate regions (16.5°C or below), has high acidity, low to medium tannins, and should be served at 13°C - 18°C?"
+   Answer: "Pinot Noir"
+   Options: [
+     "Pinot Noir",
+     "Merlot",
+     "Syrah",
+     "Cabernet Sauvignon"
+   ]
+
+4. Question: "What is the fermentation temperature range for a grape variety that exhibits pronounced floral aromas (rose) and stone fruit flavors, typically grown in cool to moderate climates?"
+   Answer: "12°C - 22°C"
+   Options: [
+     "12°C - 22°C",
+     "20°C - 32°C",
+     "15°C - 25°C",
+     "10°C - 20°C"
+   ]
+
+5. Question: "Which grape variety, known for its thick skin and high tannins, should be fermented at 20°C - 32°C and served at 15°C - 18°C?"
+   Answer: "Cabernet Sauvignon"
+   Options: [
+     "Cabernet Sauvignon",
+     "Pinot Noir",
+     "Merlot",
+     "Syrah"
+   ]
+
+6. Question: "What is the alcohol level range for a grape variety that exhibits pronounced floral aromas and stone fruit flavors, typically grown in moderate climates (16.5°C - 18.5°C)?"
+   Answer: "11% - 13.9%"
+   Options: [
+     "11% - 13.9%",
+     "<11%",
+     ">14%",
+     "15% - 16.4%"
+   ]
+
+7. Question: "Which grape variety, known for its susceptibility to botrytis and high acidity, should be served at 7°C - 10°C when made into a light- to medium-bodied wine?"
+   Answer: "Chenin Blanc"
+   Options: [
+     "Chenin Blanc",
+     "Riesling",
+     "Sauvignon Blanc",
+     "Chardonnay"
+   ]
+
+8. Question: "What is the fermentation temperature range for a grape variety that develops from red fruit and spice to dried fruit with age, typically grown in moderate climates?"
+   Answer: "20°C - 32°C"
+   Options: [
+     "20°C - 32°C",
+     "12°C - 22°C",
+     "15°C - 25°C",
+     "10°C - 20°C"
+   ]
+
+9. Question: "Which grape variety, known for its carbonic maceration and red fruit flavors, should be served at 13°C - 18°C and grown in moderate climates (16.5°C - 18.5°C)?"
+   Answer: "Gamay"
+   Options: [
+     "Gamay",
+     "Pinot Noir",
+     "Grenache",
+     "Tempranillo"
+   ]
+
+10. Question: "What is the alcohol level range for a grape variety that exhibits pronounced floral aromas and stone fruit flavors, typically grown in warm climates (>21°C)?"
+    Answer: ">14%"
+    Options: [
+      ">14%",
+      "<11%",
+      "11% - 13.9%",
+      "15% - 16.4%"
+    ] 

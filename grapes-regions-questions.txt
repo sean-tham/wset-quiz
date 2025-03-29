@@ -1,0 +1,136 @@
+Grapes & Regions Quiz Questions
+
+1. Question: "Which Grand Cru Classé appellations are known for Cabernet Sauvignon in the Left Bank of Bordeaux?"
+   Answer: "Graves, Pessac-Léognan, Margaux, Pauillac"
+   Options: [
+     "Graves, Pessac-Léognan, Margaux, Pauillac",
+     "Saint-Émilion, Pomerol, Fronsac",
+     "Médoc, Haut-Médoc, Saint-Estèphe",
+     "Sauternes, Barsac, Cadillac"
+   ]
+
+2. Question: "What are the three main locations where you will find Corvina in Italy?"
+   Answer: "Amarone della Valpolicella, Recioto della Valpolicella, Valpolicella"
+   Options: [
+     "Amarone della Valpolicella, Recioto della Valpolicella, Valpolicella",
+     "Barolo, Barbaresco, Gattinara",
+     "Chianti, Brunello di Montalcino, Vino Nobile di Montepulciano",
+     "Soave, Bardolino, Valpolicella"
+   ]
+
+3. Question: "Which Premier Cru appellations in Côte de Beaune are known for Chardonnay?"
+   Answer: "Meursault, Puligny-Montrachet"
+   Options: [
+     "Meursault, Puligny-Montrachet",
+     "Gevrey-Chambertin, Nuits-Saint-Georges",
+     "Chablis, Pouilly-Fuissé",
+     "Corton, Corton-Charlemagne"
+   ]
+
+4. Question: "What are the main locations for Pinot Noir in California's Northern California region?"
+   Answer: "Napa Valley, Calistoga, Oakville, Rutherford, Sonoma"
+   Options: [
+     "Napa Valley, Calistoga, Oakville, Rutherford, Sonoma",
+     "Santa Barbara County, Carneros, Russian River Valley",
+     "Anderson Valley, Santa Lucia Highlands, Monterey",
+     "Willamette Valley, Dundee Hills, Yamhill-Carlton"
+   ]
+
+5. Question: "Which DOCG appellations in Tuscany are known for Sangiovese?"
+   Answer: "Brunello di Montalcino, Chianti"
+   Options: [
+     "Brunello di Montalcino, Chianti",
+     "Barolo, Barbaresco",
+     "Amarone della Valpolicella, Recioto della Valpolicella",
+     "Soave, Bardolino"
+   ]
+
+6. Question: "What are the main locations for Syrah in the Northern Rhône?"
+   Answer: "Crozes-Hermitage, Côte-Rotie, Hermitage"
+   Options: [
+     "Crozes-Hermitage, Côte-Rotie, Hermitage",
+     "Châteauneuf-du-Pape, Gigondas, Vacqueyras",
+     "Côte de Nuits, Côte de Beaune",
+     "Graves, Pessac-Léognan"
+   ]
+
+7. Question: "Which Grand Cru appellations in Alsace are known for Gewurztraminer?"
+   Answer: "Alsace Grand Cru"
+   Options: [
+     "Alsace Grand Cru",
+     "Côte de Nuits Grand Cru",
+     "Côte de Beaune Grand Cru",
+     "Chablis Grand Cru"
+   ]
+
+8. Question: "What are the three main locations for Tempranillo in Spain?"
+   Answer: "Catalunya, Ribera del Duero, Rioja"
+   Options: [
+     "Catalunya, Ribera del Duero, Rioja",
+     "Priorat, Montsant, Penedès",
+     "Navarra, Toro, Rueda",
+     "Jerez, Montilla-Moriles, Málaga"
+   ]
+
+9. Question: "Which DOCG appellations in Piemonte are known for Nebbiolo?"
+   Answer: "Barbaresco, Barolo"
+   Options: [
+     "Barbaresco, Barolo",
+     "Amarone della Valpolicella, Recioto della Valpolicella",
+     "Brunello di Montalcino, Chianti",
+     "Soave, Bardolino"
+   ]
+
+10. Question: "What are the main locations for Cabernet Sauvignon in Chile's Central Valley?"
+    Answer: "Colchagua Valley, Maipo Valley"
+    Options: [
+      "Colchagua Valley, Maipo Valley",
+      "Casablanca Valley, Limarí Valley",
+      "Aconcagua Valley, Elqui Valley",
+      "Maule Valley, Bío Bío Valley"
+    ]
+
+11. Question: "Which DOCG appellations in Veneto are known for Corvina?"
+    Answer: "Amarone della Valpolicella, Recioto della Valpolicella"
+    Options: [
+      "Amarone della Valpolicella, Recioto della Valpolicella",
+      "Barolo, Barbaresco",
+      "Brunello di Montalcino, Chianti",
+      "Soave, Bardolino"
+    ]
+
+12. Question: "What are the main locations for Chardonnay in Burgundy's Côte d'Or?"
+    Answer: "Côte de Beaune, Meursault, Puligny-Montrachet"
+    Options: [
+      "Côte de Beaune, Meursault, Puligny-Montrachet",
+      "Côte de Nuits, Gevrey-Chambertin",
+      "Chablis, Pouilly-Fuissé",
+      "Mâconnais, Pouilly-Fuissé"
+    ]
+
+13. Question: "Which Grand Cru Classé appellations in Saint-Émilion are known for Merlot?"
+    Answer: "Saint-Emilion AOC, Grand Cru, Grand Cru Classé, Premier Grand Cru Classé"
+    Options: [
+      "Saint-Emilion AOC, Grand Cru, Grand Cru Classé, Premier Grand Cru Classé",
+      "Graves, Pessac-Léognan",
+      "Médoc, Haut-Médoc",
+      "Pomerol, Fronsac"
+    ]
+
+14. Question: "What are the main locations for Pinot Noir in New Zealand's South Island?"
+    Answer: "Central Otago, Marlborough"
+    Options: [
+      "Central Otago, Marlborough",
+      "Hawke's Bay, Martinborough",
+      "Waipara, Nelson",
+      "Wairarapa, Canterbury"
+    ]
+
+15. Question: "Which DOCG appellations in Campania are known for Fiano?"
+    Answer: "Fiano di Avellino"
+    Options: [
+      "Fiano di Avellino",
+      "Taurasi, Greco di Tufo",
+      "Soave, Bardolino",
+      "Barolo, Barbaresco"
+    ] 

@@ -235,127 +235,162 @@
         let selectedQuestions = [];
 
         // Question data from WSET Level 2 Cheat Sheet - By Grape
-        const allQuestions = [
+        const questions = [
             {
-                question: "Which classification system and labelling terms are used for Barbera d'Asti in Piemonte, Italy?",
-                answer: "DOCG (Denominazione di Origine Controllata e Garantita) with Superiore",
-                options: ["DOCG (Denominazione di Origine Controllata e Garantita) with Superiore", "DOC (Denominazione di Origine Controllata) with Classico", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva"]
+                question: "Which Grand Cru Classé appellations are known for Cabernet Sauvignon in the Left Bank of Bordeaux?",
+                answer: "Graves, Pessac-Léognan, Margaux, Pauillac",
+                options: [
+                    "Graves, Pessac-Léognan, Margaux, Pauillac",
+                    "Saint-Émilion, Pomerol, Fronsac",
+                    "Médoc, Haut-Médoc, Saint-Estèphe",
+                    "Sauternes, Barsac, Cadillac"
+                ]
             },
             {
-                question: "What is the classification system and labelling for Cabernet Sauvignon in Coonawarra, South Australia?",
-                answer: "GI (Geographical Indication)",
-                options: ["GI (Geographical Indication)", "DO (Denominación de Origen) with Reserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DOC (Denominazione di Origine Controllata) with Superiore"]
+                question: "What are the three main locations where you will find Corvina in Italy?",
+                answer: "Amarone della Valpolicella, Recioto della Valpolicella, Valpolicella",
+                options: [
+                    "Amarone della Valpolicella, Recioto della Valpolicella, Valpolicella",
+                    "Barolo, Barbaresco, Gattinara",
+                    "Chianti, Brunello di Montalcino, Vino Nobile di Montepulciano",
+                    "Soave, Bardolino, Valpolicella"
+                ]
             },
             {
-                question: "Which classification system and labelling terms are used for Cabernet Sauvignon in Chile's Central Valley?",
-                answer: "DO (Denominación de Origen) with Reserva, Gran Reserva",
-                options: ["DO (Denominación de Origen) with Reserva, Gran Reserva", "DOC (Denominazione di Origine Controllata) with Superiore", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "GI (Geographical Indication)"]
+                question: "Which Premier Cru appellations in Côte de Beaune are known for Chardonnay?",
+                answer: "Meursault, Puligny-Montrachet",
+                options: [
+                    "Meursault, Puligny-Montrachet",
+                    "Gevrey-Chambertin, Nuits-Saint-Georges",
+                    "Chablis, Pouilly-Fuissé",
+                    "Corton, Corton-Charlemagne"
+                ]
             },
             {
-                question: "What is the classification system and labelling for Chardonnay in Chablis, Burgundy?",
-                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Grand Cru, Premier Cru, Village, Petit Chablis",
-                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Grand Cru, Premier Cru, Village, Petit Chablis", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
+                question: "What are the main locations for Pinot Noir in California's Northern California region?",
+                answer: "Napa Valley, Calistoga, Oakville, Rutherford, Sonoma",
+                options: [
+                    "Napa Valley, Calistoga, Oakville, Rutherford, Sonoma",
+                    "Santa Barbara County, Carneros, Russian River Valley",
+                    "Anderson Valley, Santa Lucia Highlands, Monterey",
+                    "Willamette Valley, Dundee Hills, Yamhill-Carlton"
+                ]
             },
             {
-                question: "Which classification system and labelling terms are used for Chenin Blanc in Vouvray, Loire Valley?",
-                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Sec, Demi-sec, Moelleux, Doux",
-                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Sec, Demi-sec, Moelleux, Doux", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
+                question: "Which DOCG appellations in Tuscany are known for Sangiovese?",
+                answer: "Brunello di Montalcino, Chianti",
+                options: [
+                    "Brunello di Montalcino, Chianti",
+                    "Barolo, Barbaresco",
+                    "Amarone della Valpolicella, Recioto della Valpolicella",
+                    "Soave, Bardolino"
+                ]
             },
             {
-                question: "What is the classification system and labelling for Corvina in Amarone della Valpolicella, Veneto?",
-                answer: "DOCG (Denominazione di Origine Controllata e Garantita) with Classico, Riserva",
-                options: ["DOCG (Denominazione di Origine Controllata e Garantita) with Classico, Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
+                question: "What are the main locations for Syrah in the Northern Rhône?",
+                answer: "Crozes-Hermitage, Côte-Rotie, Hermitage",
+                options: [
+                    "Crozes-Hermitage, Côte-Rotie, Hermitage",
+                    "Châteauneuf-du-Pape, Gigondas, Vacqueyras",
+                    "Côte de Nuits, Côte de Beaune",
+                    "Graves, Pessac-Léognan"
+                ]
             },
             {
-                question: "Which classification system and labelling terms are used for Furmint in Tokaj, Hungary?",
-                answer: "Tokaji with Aszú (3-6 Puttonyos), Eszencia",
-                options: ["Tokaji with Aszú (3-6 Puttonyos), Eszencia", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva"]
+                question: "Which Grand Cru appellations in Alsace are known for Gewurztraminer?",
+                answer: "Alsace Grand Cru",
+                options: [
+                    "Alsace Grand Cru",
+                    "Côte de Nuits Grand Cru",
+                    "Côte de Beaune Grand Cru",
+                    "Chablis Grand Cru"
+                ]
             },
             {
-                question: "What is the classification system and labelling for Gewurztraminer in Alsace?",
-                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Grand Cru",
-                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Grand Cru", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
+                question: "What are the three main locations for Tempranillo in Spain?",
+                answer: "Catalunya, Ribera del Duero, Rioja",
+                options: [
+                    "Catalunya, Ribera del Duero, Rioja",
+                    "Priorat, Montsant, Penedès",
+                    "Navarra, Toro, Rueda",
+                    "Jerez, Montilla-Moriles, Málaga"
+                ]
             },
             {
-                question: "Which classification system and labelling terms are used for Grenache/Garnacha in Priorat, Catalunya?",
-                answer: "DOCa/DOQ (Denominación de Origen Calificada/Denominació d'Origen Qualificada) with Crianza, Reserva, Gran Reserva",
-                options: ["DOCa/DOQ (Denominación de Origen Calificada/Denominació d'Origen Qualificada) with Crianza, Reserva, Gran Reserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DOC (Denominazione di Origine Controllata) with Superiore", "GI (Geographical Indication)"]
+                question: "Which DOCG appellations in Piemonte are known for Nebbiolo?",
+                answer: "Barbaresco, Barolo",
+                options: [
+                    "Barbaresco, Barolo",
+                    "Amarone della Valpolicella, Recioto della Valpolicella",
+                    "Brunello di Montalcino, Chianti",
+                    "Soave, Bardolino"
+                ]
             },
             {
-                question: "What is the classification system and labelling for Pinot Noir in Central Otago, New Zealand?",
-                answer: "GI (Geographical Indication)",
-                options: ["GI (Geographical Indication)", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva"]
+                question: "What are the main locations for Cabernet Sauvignon in Chile's Central Valley?",
+                answer: "Colchagua Valley, Maipo Valley",
+                options: [
+                    "Colchagua Valley, Maipo Valley",
+                    "Casablanca Valley, Limarí Valley",
+                    "Aconcagua Valley, Elqui Valley",
+                    "Maule Valley, Bío Bío Valley"
+                ]
             },
             {
-                question: "Which classification system and labelling terms are used for Riesling in Mosel, Germany?",
-                answer: "Qualitätswein with Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein",
-                options: ["Qualitätswein with Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva"]
+                question: "Which DOCG appellations in Veneto are known for Corvina?",
+                answer: "Amarone della Valpolicella, Recioto della Valpolicella",
+                options: [
+                    "Amarone della Valpolicella, Recioto della Valpolicella",
+                    "Barolo, Barbaresco",
+                    "Brunello di Montalcino, Chianti",
+                    "Soave, Bardolino"
+                ]
             },
             {
-                question: "What is the classification system and labelling for Sangiovese in Brunello di Montalcino, Tuscany?",
-                answer: "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva",
-                options: ["DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
+                question: "What are the main locations for Chardonnay in Burgundy's Côte d'Or?",
+                answer: "Côte de Beaune, Meursault, Puligny-Montrachet",
+                options: [
+                    "Côte de Beaune, Meursault, Puligny-Montrachet",
+                    "Côte de Nuits, Gevrey-Chambertin",
+                    "Chablis, Pouilly-Fuissé",
+                    "Mâconnais, Pouilly-Fuissé"
+                ]
             },
             {
-                question: "Which classification system and labelling terms are used for Sauvignon Blanc in Pouilly–Fumé, Loire Valley?",
-                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée)",
-                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée)", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
+                question: "Which Grand Cru Classé appellations in Saint-Émilion are known for Merlot?",
+                answer: "Saint-Emilion AOC, Grand Cru, Grand Cru Classé, Premier Grand Cru Classé",
+                options: [
+                    "Saint-Emilion AOC, Grand Cru, Grand Cru Classé, Premier Grand Cru Classé",
+                    "Graves, Pessac-Léognan",
+                    "Médoc, Haut-Médoc",
+                    "Pomerol, Fronsac"
+                ]
             },
             {
-                question: "What is the classification system and labelling for Sémillon in Sauternes, Bordeaux?",
-                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Premier Cru Supérieur, Premier Cru Classé",
-                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Premier Cru Supérieur, Premier Cru Classé", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
+                question: "What are the main locations for Pinot Noir in New Zealand's South Island?",
+                answer: "Central Otago, Marlborough",
+                options: [
+                    "Central Otago, Marlborough",
+                    "Hawke's Bay, Martinborough",
+                    "Waipara, Nelson",
+                    "Wairarapa, Canterbury"
+                ]
             },
             {
-                question: "Which classification system and labelling terms are used for Syrah in Côte-Rotie, Northern Rhône?",
-                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée)",
-                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée)", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
-            },
-            {
-                question: "What is the classification system and labelling for Tempranillo in Rioja?",
-                answer: "DOCa (Denominación de Origen Calificada) with Joven, Crianza, Reserva, Gran Reserva",
-                options: ["DOCa (Denominación de Origen Calificada) with Joven, Crianza, Reserva, Gran Reserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DOC (Denominazione di Origine Controllata) with Superiore", "GI (Geographical Indication)"]
-            },
-            {
-                question: "Which classification system and labelling terms are used for Verdicchio in Verdicchio dei Castelli di Jesi, Marche?",
-                answer: "DOC (Denominazione di Origine Controllata) with Classico, Riserva, Superiore",
-                options: ["DOC (Denominazione di Origine Controllata) with Classico, Riserva, Superiore", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
-            },
-            {
-                question: "What is the classification system and labelling for Viognier in Condrieu, Northern Rhône?",
-                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée)",
-                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée)", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
-            },
-            {
-                question: "Which classification system and labelling terms are used for Zinfandel in California?",
-                answer: "AVA (American Viticultural Area) with Reserve",
-                options: ["AVA (American Viticultural Area) with Reserve", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva"]
-            },
-            {
-                question: "What is the classification system and labelling for Chardonnay in Meursault, Côte de Beaune?",
-                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Premier Cru",
-                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Premier Cru", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
-            },
-            {
-                question: "Which classification system and labelling terms are used for Pinot Noir in Gevrey-Chambertin, Côte de Nuits?",
-                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Grand Cru, Premier Cru",
-                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Grand Cru, Premier Cru", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
-            },
-            {
-                question: "What is the classification system and labelling for Cabernet Sauvignon in Napa Valley, California?",
-                answer: "AVA (American Viticultural Area) with Reserve, Estate Bottled",
-                options: ["AVA (American Viticultural Area) with Reserve, Estate Bottled", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "AOC (Appellation d'Origine Contrôlée) with Grand Cru", "DO (Denominación de Origen) with Reserva"]
-            },
-            {
-                question: "Which classification system and labelling terms are used for Merlot in Saint-Émilion, Right Bank Bordeaux?",
-                answer: "AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Saint-Emilion AOC, Grand Cru, Grand Cru Classé, Premier Grand Cru Classé",
-                options: ["AOC/AOP (Appellation d'Origine Contrôlée/Protégée) with Saint-Emilion AOC, Grand Cru, Grand Cru Classé, Premier Grand Cru Classé", "DOCG (Denominazione di Origine Controllata e Garantita) with Riserva", "DO (Denominación de Origen) with Reserva", "GI (Geographical Indication)"]
+                question: "Which DOCG appellations in Campania are known for Fiano?",
+                answer: "Fiano di Avellino",
+                options: [
+                    "Fiano di Avellino",
+                    "Taurasi, Greco di Tufo",
+                    "Soave, Bardolino",
+                    "Barolo, Barbaresco"
+                ]
             }
         ];
 
         function selectRandomQuestions() {
             // Shuffle all questions
-            const shuffled = [...allQuestions];
+            const shuffled = [...questions];
             shuffleArray(shuffled);
             // Take only 25 questions
             selectedQuestions = shuffled.slice(0, 25);
