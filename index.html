@@ -137,6 +137,14 @@
             transition: width 0.3s ease;
         }
 
+        .progress-text {
+            text-align: center;
+            color: var(--primary);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
         .progress-percentage {
             position: absolute;
             top: -25px;
@@ -270,8 +278,10 @@
 
         <div class="quiz-container" id="quizContainer">
             <div class="progress-bar">
-                <div class="progress" id="progress"></div>
+                <div class="progress" id="progressBar"></div>
+                <div class="progress-percentage"></div>
             </div>
+            <p id="progressText" class="progress-text"></p>
             <div class="question" id="question"></div>
             <div class="options" id="options"></div>
             <div class="controls">
@@ -433,6 +443,9 @@
 
         function showQuestion() {
             if (currentQuestion < questions.length) {
+                // Reset the answered flag for the new question
+                answered = false;
+                
                 const questionData = questions[currentQuestion];
                 document.getElementById('question').textContent = questionData.question;
                 
@@ -449,18 +462,9 @@
                 
                 // Update progress bar and percentage
                 const progressPercent = ((currentQuestion + 1) / questions.length) * 100;
-                document.querySelector('.progress').style.width = `${progressPercent}%`;
-                
-                // Update progress percentage text
-                const progressText = document.querySelector('.progress-percentage');
-                if (!progressText) {
-                    const percentageDiv = document.createElement('div');
-                    percentageDiv.className = 'progress-percentage';
-                    document.querySelector('.progress-bar').appendChild(percentageDiv);
-                }
+                document.getElementById('progressBar').style.width = `${progressPercent}%`;
                 document.querySelector('.progress-percentage').textContent = `${Math.round(progressPercent)}% Complete`;
-                
-                document.getElementById('progress').textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
+                document.getElementById('progressText').textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
             } else {
                 showScore();
             }
@@ -494,13 +498,9 @@
                 alert('Please select an answer first!');
                 return;
             }
-
+            
             currentQuestion++;
-            if (currentQuestion < questions.length) {
-                showQuestion();
-            } else {
-                showScore();
-            }
+            showQuestion();
         }
 
         function showScore() {
@@ -520,7 +520,7 @@
 
         function updateProgress() {
             const progress = ((currentQuestion + 1) / questions.length) * 100;
-            document.getElementById('progress').style.width = `${progress}%`;
+            document.getElementById('progressBar').style.width = `${progress}%`;
         }
 
         const grapeQuestions = [
