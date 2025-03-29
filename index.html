@@ -473,10 +473,20 @@
             const options = document.querySelectorAll('.option');
             const correct = questions[currentQuestion].correct;
 
-            options[index].classList.add(index === correct ? 'correct' : 'incorrect');
+            // First, mark the correct answer
             options[correct].classList.add('correct');
+            
+            // Then, if user selected a different option, mark it as incorrect
+            if (index !== correct) {
+                options[index].classList.add('incorrect');
+            }
 
             if (index === correct) score++;
+
+            // Disable all options after selection
+            options.forEach(option => {
+                option.style.pointerEvents = 'none';
+            });
         }
 
         function nextQuestion() {
