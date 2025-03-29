@@ -1,0 +1,123 @@
+Grape,Climate,Acidity,Tannins,Sweetness,Body,Flavour,Oak,Characteristics,Aged Characteristics
+Pinot Noir,"Cool, Moderate",High,"Low, Medium",,"Light, Medium","• Red fruit: strawberry, raspberry, red cherry",Careful use of oak,"• Thin skin
+• Typically single varietal
+• Used to make sparkling wines","• Mushroom
+• Forest floor"
+Zinfandel / Primitivo,Warm,"Medium, High","Medium, High",,,"• Red fruits (strawberries, raspberries)
+• Black fruits (plums, black cherries)","Red wines often oaked	
+","• Thin skin
+• Typically single varietal
+• Used to make sparkling wines","• Earth
+• Meat"
+Riesling,"Cool, Moderate",High,,"Dry, Off-dry, Medium, Sweet","Light, Medium, Full","• Just ripe: green fruit (apple, pear), citrus (lemon lime) and floral (blossom)
+• Extra ripe: stone fruit (peach, apricot), tropical fruit (mango, pineapple) and dried fruit (apricot)",Unoaked,"• Susceptible to botrytis/noble rot
+• Aromatic variety
+• Fruit characteristics vary according to ripeness
+• Many harvest options","• Honey
+• Petrol"
+Chenin Blanc,"Cool, Moderate, Warm",High,,"Dry, Off-dry, Medium, Sweet",,"• Just ripe: green fruit (apple) and citrus (lemon)
+• Extra ripe: stone fruit (peach) and tropical fruit (pineapple, mango)",Oaked or unoaked,"• Versatile: climates
+• Susceptible to botrytis/noble rot
+• Many harvest options","• Dried fruit
+• Honey"
+Sémillon / semillon,"Moderate, Warm","Medium, High",,"Dry, Off-dry, Medium, Sweet","Light, Medium, Full","• Young: apple, lemon, grass
+• Developed: honey, nuts, raisins",Oaked or unoaked,"• Susceptible to botrytis/noble rot
+• Many harvest options
+• Sometimes blended (sauvignon blanc)",• Can age
+Furmint,Moderate,High,,"Dry, Off-dry, Medium, Sweet",,• ,Oaked or unoaked,• Susceptible to botrytis/noble rot,"• Dried fruit
+• Caramel
+• Nuts"
+Chardonnay,"Cool, Moderate, Warm","High, Medium",,Dry,"Light, Medium, Full","• Cool: green fruit (apple, pear), citrus (lemon, lime) and wet stones
+• Moderate: lemon, stone fruits (peach) and sometimes tropical fruit (melon)
+• Warm: stone fruit (peach), tropical fruit (pineapple, banana)",Oaked or unoaked,"• Versatile: range of climats
+• Range of winemaking techniques including lees, malolactic conversion
+• Used to make sparkling wines","• Hazelnut
+• Mushroom"
+Sauvignon blanc,"Cool, Moderate",High,,Dry,"Light, Medium","• Herbaceous, floral (grass, green bell pepper, asparagus)
+• Just ripe: green fruits (apple, gooseberry), wet stones
+• Ripe: tropical fruit (passion fruit)",Typically unoaked,"• Aromatic variety
+• Typically single varietal
+• Sometimes blended with sémillon/semillon",• For early drinking
+Pinot grigio,"Cool, Moderate","Medium, High",,Dry,Light,"• Green apple
+• Lemon",Typically unoaked,• Simple,• For early drinking
+Pinot gris,"Cool, Moderate","Medium, High",,"Dry, Off-dry, Medium",Full,"• Lemon
+• Stone fruit (peach)
+• Tropical fruit (mango, banana)",Typically unoaked,• Complex,"• Honey
+• Ginger"
+Gewurztraminer,"Cool, Moderate","Low, Medium",,"Dry, Off-dry, Medium, Sweet",Full,"• Floral (rose)
+• Stone fruit (peach, apricot)
+• Tropical fruit (lychee)",Typically unoaked,• Aromatic variety,"• Honey
+• Dried fruit"
+Viognier,Moderate,"Low, Medium",,Dry,"Medium, Full","• Floral (blossom)
+• Stone fruit (peach, apricot)",Oaked or unoaked,• Single varietal or blended,• 
+Albariño,Moderate,High,,Dry,Medium,"• Citrus (lemon, grapefruit)
+• Stone fruit (peach, apricot)",Oaked or unoaked,• ,• For early drinking
+Cabernet sauvignon,"Moderate, Warm",High,High,,"Medium, Full","• Herbaceous (green ball pepper), mint
+• Black fruit (blackcurrant, black cherry)",Oak maturation is common,"• Thick skinned
+• Single varietal or blended
+• Simple or complex","• Dried fruit
+• Earth
+• Forest floor"
+Merlot,"Moderate, Warm",Medium,Medium,,"Light, Medium, Full","• Just ripe: herbaceous (green ball pepper), red fruit (strawberry, red plum)
+• Ripe: black fruit (cooked blackberry, black plum)",Oaked or unoaked,"• Single varietal or blended
+• Simple or complex","• Dried fruit
+• Tobacco"
+Syrah / Shiraz,"Moderate, Warm","Medium, High","Medium, High",,"Medium, Full","• Thick skin
+• Black fruit (black cherry, blackberry)
+• Herbal
+• Black pepper",Oak maturation is common,• Single varietal or blended,"• Dried fruit
+• Leather
+• Meat
+• Earth"
+Gamay,Moderate,High,"Low, Medium",,Light,"• Red fruit: raspberry, red cherry, red plum",Typically unoaked,• Carbonic maceration give aromas and flavours of banana and candy,• For early drinking
+Grenache / Garnacha,Warm,Low,"Low, Medium",,,"• Red fruit: strawberry, red plum, red cherry
+• Spice: white pepper, liquorice",Oaked or unoaked,"• Thin skin
+• High sugar levels
+• Often blended
+• Red or rosé wine","• Earth
+• Meat
+• Dried fruit
+• Caramel"
+Tempranillo,"Moderate, Warm",Medium,Medium,,"Medium, Full","• Red fruit: strawberry, raspberry, red cherry
+• Black fruit: blackberry, black plum",Oaked or unoaked,"• Simple or complex
+• Blended or single varietal","• Dried fruit
+• Leather
+• Mushroom"
+Carmenère,Warm,"Medium, High",High,,Full,"• Herbaceous: green ball pepper
+• Herbal: eucalyptus
+• Black fruit: blackberry",Often oaked,• Blended or single varietal,"• Leather
+• Earth"
+Malbec,Warm,,High,,Full,"• Black fruit: blackberry, black plum",Often oaked,• Blended or single varietal,"• Dried fruit
+• Meat"
+Pinotage,Warm,High,Medium,,"Medium, Full","• Red fruit: strawberry, raspberry, red cherry",Often oaked,"• Blended or single varietal
+• Takes on strong flavours from oak: coffee, chocolate, smoke",• Can age
+Cortese,,High,,Dry,Light,"• Floral: blossom
+• Green fruit: apple, pear
+• Citrus fruit: lemon",Unoaked,• ,• For early drinking
+Garganega,,High,,"Dry, Sweet",Medium,"• Green fruit: apple, pear
+• Citrus fruit: lemon
+• Stone fruit: peach",Unoaked,• ,"• Honey
+• Almond"
+Verdicchio,,High,,Dry,Medium,"• Green fruit: apple, pear
+• Citrus fruit: lemon
+• Herbal: fennel",Unoaked,• ,"• Honey
+• Nuts"
+Fiano,,Medium,,Dry,"Medium, Full","• Stone fruit: peach
+• Tropical fruit: melon, mango",Oaked or unoaked,• Can be aged on lees,"• Honey
+• Nuts"
+Nebbiolo,,High,High,,Full,"• Red fruit: red cherry, red plum
+• Floral: rose, violet
+• Herbal: dried herbs",Oak maturation is common,• Typically single varietal,"• Mushroom
+• Tobacco
+• Leather"
+Barbera,,High,"Low, Medium",,"Light, Medium, Full","• Red fruit: red cherry, red plum
+• Spice: black pepper",Oaked or unoaked,"• Typically single varietal
+• Simple or complex","• Can be for early drinking
+• Can age"
+Corvina,,High,"Low, Medium",,"Light, Medium, Full","• Red fruit: red cherry, red plum",Basic: usually oaked,"• Often blended (local varieties)
+• Appassimento method sometimes used","• Can be for early drinking
+• Can age"
+Sangiovese,,High,High,,"Medium, Full","• Red fruit: red cherry, red plum
+• Herbal: dried herbs",Often oaked,• Often blended (local and international varieties),"• Can be for early drinking
+• Can age"
+Montepulciano,,Medium,High,,,"• Black fruit: black plum, black cherry",Oaked or unoaked,• ,• For early drinking

@@ -226,6 +226,10 @@
                     <h3>Grapes & Regions Quiz</h3>
                     <p>Test your knowledge about grape varieties, regions, and appellations.</p>
                 </div>
+                <div class="quiz-option" onclick="startCharacteristicsQuiz()">
+                    <h3>Grape Characteristics Quiz</h3>
+                    <p>Test your knowledge about grape characteristics, aging potential, and flavor profiles.</p>
+                </div>
             </div>
         </div>
 
@@ -723,6 +727,24 @@
         function startGrapeQuiz() {
             currentQuiz = 'grape';
             questions = shuffleArray([...grapeQuestions]).map(q => {
+                const shuffledOptions = shuffleArray([...q.options]);
+                const correctIndex = shuffledOptions.indexOf(q.correct);
+                return {
+                    question: q.question,
+                    options: shuffledOptions,
+                    correct: correctIndex
+                };
+            });
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('quizContainer').classList.add('active');
+            showQuestion();
+        }
+
+        function startCharacteristicsQuiz() {
+            currentQuiz = 'characteristics';
+            questions = shuffleArray([...characteristicsQuestions]).map(q => {
                 const shuffledOptions = shuffleArray([...q.options]);
                 const correctIndex = shuffledOptions.indexOf(q.correct);
                 return {

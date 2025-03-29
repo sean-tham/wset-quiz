@@ -12,7 +12,7 @@ Cabernet sauvignon,France,Bordeaux,Left Bank,Médoc,Yes,,AOC/AOP (Appellation d'
 Cabernet sauvignon,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, ",Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Cru Bourgeois, Cru Classé"
 Cabernet sauvignon,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, Margaux",Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
 Cabernet sauvignon,France,Bordeaux,Left Bank,"Médoc, Haut-Médoc, Pauillac",Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Grand Cru Classé
-Cabernet sauvignon,France,South of France,Languedoc-Roussillon,Pays d'Oc IGP,Yes,,IGP (Indication Géographique Protégée),Pays d'Oc IGP
+Cabernet sauvignon,France,South of France,Languedoc-Roussillon,Pays d'Oc,Yes,,IGP (Indication Géographique Protégée),Pays d'Oc IGP
 Cabernet sauvignon,New Zealand,New Zealand,North Island,Hawke's Bay,Yes,,GI (Geographical Indication),
 Cabernet sauvignon,South Africa,Western Cape,Stellenbosch,,Yes,used in Cape Blend,Wine of Origin (WO),Estate Wine
 Cabernet sauvignon,USA,California,Northern California,Napa Valley,Yes,ripest and full-bodied,AVA (American Viticultural Area),"Reserve, Estate Bottled"
@@ -34,7 +34,7 @@ Chardonnay,France,Burgundy,Côte d'Or,"Côte de Beaune, Puligny-Montrachet",Yes,
 Chardonnay,France,Burgundy,Mâconnais,Mâcon,Yes,"fruity, unoaked",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
 Chardonnay,France,Burgundy,Mâconnais,Pouilly-Fuissé,Yes,"concentrated, often oaked",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Premier Cru
 Chardonnay,France,South of France,,,,,IGP (Indication Géographique Protégée),
-Chardonnay,France,South of France,Languedoc-Roussillon,Pays d'Oc IGP,Yes,"peach, pineapple and banana ",IGP (Indication Géographique Protégée),Pays d'Oc IGP
+Chardonnay,France,South of France,Languedoc-Roussillon,Pays d'Oc,Yes,"peach, pineapple and banana ",IGP (Indication Géographique Protégée),Pays d'Oc IGP
 Chardonnay,New Zealand,New Zealand,North Island,Hawke's Bay,Yes,full body; pronounced stone fruit flavours,GI (Geographical Indication),
 Chardonnay,New Zealand,South Island,Marlborough,,Yes,"ripe lemon, peach, melon; high acidity, subtle oak",GI (Geographical Indication),
 Chardonnay,South Africa,Western Cape,,,Yes,,Wine of Origin (WO),Estate Wine
@@ -60,7 +60,7 @@ Gewurztraminer,France,Alsace,Alsace,,Yes,pronounced floral aromas (rose) and sto
 Grenache / Garnacha,Australia,South Australia,Barossa Valley,,Yes,old vines: concentrated red-fruit and spice flavours,GI (Geographical Indication),
 Grenache / Garnacha,Australia,South Australia,McLaren Vale,,Yes,old vines: concentrated red-fruit and spice flavours,GI (Geographical Indication),
 Grenache / Garnacha,France,Côtes du Rhône,,,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),Côtes du Rhône AOC. Côtes du Rhône Villages AOC
-Grenache / Garnacha,France,Côtes du Rhône,Southern Rhône,"Châteauneuf-du-Pape, , ",Yes,"full-bodied, high alcohol levels",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Côtes du Rhône AOC. Côtes du Rhône Villages AOC, Rhone crus"
+Grenache / Garnacha,France,Côtes du Rhône,Southern Rhône,Châteauneuf-du-Pape,Yes,"full-bodied, high alcohol levels",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),"Côtes du Rhône AOC. Côtes du Rhône Villages AOC, Rhone crus"
 Grenache / Garnacha,France,South of France,Minervois AOC,,Yes,blended,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
 Grenache / Garnacha,France,South of France,Languedoc-Roussillon and Provence,,Yes,blended,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
 Grenache / Garnacha,Spain,Catalunya,Priorat,,Yes,old vines: the most powerful full-bodied,DOCa/DOQ (Denominación de Origen Calificada/Denominació d'Origen Qualificada),"Crianza, Reserva, Gran Reserva"
@@ -126,7 +126,7 @@ Sauvignon blanc,France,Loire Valley,Pouilly–Fumé,,Yes,"dry, high acidity, gre
 Sauvignon blanc,France,Loire Valley,Sancerre,,Yes,"dry, high acidity, green fruit (apple), herbaceous notes (asparagus, grass), sometimes wet stones",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
 Sauvignon blanc,France,Loire Valley,Touraine,,Yes,"fruity, inexpensive",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
 Sauvignon blanc,France,South of France,,,,"dry, high acidity, tropical fruit flavours (passion fruit) and herbaceous notes (grass)",IGP (Indication Géographique Protégée),
-Sauvignon blanc,France,South of France,Languedoc-Roussillon,Pays d'Oc IGP,Yes,"dry, high in acid with tropical fruit flavours and herbaceous",IGP (Indication Géographique Protégée),Pays d'Oc IGP
+Sauvignon blanc,France,South of France,Languedoc-Roussillon,Pays d'Oc,Yes,"dry, high in acid with tropical fruit flavours and herbaceous",IGP (Indication Géographique Protégée),Pays d'Oc IGP
 Sauvignon blanc,New Zealand,South Island,Marlborough,,Yes,"all styles, experimental approach",GI (Geographical Indication),
 Sauvignon blanc,South Africa,Western Cape,Constantia,,Yes,refreshing with ripe-tropical-fruit and herbaceous aromas,Wine of Origin (WO),Estate Wine
 Sauvignon blanc,South Africa,Western Cape,Elgin,,Yes,green fruit flavours (apple) and sometimes wet stones,Wine of Origin (WO),Estate Wine
@@ -143,7 +143,7 @@ Syrah / Shiraz,France,Côtes du Rhône,Northern Rhône,Crozes-Hermitage,Yes,"les
 Syrah / Shiraz,France,Côtes du Rhône,Northern Rhône,Côte-Rotie,Yes,"complex and peppery, sometimes small amounts of Viognier",AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
 Syrah / Shiraz,France,Côtes du Rhône,Northern Rhône,Hermitage,Yes,,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
 Syrah / Shiraz,France,South of France,Minervois AOC,,Yes,blended,AOC/AOP (Appellation d'Origine Contrôlée/Protégée),
-Syrah / Shiraz,France,South of France,Languedoc-Roussillon,Pays d'Oc IGP,Yes,single-varietal,IGP (Indication Géographique Protégée),
+Syrah / Shiraz,France,South of France,Languedoc-Roussillon,Pays d'Oc,Yes,single-varietal,IGP (Indication Géographique Protégée),
 Tempranillo,Spain,Catalunya,,,Yes,from simple fruity and light to powerful oak-aged,DO (Denominación de Origen),"Joven, Crianza, Reserva, Gran Reserva"
 Tempranillo,Spain,Ribera del Duero,,,Yes,"full-bodied, fresh black-fruit flavours",DO (Denominación de Origen),"Joven, Crianza, Reserva, Gran Reserva"
 Tempranillo,Spain,Rioja,,,Yes,sometimes blended with Garnacha,DOCa (Denominación de Origen Calificada),"Joven, Crianza, Reserva, Gran Reserva"
