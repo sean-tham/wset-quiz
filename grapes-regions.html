@@ -232,7 +232,6 @@
         let currentQuestion = 0;
         let score = 0;
         let answered = false;
-        let questions = [];
         let selectedQuestions = [];
 
         // Question data from WSET Level 2 Cheat Sheet - By Grape
@@ -364,7 +363,11 @@
             }
         ];
 
-        // Function to shuffle array
+        function selectRandomQuestions() {
+            selectedQuestions = [...allQuestions];
+            shuffleArray(selectedQuestions);
+        }
+
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -372,24 +375,7 @@
             }
         }
 
-        // Function to select random questions
-        function selectRandomQuestions() {
-            selectedQuestions = [...allQuestions];  // Use all questions instead of selecting a subset
-            shuffleArray(selectedQuestions);
-        }
-
-        // Function to start quiz
-        function startQuiz() {
-            currentQuestion = 0;
-            score = 0;
-            answered = false;
-            selectRandomQuestions();
-            showQuestion();
-            updateProgress();
-        }
-
-        // Function to show question
-        function showQuestion() {
+        function displayQuestion() {
             if (currentQuestion >= selectedQuestions.length) {
                 showScore();
                 return;
@@ -401,77 +387,79 @@
             const optionsContainer = document.getElementById('options');
             optionsContainer.innerHTML = '';
             
-            question.options.forEach((option, index) => {
+            const shuffledOptions = [...question.options];
+            shuffleArray(shuffledOptions);
+            
+            shuffledOptions.forEach(option => {
                 const button = document.createElement('button');
                 button.className = 'option';
                 button.textContent = option;
-                button.disabled = false;
-                button.onclick = () => selectOption(index);
+                button.onclick = () => selectOption(button, option);
                 optionsContainer.appendChild(button);
             });
             
-            document.getElementById('nextBtn').disabled = true;
+            document.getElementById('currentQuestion').textContent = currentQuestion + 1;
+            document.getElementById('progress').style.width = `${((currentQuestion + 1) / selectedQuestions.length) * 100}%`;
+            
             answered = false;
+            document.getElementById('nextBtn').disabled = true;
         }
 
-        // Function to select option
-        function selectOption(selectedIndex) {
+        function selectOption(button, selectedOption) {
             if (answered) return;
             
+            answered = true;
             const question = selectedQuestions[currentQuestion];
-            const options = document.querySelectorAll('.option');
-            const correctIndex = question.options.indexOf(question.answer);
+            const correct = selectedOption === question.answer;
             
-            options.forEach(option => option.disabled = true);
-            
-            options[selectedIndex].classList.add(selectedIndex === correctIndex ? 'correct' : 'incorrect');
-            options[correctIndex].classList.add('correct');
-            
-            if (selectedIndex === correctIndex) {
+            if (correct) {
+                button.classList.add('correct');
                 score++;
+            } else {
+                button.classList.add('incorrect');
+                // Show correct answer
+                Array.from(document.getElementsByClassName('option')).forEach(opt => {
+                    if (opt.textContent === question.answer) {
+                        opt.classList.add('correct');
+                    }
+                });
             }
             
-            answered = true;
+            // Disable all options
+            Array.from(document.getElementsByClassName('option')).forEach(opt => {
+                opt.disabled = true;
+            });
+            
             document.getElementById('nextBtn').disabled = false;
         }
 
-        // Function to move to next question
         function nextQuestion() {
-            if (!answered) return;
-            
             currentQuestion++;
-            updateProgress();
-            
-            if (currentQuestion < selectedQuestions.length) {
-                showQuestion();
-            } else {
-                showScore();
-            }
+            displayQuestion();
         }
 
-        // Function to update progress bar
-        function updateProgress() {
-            const progress = ((currentQuestion) / selectedQuestions.length) * 100;
-            document.getElementById('progress').style.width = `${progress}%`;
-            document.getElementById('currentQuestion').textContent = currentQuestion + 1;
-        }
-
-        // Function to show score
         function showScore() {
+            const percentage = Math.round((score / selectedQuestions.length) * 100);
+            document.getElementById('score').textContent = percentage;
             document.querySelector('.question-container').style.display = 'none';
-            document.getElementById('scoreContainer').classList.add('active');
-            document.getElementById('score').textContent = Math.round((score / selectedQuestions.length) * 100);
+            document.querySelector('.score-container').classList.add('active');
+            document.querySelector('.progress-container').style.display = 'none';
         }
 
-        // Function to restart quiz
         function restartQuiz() {
-            document.getElementById('scoreContainer').classList.remove('active');
+            currentQuestion = 0;
+            score = 0;
+            answered = false;
             document.querySelector('.question-container').style.display = 'block';
-            startQuiz();
+            document.querySelector('.score-container').classList.remove('active');
+            document.querySelector('.progress-container').style.display = 'block';
+            selectRandomQuestions();
+            displayQuestion();
         }
 
-        // Start quiz when page loads
-        window.onload = startQuiz;
+        // Initialize quiz
+        selectRandomQuestions();
+        displayQuestion();
     </script>
 </body>
 </html> 
