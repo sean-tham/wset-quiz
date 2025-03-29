@@ -237,13 +237,256 @@
 
         // Question data combined from all categories
         const allQuestions = [
-            // Questions from serving-growing.html
             {
                 question: "What is considered a cool climate temperature range?",
                 answer: "16.5°C - 18.5°C",
                 options: ["16.5°C - 18.5°C", "18.5°C - 21°C", "21°C - 24°C", "Above 24°C"]
             },
-            // Add more questions from all categories
+            {
+                question: "Which region is known for producing Chardonnay with flavors of citrus and green apple?",
+                answer: "Chablis",
+                options: ["Chablis", "Napa Valley", "Barossa Valley", "Rioja"]
+            },
+            {
+                question: "What are the typical characteristics of Sauvignon Blanc?",
+                answer: "Gooseberry, Cut Grass, Green Bell Pepper",
+                options: ["Gooseberry, Cut Grass, Green Bell Pepper", "Peach, Apricot, Honey", "Cherry, Strawberry, Earth", "Black Currant, Cedar, Tobacco"]
+            },
+            {
+                question: "What is the ideal serving temperature for full-bodied red wines?",
+                answer: "15-18°C",
+                options: ["15-18°C", "8-10°C", "6-8°C", "20-22°C"]
+            },
+            {
+                question: "Which region is famous for Riesling production?",
+                answer: "Mosel",
+                options: ["Mosel", "Provence", "Rhône Valley", "Douro"]
+            },
+            {
+                question: "What are the key characteristics of Pinot Noir?",
+                answer: "Red Cherry, Strawberry, Earth",
+                options: ["Red Cherry, Strawberry, Earth", "Blackberry, Black Pepper, Leather", "Gooseberry, Asparagus, Grass", "Black Currant, Cedar, Tobacco"]
+            },
+            {
+                question: "What is the recommended storage temperature for wine?",
+                answer: "12-14°C",
+                options: ["12-14°C", "18-20°C", "8-10°C", "22-24°C"]
+            },
+            {
+                question: "Which region produces Chianti Classico?",
+                answer: "Tuscany",
+                options: ["Tuscany", "Piedmont", "Veneto", "Puglia"]
+            },
+            {
+                question: "What are the typical characteristics of Cabernet Sauvignon?",
+                answer: "Black Currant, Cedar, Tobacco",
+                options: ["Black Currant, Cedar, Tobacco", "Cherry, Raspberry, Violet", "Plum, Chocolate, Black Pepper", "Apple, Pear, Almond"]
+            },
+            {
+                question: "What type of climate is best for ripening Cabernet Sauvignon?",
+                answer: "Warm Climate",
+                options: ["Warm Climate", "Cool Climate", "Maritime Climate", "Continental Climate"]
+            },
+            {
+                question: "Where is Barolo wine produced?",
+                answer: "Piedmont",
+                options: ["Piedmont", "Veneto", "Tuscany", "Lombardy"]
+            },
+            {
+                question: "Which grape variety is known for its spicy black pepper notes?",
+                answer: "Syrah/Shiraz",
+                options: ["Syrah/Shiraz", "Merlot", "Sangiovese", "Tempranillo"]
+            },
+            {
+                question: "What is the ideal serving temperature for sparkling wines?",
+                answer: "6-8°C",
+                options: ["6-8°C", "12-14°C", "15-18°C", "18-20°C"]
+            },
+            {
+                question: "Which region is famous for sparkling wine production using Méthode Traditionelle?",
+                answer: "Champagne",
+                options: ["Champagne", "Provence", "Bordeaux", "Loire Valley"]
+            },
+            {
+                question: "What are the key characteristics of warm-climate Chardonnay?",
+                answer: "Tropical Fruit, Vanilla, Butter",
+                options: ["Tropical Fruit, Vanilla, Butter", "Green Apple, Mineral, Citrus", "Peach, Apricot, Honey", "Gooseberry, Cut Grass, Asparagus"]
+            },
+            {
+                question: "What is the effect of altitude on grape growing?",
+                answer: "Cooler Temperatures",
+                options: ["Cooler Temperatures", "Warmer Temperatures", "Higher Humidity", "Lower Rainfall"]
+            },
+            {
+                question: "Where is Malbec the principal grape variety?",
+                answer: "Mendoza",
+                options: ["Mendoza", "Rioja", "Douro", "Rhône Valley"]
+            },
+            {
+                question: "Which grape variety shows aromas of cherry, tar, and roses?",
+                answer: "Nebbiolo",
+                options: ["Nebbiolo", "Malbec", "Grenache", "Tempranillo"]
+            },
+            {
+                question: "What is the purpose of canopy management?",
+                answer: "Control Sun Exposure",
+                options: ["Control Sun Exposure", "Increase Yield", "Prevent Frost Damage", "Improve Soil Quality"]
+            },
+            {
+                question: "Which region is known for producing Port wine?",
+                answer: "Douro Valley",
+                options: ["Douro Valley", "Jerez", "Tuscany", "Bordeaux"]
+            },
+            {
+                question: "What are the typical characteristics of Merlot?",
+                answer: "Plum, Chocolate, Soft Tannins",
+                options: ["Plum, Chocolate, Soft Tannins", "Black Currant, Cedar, Firm Tannins", "Cherry, Strawberry, Earth", "Blackberry, Black Pepper, Leather"]
+            },
+            {
+                question: "What is the ideal serving temperature for light-bodied white wines?",
+                answer: "8-10°C",
+                options: ["8-10°C", "12-14°C", "15-18°C", "6-8°C"]
+            },
+            {
+                question: "Where is Pinot Noir a key grape variety?",
+                answer: "Burgundy",
+                options: ["Burgundy", "Bordeaux", "Rhône Valley", "Rioja"]
+            },
+            {
+                question: "Which grape variety is known for its orange blossom and apricot notes?",
+                answer: "Viognier",
+                options: ["Viognier", "Riesling", "Pinot Grigio", "Sauvignon Blanc"]
+            },
+            {
+                question: "What is the effect of diurnal temperature range on grapes?",
+                answer: "Balanced Ripening",
+                options: ["Balanced Ripening", "Faster Ripening", "Slower Ripening", "Uneven Ripening"]
+            },
+            {
+                question: "What is the effect of soil type on wine character?",
+                answer: "Influences Mineral Content",
+                options: ["Influences Mineral Content", "Determines Wine Color", "Controls Alcohol Level", "Sets Sugar Content"]
+            },
+            {
+                question: "Which region is famous for its Amarone wines?",
+                answer: "Veneto",
+                options: ["Veneto", "Tuscany", "Piedmont", "Puglia"]
+            },
+            {
+                question: "What are the characteristics of botrytized wines?",
+                answer: "Concentrated, Sweet, Honey Notes",
+                options: ["Concentrated, Sweet, Honey Notes", "Light, Crisp, Citrus Notes", "Tannic, Full-bodied, Dark Fruit", "Sparkling, Fresh, Apple Notes"]
+            },
+            {
+                question: "Which grape variety is known for its 'cat pee' aroma descriptor?",
+                answer: "Sauvignon Blanc",
+                options: ["Sauvignon Blanc", "Chardonnay", "Riesling", "Pinot Grigio"]
+            },
+            {
+                question: "What is the main grape variety in Barolo?",
+                answer: "Nebbiolo",
+                options: ["Nebbiolo", "Sangiovese", "Barbera", "Dolcetto"]
+            },
+            {
+                question: "What is the ideal serving temperature for sweet wines?",
+                answer: "6-8°C",
+                options: ["6-8°C", "12-14°C", "15-18°C", "18-20°C"]
+            },
+            {
+                question: "Which region is known for Carménère production?",
+                answer: "Chile",
+                options: ["Chile", "Argentina", "Spain", "Italy"]
+            },
+            {
+                question: "What are the characteristics of wines aged in new oak?",
+                answer: "Vanilla, Toast, Spice",
+                options: ["Vanilla, Toast, Spice", "Fresh Fruit, Crisp, Light", "Petrol, Honey, Mineral", "Earth, Leather, Game"]
+            },
+            {
+                question: "Which grape variety is the main component of white Rioja?",
+                answer: "Viura",
+                options: ["Viura", "Albariño", "Verdejo", "Godello"]
+            },
+            {
+                question: "What is the effect of malolactic fermentation on white wine?",
+                answer: "Creamy, Buttery Notes",
+                options: ["Creamy, Buttery Notes", "Crisp, Citrus Notes", "Floral, Aromatic Notes", "Mineral, Flinty Notes"]
+            },
+            {
+                question: "Which region is famous for Moscato d'Asti?",
+                answer: "Piedmont",
+                options: ["Piedmont", "Veneto", "Tuscany", "Sicily"]
+            },
+            {
+                question: "What causes 'brett' character in wine?",
+                answer: "Brettanomyces Yeast",
+                options: ["Brettanomyces Yeast", "Malolactic Bacteria", "Noble Rot", "Oxidation"]
+            },
+            {
+                question: "Which grape variety is known for its 'pine needle' aroma?",
+                answer: "Cabernet Franc",
+                options: ["Cabernet Franc", "Merlot", "Syrah", "Grenache"]
+            },
+            {
+                question: "What is the main grape in Valpolicella?",
+                answer: "Corvina",
+                options: ["Corvina", "Sangiovese", "Nebbiolo", "Barbera"]
+            },
+            {
+                question: "What causes high alcohol in wine?",
+                answer: "High Sugar at Harvest",
+                options: ["High Sugar at Harvest", "Low Temperature", "High Acidity", "Early Harvest"]
+            },
+            {
+                question: "Which region produces Tokaji?",
+                answer: "Hungary",
+                options: ["Hungary", "Germany", "Austria", "Slovakia"]
+            },
+            {
+                question: "What are the characteristics of carbonic maceration?",
+                answer: "Banana, Bubblegum Notes",
+                options: ["Banana, Bubblegum Notes", "Oak, Vanilla Notes", "Earth, Leather Notes", "Pepper, Spice Notes"]
+            },
+            {
+                question: "Which grape variety is known for its 'bell pepper' aroma?",
+                answer: "Cabernet Sauvignon",
+                options: ["Cabernet Sauvignon", "Merlot", "Pinot Noir", "Syrah"]
+            },
+            {
+                question: "What is the main grape in Soave?",
+                answer: "Garganega",
+                options: ["Garganega", "Trebbiano", "Verdicchio", "Vernaccia"]
+            },
+            {
+                question: "What causes reduction in wine?",
+                answer: "Lack of Oxygen",
+                options: ["Lack of Oxygen", "Too Much Oak", "High Temperature", "Low Acidity"]
+            },
+            {
+                question: "Which region is known for Assyrtiko?",
+                answer: "Santorini",
+                options: ["Santorini", "Crete", "Cyprus", "Sicily"]
+            },
+            {
+                question: "What are the characteristics of sur lie aging?",
+                answer: "Creamy, Yeasty Notes",
+                options: ["Creamy, Yeasty Notes", "Fresh Fruit Notes", "Oaky, Vanilla Notes", "Floral, Aromatic Notes"]
+            },
+            {
+                question: "Which grape variety is the main component of Cava?",
+                answer: "Macabeo",
+                options: ["Macabeo", "Chardonnay", "Glera", "Chenin Blanc"]
+            },
+            {
+                question: "What causes high tannins in red wine?",
+                answer: "Extended Skin Contact",
+                options: ["Extended Skin Contact", "High Sugar", "Low Temperature", "Early Harvest"]
+            },
+            {
+                question: "Which region produces Franciacorta?",
+                answer: "Lombardy",
+                options: ["Lombardy", "Veneto", "Tuscany", "Piedmont"]
+            }
         ];
 
         // Function to shuffle array
@@ -256,9 +499,7 @@
 
         // Function to select random questions
         function selectRandomQuestions() {
-            const shuffled = [...allQuestions];
-            shuffleArray(shuffled);
-            selectedQuestions = shuffled.slice(0, 50);  // Select 50 random questions
+            selectedQuestions = [...allQuestions];  // Use all questions instead of selecting a subset
             shuffleArray(selectedQuestions);
         }
 

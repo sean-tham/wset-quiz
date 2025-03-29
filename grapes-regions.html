@@ -242,7 +242,126 @@
                 answer: "Chablis",
                 options: ["Chablis", "Napa Valley", "Barossa Valley", "Rioja"]
             },
-            // Add more questions here based on the cheat sheet
+            {
+                question: "Which region is famous for its Sangiovese-based wines?",
+                answer: "Tuscany",
+                options: ["Tuscany", "Bordeaux", "Rhône Valley", "Piedmont"]
+            },
+            {
+                question: "Where is Barolo wine produced?",
+                answer: "Piedmont",
+                options: ["Piedmont", "Veneto", "Tuscany", "Lombardy"]
+            },
+            {
+                question: "Which region is known for producing Tempranillo-based wines?",
+                answer: "Rioja",
+                options: ["Rioja", "Bordeaux", "Champagne", "Mosel"]
+            },
+            {
+                question: "Where does Sauternes sweet wine come from?",
+                answer: "Bordeaux",
+                options: ["Bordeaux", "Loire Valley", "Alsace", "Burgundy"]
+            },
+            {
+                question: "Which region is famous for Riesling production?",
+                answer: "Mosel",
+                options: ["Mosel", "Provence", "Rhône Valley", "Douro"]
+            },
+            {
+                question: "Where is Shiraz the flagship grape variety?",
+                answer: "Barossa Valley",
+                options: ["Barossa Valley", "Marlborough", "Napa Valley", "Champagne"]
+            },
+            {
+                question: "Which region is known for Sauvignon Blanc production?",
+                answer: "Marlborough",
+                options: ["Marlborough", "Barossa Valley", "Rioja", "Chianti"]
+            },
+            {
+                question: "Where is Brunello di Montalcino produced?",
+                answer: "Tuscany",
+                options: ["Tuscany", "Piedmont", "Veneto", "Puglia"]
+            },
+            {
+                question: "Which region is famous for sparkling wine production using Méthode Traditionelle?",
+                answer: "Champagne",
+                options: ["Champagne", "Provence", "Bordeaux", "Loire Valley"]
+            },
+            {
+                question: "Where is Malbec the principal grape variety?",
+                answer: "Mendoza",
+                options: ["Mendoza", "Rioja", "Douro", "Rhône Valley"]
+            },
+            {
+                question: "Which region is known for producing Port wine?",
+                answer: "Douro Valley",
+                options: ["Douro Valley", "Jerez", "Tuscany", "Bordeaux"]
+            },
+            {
+                question: "Where is Pinot Noir a key grape variety?",
+                answer: "Burgundy",
+                options: ["Burgundy", "Bordeaux", "Rhône Valley", "Rioja"]
+            },
+            {
+                question: "Which region is famous for Grenache-based rosé wines?",
+                answer: "Provence",
+                options: ["Provence", "Loire Valley", "Alsace", "Champagne"]
+            },
+            {
+                question: "Where is Chenin Blanc a key grape variety?",
+                answer: "Loire Valley",
+                options: ["Loire Valley", "Burgundy", "Alsace", "Bordeaux"]
+            },
+            {
+                question: "Which region produces Amarone della Valpolicella?",
+                answer: "Veneto",
+                options: ["Veneto", "Tuscany", "Piedmont", "Puglia"]
+            },
+            {
+                question: "Where is Sherry produced?",
+                answer: "Jerez",
+                options: ["Jerez", "Porto", "Marsala", "Madeira"]
+            },
+            {
+                question: "Which region is known for Cabernet Sauvignon production?",
+                answer: "Napa Valley",
+                options: ["Napa Valley", "Mosel", "Chablis", "Rioja"]
+            },
+            {
+                question: "Where is Gewürztraminer a signature grape?",
+                answer: "Alsace",
+                options: ["Alsace", "Loire Valley", "Burgundy", "Bordeaux"]
+            },
+            {
+                question: "Which region produces Chianti Classico?",
+                answer: "Tuscany",
+                options: ["Tuscany", "Piedmont", "Veneto", "Puglia"]
+            },
+            {
+                question: "Where is Syrah/Shiraz the key grape in the Northern Rhône?",
+                answer: "Rhône Valley",
+                options: ["Rhône Valley", "Bordeaux", "Burgundy", "Loire Valley"]
+            },
+            {
+                question: "Which region is known for its First Growth châteaux?",
+                answer: "Bordeaux",
+                options: ["Bordeaux", "Burgundy", "Champagne", "Loire Valley"]
+            },
+            {
+                question: "Where is Primitivo (Zinfandel) widely grown?",
+                answer: "Puglia",
+                options: ["Puglia", "Tuscany", "Piedmont", "Veneto"]
+            },
+            {
+                question: "Which region is famous for its Grand Cru vineyards?",
+                answer: "Burgundy",
+                options: ["Burgundy", "Bordeaux", "Loire Valley", "Rhône Valley"]
+            },
+            {
+                question: "Where is Prosecco produced?",
+                answer: "Veneto",
+                options: ["Veneto", "Tuscany", "Piedmont", "Puglia"]
+            }
         ];
 
         // Function to shuffle array
@@ -255,9 +374,7 @@
 
         // Function to select random questions
         function selectRandomQuestions() {
-            const shuffled = [...allQuestions];
-            shuffleArray(shuffled);
-            selectedQuestions = shuffled.slice(0, 25);  // Select 25 random questions
+            selectedQuestions = [...allQuestions];  // Use all questions instead of selecting a subset
             shuffleArray(selectedQuestions);
         }
 
